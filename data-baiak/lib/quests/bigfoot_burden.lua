@@ -1,44 +1,39 @@
 if not warzoneConfig then
 	warzoneConfig = {
-		[45700] = {
-			center = Position(33110, 31965, 10),
-			maxRangeX = 12,
-			minRangeX = 26,
-			minRangeY = 15,
-			maxRangeY = 17,
-			bossResp = Position(33102, 31956, 10),
+		[45700] = { -- OK
+			center = Position(2096, 853, 10),
+			maxRangeX = 12, minRangeX = 26, minRangeY = 15, maxRangeY = 17,
+			bossResp = Position(2088, 844, 10),
 			boss = "Deathstrike",
-			teleportTo = Position(33096, 31955, 10),
+			teleportTo = Position(2082, 843, 10),
 			locked = false,
-			interval = configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN),
-			exit = Position(33001, 31900, 9),
+			storage = Storage.BigfootBurden.BossWarzone1,
+			interval = 20 * 60 * 60,-- 20 hours
+			exit = Position(2205, 832, 9)
 		},
 		[45701] = {
-			center = Position(33117, 31956, 11),
-			maxRangeX = 14,
-			minRangeX = 14,
-			minRangeY = 14,
-			maxRangeY = 14,
-			bossResp = Position(33116, 31956, 11),
+			center = Position(2086, 826, 11),
+			maxRangeX = 14, minRangeX = 14, minRangeY = 14, maxRangeY = 14,
+			bossResp = Position(2085, 826, 11),
 			boss = "Gnomevil",
-			teleportTo = Position(33106, 31955, 11),
+			teleportTo = Position(2075, 825, 11),
 			locked = false,
 			interval = configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN),
-			exit = Position(33001, 31900, 9),
+			exit = Position(2205, 832, 9),
 			wall = 16169, --Id of current crystais in warzone 2 (open killing parasite)
 		},
 		[45702] = {
-			center = Position(33090, 31910, 12),
+			center = Position(2067, 802, 12),
 			maxRangeX = 12,
 			minRangeX = 12,
 			minRangeY = 12,
 			maxRangeY = 12,
-			bossResp = Position(33088, 31910, 12),
+			bossResp = Position(2065, 802, 12),
 			boss = "Abyssador",
-			teleportTo = Position(33083, 31904, 12), --Place where the player will be teleported inside the room
+			teleportTo = Position(2060, 796, 12), --Place where the player will be teleported inside the room
 			locked = false,
 			interval = configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN),
-			exit = Position(33001, 31900, 9),
+			exit = Position(2205, 832, 9),
 		},
 	}
 
