@@ -1,4 +1,4 @@
-local oldpos = {}
+local oldpos = { }
 
 local config = {
 	position = { fromPosition = Position(33415, 31522, 11), toPosition = Position(33445, 31554, 11) },

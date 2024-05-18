@@ -77,8 +77,64 @@ Reserved player action storage key ranges (const.h)
 	Questline = Storage through the Quest
 ]]
 
+
+STORAGEVALUE_REWARD_DAILY_EXERCISE = 97150
+
+-- Storage EBB and FLOW System
+STORAGEVALUE_EBB_FLOW = 97149
+
+-- Storage SuperUP
+STORAGEVALUE_SUPERUP_INDEX = 97147
+STORAGEVALUE_SUPERUP_TEMPO = 97148
+-- Storage Castle 24H
+STORAGEVALUE_CASTLE_DOMINADO = 75147
+STORAGEVALUE_CASTLE_SPAM = 75148
+-- Storage Castle 48H
+STORAGEVALUE_CASTLE48_WINNER = 971234
+-- Critical/Dodge System
+STORAGEVALUE_DODGE = 48900
+STORAGEVALUE_CRITICAL = 48901
+-- Events
+STORAGEVALUE_EVENTS = 74861
+-- BomberMan
+STORAGEVALUE_MINIGAME_BOMBERMAN_SIZE = 971235
+STORAGEVALUE_MINIGAME_BOMBERMAN_MAXBOMB = 971236
+STORAGEVALUE_MINIGAME_BOMBERMAN_ACTIVEBOMB = 971237
+STORAGEVALUE_MINIGAME_BOMBERMAN_SPEED = 971238
+
+-- BOSS EVENT STORE THE NAME OF BOSS TO CHECK ON CREATURESCRIPT
+BOSS_EVENT_NAME = nil
+
+-- AutoLoot config
+AUTO_LOOT_MAX_ITEMS = 5
+
+-- Reserved storage
+AUTOLOOT_STORAGE_START = 10000
+AUTOLOOT_STORAGE_END = AUTOLOOT_STORAGE_START + AUTO_LOOT_MAX_ITEMS
+-- AutoLoot config end
+
+-- Lottery config
+LOTTERY_STORAGE_MINUTE = 60001
+LOTTERY_STORAGE_FINISHED = 60002
+LOTTERY_STORAGE_FINISHEDHOUR = 60003
+-- Lottery config end
+
 Storage = {
+	-- CUSTOM STORAGES BAIAK
+	Quest = {
+		DemonHelmet = 47000,
+		PitsOfInferno = 47001
+	},
+	
+	bomberman = {
+		bombsize = 971239,
+		maxbombammount = 971240,
+		activebombs = 971241,
+		bombermanspeed = 971242
+	},
+
 	-- General storages
+	IsTraining = 30000,
 	Dragonfetish = 30003,
 	EdronRopeQuest = 30004,
 	GhostShipQuest = 30005,
@@ -205,7 +261,11 @@ Storage = {
 		Fourteen = {
 			Remains = 50041,
 		},
+		UrmahlulluTimer = 50042,
 		AccessDoor = 50043,
+		NeferiTheSpyTimer = 50044,
+		SisterHetaiTimer = 55045,
+		AmenefTimer = 55046,
 		CatacombDoors = 55047,
 	},
 	TheSecretLibrary = {
@@ -419,11 +479,15 @@ Storage = {
 		Questline = 50350,
 		DragonCounter = 50351,
 		ChestCounter = 50352,
+		TazhadurTimer = 50353,
+		KalyassaTimer = 50354,
 		SecretsCounter = 50355,
 		GelidrazahAccess = 50356,
+		GelidrazahTimer = 50357,
 		DesertTile = 50358,
 		StoneSculptureTile = 50359,
 		SuntowerTile = 50360,
+		ZorvoraxTimer = 50361,
 		Horn = 50362,
 		Scale = 50363,
 		Bones = 50364,
@@ -455,6 +519,14 @@ Storage = {
 		RiftRunner = 50420, -- Scroll
 		TheShattererTimer = 50421,
 		TheLordOfTheLiceTimer = 50422,
+		TarbazTimer = 50423,
+		RazzagornTimer = 50424,
+		RagiazTimer = 50425,
+		ZamuloshTimer = 50426,
+		ShulgraxTimer = 50427,
+		MazoranTimer = 50428,
+		PlagirathTimer = 50429,
+		FerumbrasTimer = 50430,
 		Tarbaz = 50431,
 		Razzagorn = 50432,
 		Ragiaz = 50433,
@@ -505,12 +577,19 @@ Storage = {
 		DiamondServantCounter = 50484,
 		AccessPortals = 50485,
 		AccessMachine = 50486,
+		LadyTenebrisTimer = 50487,
 		LadyTenebrisKilled = 50488,
+		LloydTimer = 50489,
 		LloydKilled = 50490,
+		ThornKnightTimer = 50491,
 		ThornKnightKilled = 50492,
+		DragonkingTimer = 50493,
 		DragonkingKilled = 50494,
+		HorrorTimer = 50495,
 		HorrorKilled = 50496,
+		TimeGuardianTimer = 50497,
 		TimeGuardianKilled = 50498,
+		LastLoreTimer = 50499,
 		LastLoreKilled = 50501,
 		BirdCage = 50502,
 		AccessLavaTeleport = 50503,
@@ -653,6 +732,9 @@ Storage = {
 		Warzone3Reward = 50704,
 		BossKills = 50705,
 		DoorGoldenFruits = 50706,
+		BossWarzone1 = 50707,
+		BossWarzone2 = 50708,
+		BossWarzone3 = 50709,
 		GnomedixMsg = 50710,
 	},
 	TheirMastersVoice = {
@@ -814,6 +896,11 @@ Storage = {
 		-- Until all outfit quests are completed
 		DefaultStart = 50960,
 		Ref = 50961,
+		Afflicted = {
+			Outfit = 50962,
+			AddonPlagueMask = 50963,
+			AddonPlagueBell = 50964
+		},
 		Citizen = {
 			-- Mission storages for temporary questlog entries
 			MissionHat = 50966,
@@ -1669,6 +1756,7 @@ Storage = {
 		Questline = 52310,
 		CobraBastion = {
 			Questline = 52311,
+			ScarlettTimer = 52312,
 		},
 	},
 	RottinWoodAndMaried = {
@@ -1692,6 +1780,9 @@ Storage = {
 		-- Reserved storage 52396-52410 (TheOrderOfTheLion)
 		Drume = {
 			Commander = 52396, -- Global
+			TotalLionCommanders = 52397, -- Global
+			TotalUsurperCommanders = 52398, -- Global
+			Timer = 52399,
 		},
 	},
 	-- News quest development
@@ -2411,6 +2502,7 @@ Storage = {
 			TheColoursOfMagic = {},
 		},
 		U9_1 = { --update 9.1 - Reserved Storages 43351 - 43550
+			AfflictedOutfits = {},
 			AwashWorldChange = {},
 			DemonWarsWorldChange = {},
 			ElementalistOutfits = {},
@@ -2527,8 +2619,17 @@ Storage = {
 			ChakoyaIcebergMiniWorldChange = {},
 			GrimvaleMineWorldChange = {},
 			Grimvale = {
+				BloodbackTimer = 44951,
+				DarkfangTimer = 44952,
+				SharpclawTimer = 44953,
+				ShadowpeltTimer = 44954,
+				BlackVixenTimer = 44955,
 				AncientFeudDoors = 44956,
 				AncientFeudShortcut = 44957,
+				YirkasTimer = 44958,
+				SrezzTimer = 44959,
+				UtuaTimer = 44960,
+				KatexTimer = 44961,
 			},
 			HiveOutpostMiniWorldChange = {},
 			JungleCampMiniWorldChange = {},
@@ -2536,6 +2637,7 @@ Storage = {
 			NightmareTeddy = {},
 			PoacherCavesMiniWorldChange = {},
 			TheGreatDragonHunt = {},
+			TheLostBrother = {},
 			TheTaintedSouls = {},
 		},
 		U10_90 = { -- update 10.90 - Reserved Storages 45201 - 45350
@@ -2565,7 +2667,7 @@ Storage = {
 					Feathers3 = 45758,
 					Feathers4 = 45759,
 					Feathers5 = 45760,
-				},
+					},
 				Mission02 = {
 					45761, -- Nightmare Intruders
 					FrazzlemawsCount = 45762,
@@ -2598,7 +2700,7 @@ Storage = {
 					StarlightPos03 = 45789,
 					StarlightPos04 = 45790,
 					StarlightPos05 = 45791,
-				},
+					},
 				Mission03 = {
 					45792, -- An Unlikely Couple
 					UnlikelyCouple = 45793,
@@ -2606,10 +2708,10 @@ Storage = {
 					RavenHerbTimer = 45795,
 					DarkSunCatcher = 45796,
 					EmptyStarlightVial = 45797,
-				},
+					},
 				Mission04 = {
 					45798,
-				},
+					},
 				Mission05 = 45799,
 			},
 		},
@@ -2663,6 +2765,9 @@ Storage = {
 				ScourgeOfOblivionDoor = 46023,
 				ScourgeOfOblivionTimer = 46024,
 				ScourgeOfOblivionKilled = 46025,
+				BrokulKilled = 35000,
+				BrokulTimer = 36000,
+				MazzinorProtection = 46026,
 			},
 		},
 		U12_00 = { -- update 12.00 - Reserved Storages 46301 - 46600
@@ -2673,6 +2778,7 @@ Storage = {
 				BuriedCathedralAccess = 46403,
 				DreamScarAccess = 46404,
 				AndrewDoor = 14900,
+				FacelessBaneTime = 50283,
 				AccessDoors = 46309,
 				ArenaTimer = 46310,
 				PlaguerootKilled = 46311,
@@ -2709,12 +2815,18 @@ Storage = {
 					IceIslands = 46863,
 				},
 				Bosses = {
+					BaelocNictrosTimer = 46865,
 					BaelocNictrosKilled = 46866,
+					CountVlarkorthTimer = 46867,
 					CountVlarkorthKilled = 46868,
+					DukeKruleTimer = 46869,
 					DukeKruleKilled = 46870,
+					EarlOsamTimer = 46871,
 					EarlOsamKilled = 46872,
+					LordAzaramTimer = 46873,
 					LordAzaramKilled = 46874,
 					KingZelosDoor = 46875,
+					KingZelosTimer = 46876,
 					KingZelosKilled = 46877,
 					InquisitionOutfitReceived = 46878,
 				},
@@ -2726,13 +2838,24 @@ Storage = {
 		U12_30 = { -- update 12.30 - Reserved Storages 47001 - 47200
 			FalconerOutfits = {},
 			FeasterOfSouls = {
+				IrgixTimer = 47005,
+				IrgixKilled = 47006,
+				UnazTimer = 47007,
 				UnazKilled = 47008,
+				VokTimer = 47009,
 				VokKilled = 47010,
+				FearFeasterTimer = 47011,
 				FearFeasterKilled = 47012,
+				DreadMaidenTimer = 47013,
 				DreadMaidenKilled = 47014,
+				UnwelcomeTimer = 47015,
 				UnwelcomeKilled = 47016,
 				PaleWormEntrance = 47017,
+				PaleWormTimer = 47018,
 				PaleWormKilled = 47019,
+				BrainHeadTimer = 47020,
+				ThaianTimer = 47021,
+				PaleWormSteps = 47022,
 			},
 			PoltergeistOutfits = {
 				Received = 47020,
@@ -2746,12 +2869,18 @@ Storage = {
 				AccessSouthernSide = 47403,
 			},
 			SoulWar = {
+				GoshnarMaliceTimer = 47210,
 				GoshnarMaliceKilled = 47211,
+				GoshnarHatredTimer = 47212,
 				GoshnarHatredKilled = 47213,
+				GoshnarSpiteTimer = 47214,
 				GoshnarSpiteKilled = 47215,
+				GoshnarCrueltyTimer = 47216,
 				GoshnarCrueltyKilled = 47217,
+				GoshnarGreedTimer = 47218,
 				GoshnarGreedKilled = 47219,
 				GoshnarMegalomaniaAccess = 47220,
+				GoshnarMegalomaniaTimer = 47221,
 				GoshnarMegalomaniaKilled = 47222,
 				QuestReward = 47223,
 				OutfitReward = 47224,
@@ -2764,15 +2893,22 @@ Storage = {
 				RascacoonShortcut = 47512,
 				TentuglyKilled = 47513,
 				TentuglyDoor = 47514,
+				TentuglyTimer = 47515,
+				RatmiralTimer = 47516,
 			},
 			RascoohanOutfits = {},
 		},
 		U12_70 = { -- update 12.70 - Reserved Storages 47601 - 47800
 			AdventuresOfGalthen = {
 				AccessDoor = 47601,
+				MegasylvanYseldaTimer = 47602,
 			},
 			CitizenOfIssaviOutfits = {},
 			RoyalBounaceanAdvisorOutfits = {},
+			TooHotToHandle = {
+				TheMegaMagmaoidTimer = 47701,
+				TheBrainstealerTimer = 47702,
+			}
 		},
 		U12_80 = { -- update 12.80 - Reserved Storages 47801 - 47850
 			RoyalCostumeOutfits = {},
@@ -2780,10 +2916,19 @@ Storage = {
 		U12_90 = { -- update 12.90 - Reserved Storages 47851 - 47900
 			PrimalOrdeal = {
 				QuestLine = 47851,
+				Hazard = {
+					Current = 47856,
+					Max = 47857,
+				},
 				Bosses = {
+					MagmaBubbleTimer = 47852,
 					MagmaBubbleKilled = 47853,
+					ThePrimalMenaceTimer = 47854,
 					ThePrimalMenaceKilled = 47855,
 				},
+			},
+			WithinTheTides = {
+				TimiraTheManyHeads = 47861,
 			},
 		},
 		U13_10 = { -- update 13.10 - Reserved Storages 47901 - 47951
@@ -2915,6 +3060,7 @@ Storage = {
 	},
 
 	VipSystem = {
+		IsVip = 150001,
 		OnlineCoinsGain = 150002,
 		OnlineTokensGain = 150003,
 	},
@@ -3091,11 +3237,40 @@ GlobalStorage = {
 	OberonEventTime = 65009,
 	PrinceDrazzakEventTime = 65010,
 	ScarlettEtzelEventTime = 65011,
+	CobraBastionFlask = 65012,
 	Inquisition = 65013,
 	Yasir = 65014,
+	NightmareIsle = 65015,
 	IceCrack = 65016,
 	UglyMonster = 65017,
 	KeysUpdate = 40000, -- Reserved storage from 40000 - 40000
+	FeasterOfSouls = {
+		ThePaleWorm = {
+			Battle = 90001,
+		},
+		TheUnWelcome = {
+			BrotherBattle = 90002,
+		},
+	},
+	TheSecretLibrary = {
+		GhuloshHealth = 90003,
+		GhuloshFight = 90004,
+		GorzindelFight = 90005,
+		MazzinorFight = 90006,
+		MazzinorHealth = 90007,
+		LokathmorFight = 90008,
+		LokathmorHealth = 90009,
+		SpellsteallerTransform = 90010,
+		ScourageInvasionLevel = 90011,
+		ScourageInvasionKills = 90012,
+		ScourageBrotherKilled = 90013,
+		ScourageTransform = 90014,
+		ScourageTransform2 = 90015,
+	},
+	GraveDanger = {
+		CountVlarkorthHealth = 90016,
+		CountVlarkorthCounting = 90017,
+	},
 }
 
 startupGlobalStorages = {
@@ -3129,3 +3304,30 @@ startupGlobalStorages = {
 	GlobalStorage.FerumbrasAscendant.Elements.Third,
 	GlobalStorage.FerumbrasAscendant.Elements.Done,
 }
+
+-- Values extraction function
+local function extractValues(tab, ret)
+	if type(tab) == "number" then
+		table.insert(ret, tab)
+	else
+		for _, v in pairs(tab) do
+			extractValues(v, ret)
+		end
+	end
+end
+
+local extraction = { }
+extractValues(Storage, extraction) -- Call function
+table.sort(extraction) -- Sort the table
+-- The choice of sorting is due to the fact that sorting is very cheap O (n log2 (n))
+-- And then we can simply compare one by one the elements finding duplicates in O(n)
+
+-- Scroll through the extracted table for duplicates
+if #extraction > 1 then
+	for i = 1, #extraction - 1 do
+		if extraction[i] == extraction[i+1] then
+			Spdlog.warn(string.format("Duplicate storage value found: %d",
+				extraction[i]))
+		end
+	end
+end

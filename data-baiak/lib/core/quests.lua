@@ -1104,8 +1104,8 @@ if not Quests then
 						[0] = function(player)
 							return string.format(
 								"You already hunted %d kongras, %d merlkins and %d sibangs. You are supposed to kill 300 apes in total.",
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.KongraCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.MerlkinCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.KongraCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.MerlkinCount),
 								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.SibangCount)
 							)
 						end,
@@ -1165,10 +1165,10 @@ if not Quests then
 						[0] = function(player)
 							return string.format(
 								"You already killed %d constrictor scouts, %d hydromancer scouts, %d mantassin scouts, %d pincher scouts and %d predator scouts. You are supposed to kill 400 in total.",
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraConstrictorScoutCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraHydromancerScoutCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaramMntassinScoutCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraPincherScoutCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraConstrictorScoutCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraHydromancerScoutCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaramMntassinScoutCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraPincherScoutCount),
 								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraPredatorScoutCount)
 							)
 						end,
@@ -1312,10 +1312,10 @@ if not Quests then
 						[0] = function(player)
 							return string.format(
 								"You already killed %d constrictors, %d hydromancers, %d mantassins, %d pinchers and %d predators. You are supposed to kill 600 in total.",
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraConstrictorCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraHydromancerCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraMantassinCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraPincherCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraConstrictorCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraHydromancerCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraMantassinCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraPincherCount),
 								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.QuaraPredatorCount)
 							)
 						end,
@@ -1389,10 +1389,10 @@ if not Quests then
 						[0] = function(player)
 							return string.format(
 								"You already hunted %d Chosen, %d Dragon Priest, %d High Guard, %d Legionnaire and %d Zaogun. You are supposed to kill 800 high class lizards in total.",
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardChosenCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardDragonPriestCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardHighGuardCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardLegionnaireCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardChosenCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardDragonPriestCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardHighGuardCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardLegionnaireCount),
 								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.LizardZaogunCount)
 							)
 						end,
@@ -1543,9 +1543,9 @@ if not Quests then
 						[0] = function(player)
 							return string.format(
 								"You already hunted %d draken abomination, %d draken elite, %d draken spellweaver and %d draken warmaster. You are supposed to kill 900 drakens in total.",
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.DrakenAbominationCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.DrakenEliteCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.DrakenSpellweaverCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.DrakenAbominationCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.DrakenEliteCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.DrakenSpellweaverCount),
 								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.DrakenWarmasterCount)
 							)
 						end,
@@ -2108,8 +2108,8 @@ if not Quests then
 						[0] = function(player)
 							return string.format(
 								"Daniel Steelsoul sent you to kill 500 cyclops, preferably in Cyclopolis north of Edron city. You have killed %d cyclops, %d drones and %d smiths so far.",
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.CyclopsCount),
-								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.CyclopsDroneCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.CyclopsCount),
+							player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.CyclopsDroneCount),
 								player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.CyclopsSmithCount)
 							)
 						end,
@@ -4362,8 +4362,8 @@ if not Quests then
 			missions = {
 				[1] = {
 					name = "Access to the Isle of Kings",
-					storageId = Storage.WhiteRavenMonastery.Passage,
-					missionId = 10315,
+                    storageId = Storage.WhiteRavenMonastery.Passage,
+                    missionId = 10315,
 					startValue = 1,
 					endValue = 2,
 					states = {
@@ -4392,8 +4392,8 @@ if not Quests then
 			missions = {
 				[1] = {
 					name = "To Appease the Mighty",
-					storageId = Storage.TibiaTales.ToAppeaseTheMightyQuest,
-					missionId = 10317,
+                    storageId = Storage.TibiaTales.ToAppeaseTheMightyQuest,
+                    missionId = 10317,
 					startValue = 0,
 					endValue = 4,
 					states = {
@@ -4685,15 +4685,15 @@ if not Quests then
 					},
 				},
 				-- [17] = {
-				-- name = "Nomads Land",
-				-- storageId = PLACEHOLDER,
-				-- missionId = PLACEHOLDER,
-				-- startValue = 1,
-				-- endValue = 2,
-				-- states = {
-				-- [1] = "",
-				-- [2] = ""
-				-- }
+					-- name = "Nomads Land",
+					-- storageId = PLACEHOLDER,
+					-- missionId = PLACEHOLDER,
+					-- startValue = 1,
+					-- endValue = 2,
+					-- states = {
+						-- [1] = "",
+						-- [2] = ""
+					-- }
 				-- }
 			},
 		},
@@ -6243,8 +6243,8 @@ if not Quests then
 								monsters and Kroazur. - You killed %d weakened frazzlemaws and %d efeebled silencers.",
 								(math.max(player:getStorageValue(Storage.Quest.U11_40.ThreatenedDreams.Mission02.FrazzlemawsCount), 0)),
 								(math.max(player:getStorageValue(Storage.Quest.U11_40.ThreatenedDreams.Mission02.EnfeebledCount), 0))
-							)
-						end,
+								)
+							end,
 						[2] = "You killed 200 of the nightmare monsters that are invading Feyrist. Maelyrra was very happy but it seems \z
 						she still has other problems. She may need your help once more.",
 						[3] = "Maelyrra asked you to retrieve an artefact for her: the moon mirror. It was stolen by the tainted fae \z
