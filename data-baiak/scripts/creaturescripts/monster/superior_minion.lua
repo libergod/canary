@@ -15,5 +15,4 @@ function superiorMinion.onThink(creature)
 		return true
 	end, 7000, creature:getId())
 end
-
 superiorMinion:register()

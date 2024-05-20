@@ -15,12 +15,12 @@ end
 
 local function doCheckArea()
 	--Room 1
-	local upConer = { x = 32133, y = 31341, z = 14 } -- upLeftCorner
-	local downConer = { x = 32174, y = 31375, z = 14 } -- downRightCorner
+	local upConer = {x = 1098, y = 776, z = 8}       -- upLeftCorner
+	local downConer = {x = 1151, y = 825, z = 8}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+        	for k = upConer.z, downConer.z do
 				local room = { x = i, y = j, z = k }
 				local tile = Tile(room)
 				if tile then
@@ -39,8 +39,8 @@ local function doCheckArea()
 	end
 
 	--Room 2
-	local upConer2 = { x = 32140, y = 31340, z = 15 } -- upLeftCorner
-	local downConer2 = { x = 32174, y = 31375, z = 15 } -- downRightCorner
+    local upConer2 = {x = 1106, y = 784, z = 9}       -- upLeftCorner
+	local downConer2 = {x = 1143, y = 818, z = 9}     -- downRightCorner
 
 	for f = upConer2.x, downConer2.x do
 		for g = upConer2.y, downConer2.y do
@@ -71,8 +71,8 @@ end
 
 local function clearArea()
 	--Room 1
-	local upConer = { x = 32133, y = 31341, z = 14 } -- upLeftCorner
-	local downConer = { x = 32174, y = 31375, z = 14 } -- downRightCorner
+	local upConer = {x = 1098, y = 776, z = 8}       -- upLeftCorner
+	local downConer = {x = 1151, y = 825, z = 8}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
@@ -86,7 +86,7 @@ local function clearArea()
 							local creature = Creature(creatureUid)
 							if creature then
 								if creature:isPlayer() then
-									creature:teleportTo({ x = 32092, y = 31330, z = 12 })
+								creature:teleportTo({ x = 1135, y = 771, z = 7 })
 								elseif creature:isMonster() then
 									creature:remove()
 								end
@@ -99,8 +99,8 @@ local function clearArea()
 	end
 
 	--Room 2
-	local upConer2 = { x = 32140, y = 31340, z = 15 } -- upLeftCorner
-	local downConer2 = { x = 32174, y = 31375, z = 15 } -- downRightCorner
+    local upConer2 = {x = 1106, y = 784, z = 9}       -- upLeftCorner
+	local downConer2 = {x = 1143, y = 818, z = 9}     -- downRightCorner
 
 	for f = upConer2.x, downConer2.x do
 		for g = upConer2.y, downConer2.y do
@@ -114,7 +114,7 @@ local function clearArea()
 							local creature = Creature(creatureUid)
 							if creature then
 								if creature:isPlayer() then
-									creature:teleportTo({ x = 32092, y = 31330, z = 12 })
+								creature:teleportTo({ x = 1135, y = 771, z = 7 })
 								elseif creature:isMonster() then
 									creature:remove()
 								end
@@ -135,12 +135,12 @@ function teleportToCrackler()
 	shuffleTable(team, 2, ri, rj) -- Embaralha a tabela para dar um random teleport
 
 	--Room 1
-	local upConer = { x = 32142, y = 31341, z = 14 } -- upLeftCorner
-	local downConer = { x = 32176, y = 31375, z = 14 } -- downRightCorner
+	local upConer = { x = 1098, y = 776, z = 8 }       -- upLeftCorner
+	local downConer = { x = 1151, y = 825, z = 8 }     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+        	for k = upConer.z, downConer.z do
 				local room = { x = i, y = j, z = k }
 				local tile = Tile(room)
 				if tile then
@@ -149,7 +149,7 @@ function teleportToCrackler()
 						for _, c in pairs(creatures) do
 							if c == team[1] or c == team[2] then
 								c:teleportTo({ x = c:getPosition().x, y = c:getPosition().y, z = c:getPosition().z + 1 })
-								c:say("A shift in polarity switches creatures with coresponding polarity into another phase of existence!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32158, y = 31355, z = 14 })
+								c:say("A shift in polarity switches creatures with coresponding polarity into another phase of existence!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, {x = 1127, y = 798, z = 8})
 							end
 						end
 					end
@@ -161,9 +161,9 @@ function teleportToCrackler()
 end
 
 function teleportToCharger()
-	--Room 1
-	local upConer = { x = 32142, y = 31341, z = 15 } -- upLeftCorner
-	local downConer = { x = 32176, y = 31375, z = 15 } -- downRightCorner
+	--Room 2
+    local upConer = { x = 1106, y = 784, z = 9 }       -- upLeftCorner
+	local downConer = { x = 1143, y = 818, z = 9 }     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
@@ -193,17 +193,17 @@ local heartDestructionCharges = Action()
 function heartDestructionCharges.onUse(player, item, fromPosition, itemEx, toPosition)
 	local config = {
 		playerPositions = {
-			Position(32091, 31327, 12),
-			Position(32092, 31327, 12),
-			Position(32093, 31327, 12),
-			Position(32094, 31327, 12),
-			Position(32095, 31327, 12),
+			Position(1136, 767, 7),
+			Position(1137, 767, 7),
+			Position(1138, 767, 7),
+			Position(1139, 767, 7),
+			Position(1140, 767, 7),
 		},
 
-		newPos = { x = 32135, y = 31363, z = 14 },
+		newPos = {x = 1104, y = 806, z = 8},
 	}
 
-	local pushPos = { x = 32091, y = 31327, z = 12 }
+	local pushPos = {x = 1136, y = 767, z = 7}
 
 	if item.actionid == 14320 then
 		if item.itemid == 8911 then
@@ -214,7 +214,7 @@ function heartDestructionCharges.onUse(player, item, fromPosition, itemEx, toPos
 					if tile then
 						local playerTile = tile:getTopCreature()
 						if playerTile and playerTile:isPlayer() then
-							storePlayers[#storePlayers + 1] = playerTile
+						storePlayers[#storePlayers + 1] = playerTile
 						end
 					end
 				end
@@ -239,22 +239,22 @@ function heartDestructionCharges.onUse(player, item, fromPosition, itemEx, toPos
 
 					spawningCharge = false
 
-					Game.createMonster("Charger", { x = 32151, y = 31356, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32154, y = 31353, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32153, y = 31361, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32158, y = 31362, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32161, y = 31360, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32156, y = 31357, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32159, y = 31354, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32163, y = 31356, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32162, y = 31352, z = 14 }, false, true)
-					Game.createMonster("Charger", { x = 32158, y = 31350, z = 14 }, false, true)
+					Game.createMonster("Charger", { x = 1120, y = 799, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1122, y = 804, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1127, y = 805, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1130, y = 803, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1132, y = 799, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1125, y = 800, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1128, y = 797, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1131, y = 795, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1127, y = 793, z = 8 }, false, true)
+					Game.createMonster("Charger", { x = 1123, y = 796, z = 8 }, false, true)
 
-					Game.createMonster("Overcharge", { x = 32152, y = 31355, z = 15 }, false, true)
-					Game.createMonster("Overcharge", { x = 32154, y = 31360, z = 15 }, false, true)
-					Game.createMonster("Overcharge", { x = 32160, y = 31360, z = 15 }, false, true)
-					Game.createMonster("Overcharge", { x = 32162, y = 31356, z = 15 }, false, true)
-					Game.createMonster("Overcharge", { x = 32158, y = 31352, z = 15 }, false, true)
+					Game.createMonster("Overcharge", { x = 1121, y = 798, z = 9 }, false, true)
+					Game.createMonster("Overcharge", { x = 1123, y = 803, z = 9 }, false, true)
+					Game.createMonster("Overcharge", { x = 1129, y = 803, z = 9 }, false, true)
+					Game.createMonster("Overcharge", { x = 1131, y = 799, z = 9 }, false, true)
+					Game.createMonster("Overcharge", { x = 1127, y = 795, z = 9 }, false, true)
 				else
 					player:sendTextMessage(19, "Someone is in the area.")
 				end

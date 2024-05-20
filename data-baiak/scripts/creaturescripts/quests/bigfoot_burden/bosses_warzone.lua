@@ -15,7 +15,7 @@ function bossesWarzone.onDeath(creature)
 	onDeathForDamagingPlayers(creature, function(creature, player)
 		if (player:getStorageValue(Storage.BigfootBurden.WarzoneStatus) + 1) == bossConfig.status then
 			player:setStorageValue(Storage.BigfootBurden.WarzoneStatus, bossConfig.status)
-			if bossConfig.status == 4 then
+				if bossConfig.status == 4 then
 				player:setStorageValue(Storage.BigfootBurden.DoorGoldenFruits, 1)
 			end
 		end

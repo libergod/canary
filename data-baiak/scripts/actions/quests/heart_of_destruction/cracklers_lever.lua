@@ -1,10 +1,10 @@
 local function doCheckArea()
-	local upConer = { x = 32192, y = 31311, z = 14 } -- upLeftCorner
-	local downConer = { x = 32225, y = 31343, z = 14 } -- downRightCorner
+	local upConer = {x = 1145, y = 724, z = 7}       -- upLeftCorner
+	local downConer = {x = 1178, y = 756, z = 7}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+        	for k = upConer.z, downConer.z do
 				local room = { x = i, y = j, z = k }
 				local tile = Tile(room)
 				if tile then
@@ -25,8 +25,8 @@ local function doCheckArea()
 end
 
 local function clearArea()
-	local upConer = { x = 32192, y = 31311, z = 14 } -- upLeftCorner
-	local downConer = { x = 32225, y = 31343, z = 14 } -- downRightCorner
+	local upConer = {x = 1145, y = 724, z = 7}       -- upLeftCorner
+	local downConer = {x = 1178, y = 756, z = 7}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
@@ -40,7 +40,7 @@ local function clearArea()
 							local creature = Creature(creatureUid)
 							if creature then
 								if creature:isPlayer() then
-									creature:teleportTo({ x = 32078, y = 31320, z = 13 })
+									creature:teleportTo({ x = 1208, y = 708, z = 7 })
 								elseif creature:isMonster() then
 									creature:remove()
 								end
@@ -57,31 +57,31 @@ end
 
 local function createVortex()
 	local positions1 = {
-		{ x = 32197, y = 31322, z = 14 },
-		{ x = 32202, y = 31328, z = 14 },
-		{ x = 32208, y = 31324, z = 14 },
-		{ x = 32210, y = 31334, z = 14 },
+		{x = 1150, y = 735, z = 7},
+		{x = 1155, y = 741, z = 7},
+		{x = 1161, y = 737, z = 7},
+		{x = 1163, y = 747, z = 7},
 	}
 
 	local positions2 = {
-		{ x = 32202, y = 31325, z = 14 },
-		{ x = 32201, y = 31334, z = 14 },
-		{ x = 32215, y = 31332, z = 14 },
-		{ x = 32208, y = 31320, z = 14 },
+		{x = 1154, y = 747, z = 7},
+		{x = 1155, y = 738, z = 7},
+		{x = 1161, y = 733, z = 7},
+		{x = 1168, y = 745, z = 7},
 	}
 
 	local positions3 = {
-		{ x = 32199, y = 31329, z = 14 },
-		{ x = 32207, y = 31335, z = 14 },
-		{ x = 32208, y = 31327, z = 14 },
-		{ x = 32213, y = 31322, z = 14 },
+		{x = 1152, y = 742, z = 7},
+		{x = 1161, y = 740, z = 7},
+		{x = 1160, y = 748, z = 7},
+		{x = 1166, y = 735, z = 7},
 	}
 
 	local positions4 = {
-		{ x = 32203, y = 31319, z = 14 },
-		{ x = 32205, y = 31325, z = 14 },
-		{ x = 32212, y = 31330, z = 14 },
-		{ x = 32219, y = 31328, z = 14 },
+		{x = 1156, y = 732, z = 7},
+		{x = 1158, y = 738, z = 7},
+		{x = 1165, y = 743, z = 7},
+		{x = 1172, y = 741, z = 7},
 	}
 	local tempo = 10
 	if vortexPositions == 0 then
@@ -89,7 +89,7 @@ local function createVortex()
 			local items = Tile(Position(positions1[i])):getGround()
 			items:transform(23471)
 			addEvent(function()
-				items:transform(23051)
+			items:transform(23051)
 			end, tempo * 1000)
 		end
 		vortexPositions = 1
@@ -98,7 +98,7 @@ local function createVortex()
 			local items = Tile(Position(positions2[i])):getGround()
 			items:transform(23471)
 			addEvent(function()
-				items:transform(23051)
+			items:transform(23051)
 			end, tempo * 1000)
 		end
 		vortexPositions = 2
@@ -107,7 +107,7 @@ local function createVortex()
 			local items = Tile(Position(positions3[i])):getGround()
 			items:transform(23471)
 			addEvent(function()
-				items:transform(23051)
+			items:transform(23051)
 			end, tempo * 1000)
 		end
 		vortexPositions = 3
@@ -116,7 +116,7 @@ local function createVortex()
 			local items = Tile(Position(positions4[i])):getGround()
 			items:transform(23471)
 			addEvent(function()
-				items:transform(23051)
+			items:transform(23051)
 			end, tempo * 1000)
 		end
 		vortexPositions = 0
@@ -131,28 +131,29 @@ local heartDestructionCracklers = Action()
 function heartDestructionCracklers.onUse(player, item, fromPosition, itemEx, toPosition)
 	local config = {
 		playerPositions = {
-			Position(32079, 31313, 13),
-			Position(32079, 31314, 13),
-			Position(32079, 31315, 13),
-			Position(32079, 31316, 13),
-			Position(32079, 31317, 13),
+			Position(1209, 701, 7),
+			Position(1209, 702, 7),
+			Position(1209, 703, 7),
+			Position(1209, 704, 7),
+			Position(1209, 705, 7)
 		},
 
-		newPos = { x = 32219, y = 31325, z = 14 },
+		newPos = {x = 1172, y = 738, z = 7},
 	}
 
-	local pushPos = { x = 32079, y = 31313, z = 13 }
+	local pushPos = {x = 1209, y = 701, z = 7}
 
 	if item.actionid == 14326 then
 		if item.itemid == 8911 then
 			if player:getPosition().x == pushPos.x and player:getPosition().y == pushPos.y and player:getPosition().z == pushPos.z then
-				local storePlayers = {}
+
+				local storePlayers, playerTile = {}
 				for i = 1, #config.playerPositions do
 					local tile = Tile(Position(config.playerPositions[i]))
 					if tile then
 						local playerTile = tile:getTopCreature()
 						if playerTile and playerTile:isPlayer() then
-							storePlayers[#storePlayers + 1] = playerTile
+						storePlayers[#storePlayers + 1] = playerTile
 						end
 					end
 				end
@@ -176,16 +177,16 @@ function heartDestructionCracklers.onUse(player, item, fromPosition, itemEx, toP
 
 					areaCrackler1 = addEvent(clearArea, 15 * 60000)
 
-					Game.createMonster("Crackler", { x = 32200, y = 31322, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32202, y = 31327, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32199, y = 31330, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32201, y = 31334, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32207, y = 31335, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32211, y = 31334, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32215, y = 31332, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32208, y = 31327, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32207, y = 31323, z = 14 }, false, true)
-					Game.createMonster("Crackler", { x = 32213, y = 31323, z = 14 }, false, true)
+					Game.createMonster("Crackler", {x = 1153, y = 735, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1155, y = 740, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1152, y = 743, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1154, y = 757, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1160, y = 748, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1164, y = 747, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1161, y = 740, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1160, y = 736, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1168, y = 745, z = 7}, false, true)
+					Game.createMonster("Crackler", {x = 1166, y = 736, z = 7}, false, true)
 
 					Game.setStorageValue(14323, 0) -- Depolarized Cracklers Count
 					vortexPositions = 0

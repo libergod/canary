@@ -23,6 +23,7 @@ Noodles ****]],
 local achievementTable = {
 	-- [chestUniqueId] = "Achievement name",
 	-- Annihilator
+	[46572] = "Addoner Quest",
 	[6085] = "Annihilator",
 	[6086] = "Annihilator",
 	[6087] = "Annihilator",
@@ -191,12 +192,16 @@ function questReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 	return true
 end
-
+--[[
 for uniqueRange = 5000, 9000 do
 	questReward:uid(uniqueRange)
 end
 
 for uniqueRange = 10000, 12000 do
+	questReward:uid(uniqueRange)
+end
+]]--
+for uniqueRange = 47001, 48000 do
 	questReward:uid(uniqueRange)
 end
 

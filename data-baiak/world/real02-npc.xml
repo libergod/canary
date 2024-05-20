@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<npcs>
+	<npc centerx="630" centery="1252" centerz="4" radius="1">
+		<npc name="Yasir" x="0" y="0" z="4" spawntime="60" />
+	</npc>
+	<npc centerx="951" centery="1205" centerz="5" radius="1">
+		<npc name="Zethra" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="963" centery="1205" centerz="5" radius="1">
+		<npc name="Dorbin" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="951" centery="1209" centerz="5" radius="1">
+		<npc name="Chuckles" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="962" centery="1209" centerz="5" radius="1">
+		<npc name="Eliyas" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="952" centery="1216" centerz="5" radius="1">
+		<npc name="Eva" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="625" centery="1232" centerz="5" radius="1">
+		<npc name="Nah'Bob" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="641" centery="1232" centerz="5" radius="1">
+		<npc name="Alesar" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="625" centery="1235" centerz="5" radius="1">
+		<npc name="Zethra" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="641" centery="1237" centerz="5" radius="1">
+		<npc name="Eliyas" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="625" centery="1240" centerz="5" radius="1">
+		<npc name="Lunna the Fooder" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="641" centery="1242" centerz="5" radius="1">
+		<npc name="Eva" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="625" centery="1244" centerz="5" radius="1">
+		<npc name="Haroun" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="641" centery="1247" centerz="5" radius="1">
+		<npc name="Yaman" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="633" centery="1252" centerz="5" radius="1">
+		<npc name="Rashid" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="606" centery="1303" centerz="5" radius="2">
+		<npc name="Tamoril" x="-1" y="0" z="5" spawntime="90" direction="2" />
+	</npc>
+	<npc centerx="1054" centery="1023" centerz="6" radius="1">
+		<npc name="Jorge" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="1062" centery="1031" centerz="6" radius="1">
+		<npc name="Yana" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="580" centery="1302" centerz="6" radius="1">
+		<npc name="Haroun" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="588" centery="1302" centerz="6" radius="1">
+		<npc name="Alesar" x="0" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="594" centery="1304" centerz="6" radius="1">
+		<npc name="Esrik" x="-1" y="1" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="576" centery="1309" centerz="6" radius="1">
+		<npc name="Yasir" x="1" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="596" centery="1310" centerz="6" radius="1">
+		<npc name="Yaman" x="0" y="1" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="582" centery="1315" centerz="6" radius="1">
+		<npc name="Nah'Bob" x="1" y="0" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="590" centery="1316" centerz="6" radius="1">
+		<npc name="Rashid of Island" x="0" y="-1" z="6" spawntime="60" />
+	</npc>
+	<npc centerx="1130" centery="795" centerz="7" radius="1">
+		<npc name="Messenger Of Heaven" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1054" centery="1020" centerz="7" radius="1">
+		<npc name="Cledwyn" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1158" centery="1034" centerz="7" radius="1">
+		<npc name="Oldrak" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1019" centery="1162" centerz="7" radius="1">
+		<npc name="King Tibianus" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="991" centery="1203" centerz="7" radius="1">
+		<npc name="The Master Reborned" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="953" centery="1205" centerz="7" radius="1">
+		<npc name="Lunna the Fooder" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="952" centery="1216" centerz="7" radius="1">
+		<npc name="Liane" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1000" centery="1217" centerz="7" radius="1">
+		<npc name="Addoner" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="595" centery="1298" centerz="7" radius="1">
+		<npc name="Hanna" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="590" centery="1303" centerz="7" radius="1">
+		<npc name="Imbuement Assistant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="598" centery="1304" centerz="7" radius="1">
+		<npc name="Token Assistant" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="582" centery="1306" centerz="7" radius="1">
+		<npc name="Archery" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="586" centery="1313" centerz="7" radius="1">
+		<npc name="Rock In A Hard Place" x="-1" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="593" centery="1315" centerz="7" radius="1">
+		<npc name="Lailene" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1983" centery="807" centerz="10" radius="1">
+		<npc name="Gnomad" x="0" y="0" z="10" spawntime="60" />
+	</npc>
+	<npc centerx="1977" centery="809" centerz="11" radius="1">
+		<npc name="Gnomole" x="0" y="0" z="11" spawntime="60" />
+	</npc>
+	<npc centerx="1965" centery="803" centerz="12" radius="1">
+		<npc name="Gnomercy" x="0" y="0" z="12" spawntime="60" />
+	</npc>
+</npcs>

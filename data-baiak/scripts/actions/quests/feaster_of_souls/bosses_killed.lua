@@ -5,14 +5,14 @@ local bosses = {
 	["the pale worm"] = { storage = Storage.Quest.U12_30.FeasterOfSouls.PaleWormKilled },
 }
 
-local bossesFeasterOfSouls = CreatureEvent("FeasterOfSoulsBossDeath")
+local bossesFeasterOfSouls = CreatureEvent("FeasterOfSoulsKill")
 function bossesFeasterOfSouls.onDeath(creature)
 	local bossConfig = bosses[creature:getName():lower()]
 	if not bossConfig then
 		return true
 	end
 	onDeathForDamagingPlayers(creature, function(creature, player)
-		if bossConfig.storage then
+			if bossConfig.storage then
 			player:setStorageValue(bossConfig.storage, 1)
 		end
 	end)

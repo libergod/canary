@@ -10,12 +10,12 @@ local function shuffleTable(t, count, ri, rj)
 end
 
 local function doCheckArea()
-	local upConer = { x = 32126, y = 31296, z = 14 } -- upLeftCorner
-	local downConer = { x = 32162, y = 31322, z = 14 } -- downRightCorner
+	local upConer = {x = 1097, y = 723, z = 7}       -- upLeftCorner
+	local downConer = {x = 1133, y = 749, z = 7}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+        	for k = upConer.z, downConer.z do
 				local room = { x = i, y = j, z = k }
 				local tile = Tile(room)
 				if tile then
@@ -36,8 +36,8 @@ local function doCheckArea()
 end
 
 local function clearArea()
-	local upConer = { x = 32126, y = 31296, z = 14 } -- upLeftCorner
-	local downConer = { x = 32162, y = 31322, z = 14 } -- downRightCorner
+	local upConer = {x = 1097, y = 723, z = 7}       -- upLeftCorner
+	local downConer = {x = 1133, y = 749, z = 7}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
@@ -51,7 +51,7 @@ local function clearArea()
 							local creature = Creature(creatureUid)
 							if creature then
 								if creature:isPlayer() then
-									creature:teleportTo({ x = 32225, y = 31347, z = 11 })
+									creature:teleportTo({ x = 1232, y = 728, z = 7 })
 								elseif creature:isMonster() then
 									creature:remove()
 								end
@@ -70,31 +70,31 @@ end
 
 function createSparks()
 	local positions = {
-		{ x = 32132, y = 31306, z = 14 },
-		{ x = 32133, y = 31309, z = 14 },
-		{ x = 32132, y = 31312, z = 14 },
-		{ x = 32136, y = 31302, z = 14 },
-		{ x = 32136, y = 31307, z = 14 },
-		{ x = 32137, y = 31311, z = 14 },
-		{ x = 32138, y = 31314, z = 14 },
-		{ x = 32139, y = 31304, z = 14 },
-		{ x = 32141, y = 31307, z = 14 },
-		{ x = 32141, y = 31310, z = 14 },
-		{ x = 32141, y = 31315, z = 14 },
-		{ x = 32145, y = 31317, z = 14 },
-		{ x = 32144, y = 31313, z = 14 },
-		{ x = 32145, y = 31309, z = 14 },
-		{ x = 32145, y = 31302, z = 14 },
-		{ x = 32149, y = 31304, z = 14 },
-		{ x = 32152, y = 31302, z = 14 },
-		{ x = 32154, y = 31305, z = 14 },
-		{ x = 32148, y = 31315, z = 14 },
-		{ x = 32150, y = 31312, z = 14 },
-		{ x = 32153, y = 31315, z = 14 },
-		{ x = 32157, y = 31313, z = 14 },
-		{ x = 32154, y = 31310, z = 14 },
-		{ x = 32157, y = 31308, z = 14 },
-		{ x = 32157, y = 31302, z = 14 },
+		{x = 1103, y = 733, z = 7},
+		{x = 1104, y = 736, z = 7},
+		{x = 1103, y = 739, z = 7},
+		{x = 1107, y = 729, z = 7},
+		{x = 1107, y = 734, z = 7},
+		{x = 1108, y = 738, z = 7},
+		{x = 1109, y = 741, z = 7},
+		{x = 1110, y = 731, z = 7},
+		{x = 1112, y = 734, z = 7},
+		{x = 1112, y = 737, z = 7},
+		{x = 1112, y = 742, z = 7},
+		{x = 1116, y = 729, z = 7},
+		{x = 1116, y = 736, z = 7},
+		{x = 1116, y = 744, z = 7},
+		{x = 1115, y = 740, z = 7},
+		{x = 1120, y = 731, z = 7},
+		{x = 1119, y = 742, z = 7},
+		{x = 1121, y = 739, z = 7},
+		{x = 1123, y = 729, z = 7},
+		{x = 1125, y = 732, z = 7},
+		{x = 1125, y = 737, z = 7},
+		{x = 1124, y = 742, z = 7},
+		{x = 1128, y = 729, z = 7},
+		{x = 1128, y = 735, z = 7},
+		{x = 1128, y = 740, z = 7},
 	}
 
 	if unstableSparksCount < 11 then
@@ -109,8 +109,8 @@ function createSparks()
 end
 
 function renewSparks()
-	local upConer = { x = 32126, y = 31296, z = 14 } -- upLeftCorner
-	local downConer = { x = 32162, y = 31322, z = 14 } -- downRightCorner
+	local upConer = {x = 1097, y = 723, z = 7}       -- upLeftCorner
+	local downConer = {x = 1133, y = 749, z = 7}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
@@ -140,17 +140,17 @@ local heartDestructionSparks = Action()
 function heartDestructionSparks.onUse(player, item, fromPosition, itemEx, toPosition)
 	local config = {
 		playerPositions = {
-			Position(32227, 31343, 11),
-			Position(32227, 31344, 11),
-			Position(32227, 31345, 11),
-			Position(32227, 31346, 11),
-			Position(32227, 31347, 11),
+			Position(1234, 724, 7),
+			Position(1234, 725, 7),
+			Position(1234, 726, 7),
+			Position(1234, 727, 7),
+			Position(1234, 728, 7),
 		},
 
-		newPos = { x = 32151, y = 31301, z = 14 },
+		newPos = { x = 1122, y = 728, z = 7 },
 	}
 
-	local pushPos = { x = 32227, y = 31343, z = 11 }
+	local pushPos = {x = 1234, y = 724, z = 7}
 
 	if item.actionid == 14328 then
 		if item.itemid == 8911 then
@@ -161,7 +161,7 @@ function heartDestructionSparks.onUse(player, item, fromPosition, itemEx, toPosi
 					if tile then
 						local playerTile = tile:getTopCreature()
 						if playerTile and playerTile:isPlayer() then
-							storePlayers[#storePlayers + 1] = playerTile
+						storePlayers[#storePlayers + 1] = playerTile
 						end
 					end
 				end
@@ -183,7 +183,7 @@ function heartDestructionSparks.onUse(player, item, fromPosition, itemEx, toPosi
 
 					unstableSparksCount = 0
 					--Game.createMonster("Crackler", {x = 32200, y = 31322, z = 14}, false, true)
-					player:say("The room slowly beginns to crackle. An erruption seems imanent!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32143, y = 31308, z = 14 })
+					player:say("The room slowly beginns to crackle. An erruption seems imanent!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 1114, y = 735, z = 7 })
 				else
 					player:sendTextMessage(19, "Someone is in the area.")
 				end

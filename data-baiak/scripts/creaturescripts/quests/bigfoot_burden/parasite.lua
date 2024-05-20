@@ -1,8 +1,8 @@
 local positionsWall = {
-	{ x = 33098, y = 31979, z = 11 },
-	{ x = 33098, y = 31978, z = 11 },
-	{ x = 33098, y = 31977, z = 11 },
-	{ x = 33098, y = 31976, z = 11 },
+	{x = 2067, y = 846, z = 11},
+	{x = 2067, y = 847, z = 11},
+	{x = 2067, y = 848, z = 11},
+	{x = 2067, y = 849, z = 11},
 }
 
 local function recreateCrystals(c)
@@ -13,7 +13,7 @@ local function recreateCrystals(c)
 		end
 	end
 
-	local spectators = Game.getSpectators(Position(33099, 31977, 11), false, false, 1, 1, 1, 2)
+	local spectators = Game.getSpectators(Position(2068, 847, 11), false, false, 1, 1, 1, 2)
 	for i = 1, #spectators do
 		if spectators[i]:isPlayer() then
 			local specPos = spectators[i]:getPosition()
@@ -33,7 +33,7 @@ function parasiteWarzone.onDeath(creature)
 	end
 
 	local pos = creature:getPosition()
-	if pos.x ~= 33097 or pos.y > 31979 or pos.y < 31976 or pos.z ~= 11 then
+	if pos.x ~= 2066 or pos.y > 849 or pos.y < 846 or pos.z ~= 11 then
 		return false
 	end
 
