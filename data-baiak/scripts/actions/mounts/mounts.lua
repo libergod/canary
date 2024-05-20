@@ -57,12 +57,12 @@ local function doFailAction(cid, mount, pos, item, itemEx, loseItem)
 	elseif action[1] == ACTION_BREAK then
 		effect = CONST_ME_BLOCKHIT
 		if loseItem then
-			Item(item.uid):remove(1)
+		Item(item.uid):remove(1)
 		end
 	elseif action[1] == ACTION_ALL then
 		Creature(itemEx.uid):remove()
 		if loseItem then
-			Item(item.uid):remove(1)
+		Item(item.uid):remove(1)
 		end
 	end
 
@@ -122,7 +122,7 @@ function mounts.onUse(cid, item, fromPosition, itemEx, toPosition)
 			Item(item.uid):remove(1)
 			return true
 		end
-		--NPC Mount
+	--NPC Mount
 	elseif targetNpc ~= nil and mount.TYPE == TYPE_NPC then
 		if mount.NAME == targetNpc:getName() then
 			if rand > mount.CHANCE then
@@ -139,7 +139,7 @@ function mounts.onUse(cid, item, fromPosition, itemEx, toPosition)
 			Item(item.uid):remove(1)
 			return true
 		end
-		--Item Mount
+	--Item Mount
 	elseif targetItem ~= nil and mount.TYPE == TYPE_ITEM then
 		if mount.NAME == targetItem:getName() then
 			if rand > mount.CHANCE then
@@ -156,7 +156,7 @@ function mounts.onUse(cid, item, fromPosition, itemEx, toPosition)
 			Item(item.uid):remove(1)
 			return true
 		end
-		--Action Mount
+	--Action Mount
 	elseif itemEx.actionid > 0 and mount.TYPE == TYPE_ACTION then
 		if mount.NAME == itemEx.actionid then
 			if rand > mount.CHANCE then
@@ -173,7 +173,7 @@ function mounts.onUse(cid, item, fromPosition, itemEx, toPosition)
 			Item(item.uid):remove(1)
 			return true
 		end
-		--Unique Mount
+	--Unique Mount
 	elseif itemEx.uid <= 65535 and mount.TYPE == TYPE_UNIQUE then
 		if mount.NAME == itemEx.uid then
 			if rand > mount.CHANCE then

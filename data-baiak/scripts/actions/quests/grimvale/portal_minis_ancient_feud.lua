@@ -1,75 +1,75 @@
 local config = {
 	[1] = {
-		teleportPosition = { x = 33123, y = 32239, z = 12 },
+		teleportPosition = {x = 1375, y = 341, z = 9},
 		bossName = "Yirkas Blue Scales",
 		requiredLevel = 250,
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33154, 32246, 12),
-		bossPosition = Position(33154, 32252, 12),
+		destination = Position(1406, 348, 9),
+		bossPosition = Position(1406, 354, 9),
 		specPos = {
-			from = Position(33150, 32242, 12),
-			to = Position(33164, 32260, 12),
+			from = Position(1402, 344, 9),
+			to = Position(1417, 364, 9),
 		},
-		exitPosition = Position(33123, 32240, 12),
+		exitPosition = Position(1375, 342, 9),
 	},
 	[2] = {
-		teleportPosition = { x = 33131, y = 32252, z = 12 },
+		teleportPosition = {x = 1383, y = 354, z = 9},
 		bossName = "Srezz Yellow Eyes",
 		requiredLevel = 250,
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33120, 32278, 12),
-		bossPosition = Position(33122, 32285, 12),
+		destination = Position(1372, 380, 9),
+		bossPosition = Position(1373, 386, 9),
 		specPos = {
-			from = Position(33115, 32275, 12),
-			to = Position(33127, 32290, 12),
+			from = Position(1367, 377, 9),
+			to = Position(1380, 394, 9),
 		},
-		exitPosition = Position(33130, 32252, 12),
+		exitPosition = Position(1382, 354, 9),
 	},
 	[3] = {
-		teleportPosition = { x = 33123, y = 32265, z = 12 },
+		teleportPosition = {x = 1375, y = 367, z = 9},
 		bossName = "Utua Stone Sting",
 		requiredLevel = 250,
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33087, 32240, 12),
-		bossPosition = Position(33087, 32245, 12),
+		destination = Position(1339, 342, 9),
+		bossPosition = Position(1339, 347, 9),
 		specPos = {
-			from = Position(33082, 32237, 12),
-			to = Position(33091, 32252, 12),
+			from = Position(1334, 339, 9),
+			to = Position(1344, 356, 9),
 		},
-		exitPosition = Position(33123, 32264, 12),
+		exitPosition = Position(1375, 366, 9),
 	},
 	[4] = {
-		teleportPosition = { x = 33114, y = 32252, z = 12 },
+		teleportPosition = {x = 1366, y = 354, z = 9},
 		bossName = "Katex Blood Tongue",
 		requiredLevel = 250,
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33149, 32283, 12),
-		bossPosition = Position(33152, 32289, 12),
+		destination = Position(1401, 385, 9),
+		bossPosition = Position(1404, 390, 9),
 		specPos = {
-			from = Position(33145, 32279, 12),
-			to = Position(33159, 32293, 12),
+			from = Position(1396, 381, 9),
+			to = Position(1412, 397, 9),
 		},
-		exitPosition = Position(33115, 32252, 12),
+		exitPosition = Position(1367, 354, 9),
 	},
 	[5] = {
-		teleportPosition = { x = 33154, y = 32245, z = 12 },
-		exitPosition = Position(33123, 32240, 12),
+		teleportPosition = {x = 1406, y = 347, z = 9},
+		exitPosition = Position(1375, 342, 9),
 	},
 	[6] = {
-		teleportPosition = { x = 33119, y = 32278, z = 12 },
-		exitPosition = Position(33130, 32252, 12),
+		teleportPosition = {x = 1400, y = 385, z = 9},
+		exitPosition = Position(1367, 354, 9),
 	},
 	[7] = {
-		teleportPosition = { x = 33087, y = 32239, z = 12 },
-		exitPosition = Position(33123, 32264, 12),
+		teleportPosition = {x = 1371, y = 380, z = 9},
+		exitPosition = Position(1382, 354, 9),
 	},
 	[8] = {
-		teleportPosition = { x = 33148, y = 32283, z = 12 },
-		exitPosition = Position(33115, 32252, 12),
+		teleportPosition = {x = 1339, y = 341, z = 9},
+		exitPosition = Position(1375, 366, 9),
 	},
 }
 

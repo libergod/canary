@@ -1,4 +1,4 @@
-local versperothPosition = Position(33075, 31878, 12)
+local versperothPosition = Position(2052, 770, 12)
 
 local function removeMinion(mid)
 	local monster = Monster(mid)
@@ -35,7 +35,7 @@ local function executeVersperothBattle(mid)
 
 		local position, minionMonster
 		for i = 1, 10 do
-			position = Position(math.random(33070, 33081), math.random(31874, 31883), 12)
+			position = Position(math.random(2047, 2059), math.random(765, 775), 12)
 			minionMonster = Game.createMonster("Minion of Versperoth", position)
 			position:sendMagicEffect(CONST_ME_TELEPORT)
 			if minionMonster then
@@ -65,12 +65,16 @@ function versperothSpawn.onStepIn(creature, item, position, fromPosition)
 	if not player then
 		return true
 	end
+	
+	if item:getPosition() ~= versperothPosition then
+		return true
+	end
 
 	if Game.getStorageValue(GlobalStorage.BigfootBurden.Versperoth.Battle) >= 1 then
 		player:say("Versperoth has already been defeated in the last 30 minutes.", TALKTYPE_MONSTER_SAY)
 		return true
 	end
-	player:teleportTo(Position(33072, 31877, 12))
+	player:teleportTo(Position(2049, 769, 12))
 	Game.setStorageValue(GlobalStorage.BigfootBurden.Versperoth.Battle, 1)
 	Game.setStorageValue(GlobalStorage.BigfootBurden.Versperoth.Health, 100000)
 	executeVersperothBattle()

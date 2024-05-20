@@ -12,6 +12,10 @@ function playerLogin.onLogin(player)
 
 		if player:isVip() then
 			CheckPremiumAndPrint(player, MESSAGE_LOGIN)
+			player:say("[VIP]", TALKTYPE_MONSTER_SAY)
+			player:getPosition():sendMagicEffect(73)
+		else
+			CheckPremiumAndPrint(player, MESSAGE_LOGIN)
 		end
 	end
 	return true

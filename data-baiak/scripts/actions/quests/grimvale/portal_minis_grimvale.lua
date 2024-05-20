@@ -1,88 +1,88 @@
 local config = {
 	[1] = {
-		teleportPosition = { x = 33167, y = 31977, z = 8 },
+		teleportPosition = {x = 797, y = 453, z = 7},
 		bossName = "Bloodback",
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33182, 32012, 8),
-		bossPosition = Position(33184, 32016, 8),
+		destination = Position(797, 485, 7),
+		bossPosition = Position(800, 489, 7),
 		specPos = {
-			from = Position(33174, 32007, 8),
-			to = Position(33191, 32020, 8),
+			from = Position(788, 479, 7),
+			to = Position(809, 495, 7)
 		},
-		exitPosition = Position(33167, 31978, 8),
+		exitPosition = Position(797, 454, 7),
 	},
 	[2] = {
-		teleportPosition = { x = 33055, y = 31910, z = 9 },
+		teleportPosition = {x = 783, y = 406, z = 7},
 		bossName = "Darkfang",
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33055, 31889, 9),
-		bossPosition = Position(33062, 31890, 9),
+		destination = Position(807, 411, 7),
+		bossPosition = Position(813, 412, 7),
 		specPos = {
-			from = Position(33050, 31883, 9),
-			to = Position(33066, 31896, 9),
+			from = Position(799, 403, 7),
+			to = Position(821, 420, 7),
 		},
-		exitPosition = Position(33055, 31911, 9),
+		exitPosition = Position(783, 407, 7),
 	},
 	[3] = {
-		teleportPosition = { x = 33128, y = 31971, z = 9 },
+		teleportPosition = {x = 780, y = 377, z = 7},
 		bossName = "Sharpclaw",
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33121, 31998, 9),
-		bossPosition = Position(33120, 32002, 9),
+		destination = Position(807, 375, 7),
+		bossPosition = Position(807, 379, 7),
 		specPos = {
-			from = Position(33113, 31994, 9),
-			to = Position(33126, 32007, 9),
+			from = Position(796, 371, 7),
+			to = Position(816, 386, 7)
 		},
-		exitPosition = Position(33128, 31972, 9),
+		exitPosition = Position(769, 383, 7),
 	},
 	[4] = {
-		teleportPosition = { x = 33402, y = 32097, z = 9 },
+		teleportPosition = {x = 846, y = 406, z = 7},
 		bossName = "Shadowpelt",
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33395, 32112, 9),
-		bossPosition = Position(33384, 32114, 9),
+		destination = Position(886, 408, 7),
+		bossPosition = Position(874, 410, 7),
 		specPos = {
-			from = Position(33376, 32107, 9),
-			to = Position(33396, 32119, 9),
+			from = Position(865, 400, 7),
+			to = Position(892, 419, 7)
 		},
-		exitPosition = Position(33403, 32097, 9),
+		exitPosition = Position(847, 406, 7),
 	},
 	[5] = {
-		teleportPosition = { x = 33442, y = 32051, z = 9 },
+		teleportPosition = {x = 848, y = 450, z = 7},
 		bossName = "Black Vixen",
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33448, 32038, 9),
-		bossPosition = Position(33450, 32034, 9),
+		destination = Position(853, 437, 7),
+		bossPosition = Position(855, 432, 7),
 		specPos = {
-			from = Position(33442, 32027, 9),
-			to = Position(33456, 32041, 9),
+			from = Position(846, 424, 7),
+			to = Position(864, 442, 7),
 		},
-		exitPosition = Position(33442, 32052, 9),
+		exitPosition = Position(848, 451, 7),
 	},
 	[6] = {
-		teleportPosition = { x = 33180, y = 32011, z = 8 },
-		exitPosition = Position(33167, 31978, 8),
+		teleportPosition = {x = 796, y = 484, z = 7},
+		exitPosition = Position(797, 454, 7),
 	},
 	[7] = {
-		teleportPosition = { x = 33056, y = 31890, z = 9 },
-		exitPosition = Position(33055, 31911, 9),
+		teleportPosition = {x = 806, y = 410, z = 7},
+		exitPosition = Position(783, 407, 7),
 	},
 	[8] = {
-		teleportPosition = { x = 33120, y = 31996, z = 9 },
-		exitPosition = Position(33128, 31972, 9),
+		teleportPosition = {x = 806, y = 374, z = 7},
+		exitPosition = Position(778, 379, 7),
 	},
 	[9] = {
-		teleportPosition = { x = 33395, y = 32111, z = 9 },
-		exitPosition = Position(33403, 32097, 9),
+		teleportPosition = {x = 887, y = 407, z = 7},
+		exitPosition = Position(847, 406, 7),
 	},
 	[10] = {
-		teleportPosition = { x = 33446, y = 32040, z = 9 },
-		exitPosition = Position(33442, 32052, 9),
+		teleportPosition = {x = 852, y = 439, z = 7},
+		exitPosition = Position(848, 451, 7),
 	},
 }
 

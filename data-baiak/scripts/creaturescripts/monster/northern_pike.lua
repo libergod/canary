@@ -6,5 +6,4 @@ function northernPike.onDeath(creature, corpse, killer, mostDamage, unjustified,
 	else
 	end
 end
-
 northernPike:register()

@@ -11,12 +11,12 @@ local areas = {
 local adventurersGuildHunt = CreatureEvent("TheGreatDragonHuntDeath")
 function adventurersGuildHunt.onDeath(creature, _corpse, _lastHitKiller, mostDamageKiller)
 	local valid = false
-	for _, area in ipairs(areas) do
-		if creature:getPosition():isInRange(area.from, area.to) then
+		for _, area in ipairs(areas) do
+			if creature:getPosition():isInRange(area.from, area.to) then
 			valid = true
-			break
+				break
+			end
 		end
-	end
 	if not valid then
 		return true
 	end

@@ -1,26 +1,30 @@
-local function teleportToTemple(creature)
-	if not creature:isPlayer() then
-		return true
-	end
+local function removeTrainers(position)
+	local arrayPos = {
+		{x = position.x, y = position.y + 1, z = position.z},
+		{x = position.x + 2, y = position.y + 1, z = position.z}
+	}
 
-	creature:teleportTo(creature:getTown():getTemplePosition())
-	creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+	for places = 1, #arrayPos do
+		local trainer = Tile(arrayPos[places]):getTopCreature()
+		if trainer then
+			if trainer:isMonster() then
+				trainer:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+				trainer:remove()
+			end
+		end
+	end
 end
 
 local trainerExit = MoveEvent()
 function trainerExit.onStepIn(creature, item, position, fromPosition)
-	teleportToTemple(creature)
+	if not creature:isPlayer() then
+		return true
+	end
+	removeTrainers(position)
+	creature:teleportTo(creature:getTown():getTemplePosition())
+	creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	return true
 end
 
-local positions = {
-	{ x = 991, y = 1031, z = 7 },
-	{ x = 1057, y = 1023, z = 7 },
-}
-for index, position in pairs(positions) do
-	trainerExit:position(position)
-end
-
-trainerExit:aid(40015)
-trainerExit:aid(4255)
+trainerExit:aid(1958)
 trainerExit:register()

@@ -8,10 +8,10 @@ The Rage = 14336
 -- FUNCTIONS
 function sparkDevourerSpawn()
 	local positions = {
-		{ x = 32268, y = 31341, z = 14 },
-		{ x = 32275, y = 31342, z = 14 },
-		{ x = 32269, y = 31352, z = 14 },
-		{ x = 32277, y = 31351, z = 14 },
+		{x = 1200, y = 766, z = 7},
+		{x = 1201, y = 777, z = 7},
+		{x = 1209, y = 776, z = 7},
+		{x = 1207, y = 767, z = 7},
 	}
 
 	if sparkSpawnCount > 0 then
@@ -24,12 +24,12 @@ function sparkDevourerSpawn()
 end
 
 local function doCheckArea()
-	local upConer = { x = 32260, y = 31336, z = 14 } -- upLeftCorner
-	local downConer = { x = 32283, y = 31360, z = 14 } -- downRightCorner
+	local upConer = {x = 1192, y = 761, z = 7}       -- upLeftCorner
+	local downConer = {x = 1215, y = 785, z = 7}     -- downRightCorner
 
-	for i = upConer.x, downConer.x do
-		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+	for i=upConer.x, downConer.x do
+		for j=upConer.y, downConer.y do
+        	for k = upConer.z, downConer.z do
 				local tile = Tile(i, j, k)
 				if tile then
 					local creatures = tile:getCreatures()
@@ -59,11 +59,11 @@ end
 
 local function changeArea()
 	local function organizeHunger()
-		local upConer = { x = 32233, y = 31360, z = 14 } -- upLeftCorner
-		local downConer = { x = 32256, y = 31384, z = 14 } -- downRightCorner
-		for i = upConer.x, downConer.x do
-			for j = upConer.y, downConer.y do
-				for k = upConer.z, downConer.z do
+		local upConer = {x = 1165, y = 785, z = 7}       -- upLeftCorner
+		local downConer = {x = 1188, y = 809, z = 7}     -- downRightCorner
+		for i=upConer.x, downConer.x do
+			for j=upConer.y, downConer.y do
+		    	for k = upConer.z, downConer.z do
 					local tile = Tile(i, j, k)
 					if tile then
 						local creatures = tile:getCreatures()
@@ -72,12 +72,12 @@ local function changeArea()
 								for _, creature in pairs(creatures) do
 									local monster = Monster(creature)
 									if monster then
-										monster:teleportTo({ x = 32244, y = 31369, z = 14 })
+										monster:teleportTo({ x = 1176, y = 794, z = 7 })
 									end
 								end
 							else
 								devourerBossesKilled = devourerBossesKilled - 1
-								Game.createMonster("The Hunger", { x = 32244, y = 31372, z = 14 }, false, true)
+								Game.createMonster("The Hunger", { x = 1176, y = 797, z = 7 }, false, true)
 								theHungerKilled = false
 							end
 						end
@@ -88,11 +88,11 @@ local function changeArea()
 	end
 
 	local function organizeDestruction()
-		local upConer = { x = 32260, y = 31304, z = 14 } -- upLeftCorner
-		local downConer = { x = 32283, y = 31328, z = 14 } -- downRightCorner
+		local upConer = {x = 1192, y = 729, z = 7}       -- upLeftCorner
+		local downConer = {x = 1215, y = 753, z = 7}     -- downRightCorner
 		for i = upConer.x, downConer.x do
 			for j = upConer.y, downConer.y do
-				for k = upConer.z, downConer.z do
+		    	for k = upConer.z, downConer.z do
 					local tile = Tile(i, j, k)
 					if tile then
 						local creatures = tile:getCreatures()
@@ -101,12 +101,12 @@ local function changeArea()
 								for _, creature in pairs(creatures) do
 									local monster = Monster(creature)
 									if monster then
-										monster:teleportTo({ x = 32271, y = 31313, z = 14 })
+										monster:teleportTo({ x = 1203, y = 738, z = 7 })
 									end
 								end
 							else
 								devourerBossesKilled = devourerBossesKilled - 1
-								Game.createMonster("The Destruction", { x = 32271, y = 31316, z = 14 }, false, true)
+								Game.createMonster("The Destruction", { x = 1203, y = 741, z = 7 }, false, true)
 								theDestructionKilled = false
 							end
 						end
@@ -117,10 +117,10 @@ local function changeArea()
 	end
 
 	local function organizeRage()
-		local upConer = { x = 32288, y = 31360, z = 14 } -- upLeftCorner
-		local downConer = { x = 32311, y = 31384, z = 14 } -- downRightCorner
-		for i = upConer.x, downConer.x do
-			for j = upConer.y, downConer.y do
+		local upConer = {x = 1220, y = 785, z = 7}       -- upLeftCorner
+		local downConer = {x = 1243, y = 809, z = 7}     -- downRightCorner
+		for i=upConer.x, downConer.x do
+			for j=upConer.y, downConer.y do
 				for k = upConer.z, downConer.z do
 					local tile = Tile(i, j, k)
 					if tile then
@@ -130,12 +130,12 @@ local function changeArea()
 								for _, creature in pairs(creatures) do
 									local monster = Monster(creature)
 									if monster then
-										monster:teleportTo({ x = 32299, y = 31369, z = 14 })
+										monster:teleportTo({ x = 1231, y = 794, z = 7 })
 									end
 								end
 							else
 								devourerBossesKilled = devourerBossesKilled - 1
-								Game.createMonster("The Rage", { x = 32299, y = 31372, z = 14 }, false, true)
+								Game.createMonster("The Rage", { x = 1231, y = 797, z = 7 }, false, true)
 								theRageKilled = false
 							end
 						end
@@ -152,23 +152,23 @@ local function changeArea()
 				if online:getStorageValue(14334) >= 1 then
 					online:setStorageValue(14334, -1)
 					online:setStorageValue(14336, 1)
-					online:teleportTo({ x = 32299, y = 31372, z = 14 })
+					online:teleportTo({ x = 1231, y = 797, z = 7 })
 					online:say("A polarity shift moves you into another part of the heart of destruction.", TALKTYPE_MONSTER_SAY)
-					Position({ x = 32299, y = 31372, z = 14 }):sendMagicEffect(11)
-					-- Teleport players from The Destruction to The Hunger
+					Position({ x = 1231, y = 797, z = 7 }):sendMagicEffect(11)
+				-- Teleport players from The Destruction to The Hunger
 				elseif online:getStorageValue(14335) >= 1 then
 					online:setStorageValue(14335, -1)
 					online:setStorageValue(14334, 1)
-					online:teleportTo({ x = 32244, y = 31372, z = 14 })
+					online:teleportTo({ x = 1176, y = 797, z = 7 })
 					online:say("A polarity shift moves you into another part of the heart of destruction.", TALKTYPE_MONSTER_SAY)
-					Position({ x = 32244, y = 31372, z = 14 }):sendMagicEffect(11)
-					-- Teleport players from The Rage to The Destruction
+					Position({ x = 1176, y = 797, z = 7 }):sendMagicEffect(11)
+				-- Teleport players from The Rage to The Destruction
 				elseif online:getStorageValue(14336) >= 1 then
 					online:setStorageValue(14336, -1)
 					online:setStorageValue(14335, 1)
-					online:teleportTo({ x = 32271, y = 31316, z = 14 })
+					online:teleportTo({ x = 1203, y = 741, z = 7 })
 					online:say("A polarity shift moves you into another part of the heart of destruction.", TALKTYPE_MONSTER_SAY)
-					Position({ x = 32271, y = 31316, z = 14 }):sendMagicEffect(11)
+					Position({ x = 1203, y = 741, z = 7 }):sendMagicEffect(11)
 				end
 			end
 		end
@@ -186,33 +186,33 @@ local function changeArea()
 				if online:getStorageValue(14334) >= 1 then
 					online:setStorageValue(14334, -1)
 					online:unregisterEvent("DevourerStorage")
-					online:teleportTo({ x = 32271, y = 31357, z = 14 })
-					Position({ x = 32271, y = 31357, z = 14 }):sendMagicEffect(11)
+					online:teleportTo({ {x = 1203, y = 782, z = 7 })
+					Position({ x = 1203, y = 782, z = 7 }):sendMagicEffect(11)
 				elseif online:getStorageValue(14335) >= 1 then
 					online:setStorageValue(14335, -1)
 					online:unregisterEvent("DevourerStorage")
-					online:teleportTo({ x = 32272, y = 31357, z = 14 })
-					Position({ x = 32272, y = 31357, z = 14 }):sendMagicEffect(11)
+					online:teleportTo({ x = 1204, y = 782, z = 7 })
+					Position({ x = 1204, y = 782, z = 7 }):sendMagicEffect(11)
 				elseif online:getStorageValue(14336) >= 1 then
 					online:setStorageValue(14336, -1)
 					online:unregisterEvent("DevourerStorage")
-					online:teleportTo({ x = 32273, y = 31357, z = 14 })
-					Position({ x = 32273, y = 31357, z = 14 }):sendMagicEffect(11)
+					online:teleportTo({ x = 1205, y = 782, z = 7 })
+					Position({ x = 1205, y = 782, z = 7 }):sendMagicEffect(11)
 				end
 			end
 		end
-		local spectators = Game.getSpectators(Position(32271, 31348, 14), false, true, 10, 10, 10, 10)
+		local spectators = Game.getSpectators(Position(1203, 773, 14), false, true, 10, 10, 10, 10)
 		if #spectators > 0 then
 			for i = 1, #spectators do
-				spectators[i]:say("With the Rage, Hunger and Destruction gone, you're sucked into the heart of destruction!! THE WORLD DEVOURER AWAITS YOU!", TALKTYPE_MONSTER_YELL, false, spectators[i], Position(32271, 31348, 14))
+				spectators[i]:say("With the Rage, Hunger and Destruction gone, you're sucked into the heart of destruction!! THE WORLD DEVOURER AWAITS YOU!", TALKTYPE_MONSTER_YELL, false, spectators[i], Position(1203, 773, 14))
 			end
 		end
 
-		Game.createMonster("World Devourer", { x = 32271, y = 31347, z = 14 }, false, true)
-		Game.createMonster("Spark of Destruction2", { x = 32268, y = 31341, z = 14 }, false, true)
-		Game.createMonster("Spark of Destruction2", { x = 32275, y = 31342, z = 14 }, false, true)
-		Game.createMonster("Spark of Destruction2", { x = 32269, y = 31352, z = 14 }, false, true)
-		Game.createMonster("Spark of Destruction2", { x = 32277, y = 31351, z = 14 }, false, true)
+		Game.createMonster("World Devourer", { x = 1203, y = 772, z = 7 }, false, true)
+		Game.createMonster("Spark of Destruction2", { x = 1200, y = 766, z = 7 }, false, true)
+		Game.createMonster("Spark of Destruction2", { x = 1201, y = 777, z = 7 }, false, true)
+		Game.createMonster("Spark of Destruction2", { x = 1209, y = 776, z = 7 }, false, true)
+		Game.createMonster("Spark of Destruction2", { x = 1207, y = 766, z = 7 }, false, true)
 		sparkSpawnCount = 0
 		devourerSummon = 0
 		areaDevourer5 = addEvent(clearDevourer, 30 * 60000)
@@ -221,12 +221,12 @@ local function changeArea()
 end
 
 local function clearHunger()
-	local upConer = { x = 32233, y = 31360, z = 14 } -- upLeftCorner
-	local downConer = { x = 32256, y = 31384, z = 14 } -- downRightCorner
+	local upConer = {x = 1165, y = 785, z = 7}       -- upLeftCorner
+	local downConer = {x = 1188, y = 809, z = 7}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+        	for k = upConer.z, downConer.z do
 				local tile = Tile(i, j, k)
 				if tile then
 					local creatures = tile:getCreatures()
@@ -235,7 +235,7 @@ local function clearHunger()
 							local creature = Creature(creatureUid)
 							if creature then
 								if creature:isPlayer() then
-									creature:teleportTo({ x = 32208, y = 31372, z = 14 })
+									creature:teleportTo({ x = 1131, y = 790, z = 7 })
 								elseif creature:isMonster() and creature:getName() ~= "Spark of Destruction" then
 									creature:remove()
 								end
@@ -250,12 +250,12 @@ local function clearHunger()
 end
 
 local function clearDestruction()
-	local upConer = { x = 32260, y = 31304, z = 14 } -- upLeftCorner
-	local downConer = { x = 32283, y = 31328, z = 14 } -- downRightCorner
+	local upConer = {x = 1192, y = 729, z = 7}       -- upLeftCorner
+	local downConer = {x = 1215, y = 753, z = 7}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+        	for k = upConer.z, downConer.z do
 				local tile = Tile(i, j, k)
 				if tile then
 					local creatures = tile:getCreatures()
@@ -264,7 +264,7 @@ local function clearDestruction()
 							local creature = Creature(creatureUid)
 							if creature then
 								if creature:isPlayer() then
-									creature:teleportTo({ x = 32208, y = 31372, z = 14 })
+									creature:teleportTo({ x = 1131, y = 790, z = 7 })
 								elseif creature:isMonster() and creature:getName() ~= "Spark of Destruction" then
 									creature:remove()
 								end
@@ -279,12 +279,12 @@ local function clearDestruction()
 end
 
 local function clearRage()
-	local upConer = { x = 32288, y = 31360, z = 14 } -- upLeftCorner
-	local downConer = { x = 32311, y = 31384, z = 14 } -- downRightCorner
+	local upConer = {x = 1220, y = 785, z = 7}       -- upLeftCorner
+	local downConer = {x = 1243, y = 809, z = 7}     -- downRightCorner
 
 	for i = upConer.x, downConer.x do
 		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+        	for k = upConer.z, downConer.z do
 				local tile = Tile(i, j, k)
 				if tile then
 					local creatures = tile:getCreatures()
@@ -293,7 +293,7 @@ local function clearRage()
 							local creature = Creature(creatureUid)
 							if creature then
 								if creature:isPlayer() then
-									creature:teleportTo({ x = 32208, y = 31372, z = 14 })
+									creature:teleportTo({ x = 1131, y = 790, z = 7 })
 								elseif creature:isMonster() and creature:getName() ~= "Spark of Destruction" then
 									creature:remove()
 								end
@@ -308,12 +308,12 @@ local function clearRage()
 end
 
 function clearDevourer()
-	local upConer = { x = 32260, y = 31336, z = 14 } -- upLeftCorner
-	local downConer = { x = 32283, y = 31360, z = 14 } -- downRightCorner
+	local upConer = {x = 1192, y = 761, z = 7}       -- upLeftCorner
+	local downConer = {x = 1215, y = 785, z = 7}     -- downRightCorner
 
-	for i = upConer.x, downConer.x do
-		for j = upConer.y, downConer.y do
-			for k = upConer.z, downConer.z do
+	for i=upConer.x, downConer.x do
+		for j=upConer.y, downConer.y do
+        	for k = upConer.z, downConer.z do
 				local tile = Tile(i, j, k)
 				if tile then
 					local creatures = tile:getCreatures()
@@ -322,7 +322,7 @@ function clearDevourer()
 							local creature = Creature(creatureUid)
 							if creature then
 								if creature:isPlayer() then
-									creature:teleportTo({ x = 32208, y = 31372, z = 14 })
+									creature:teleportTo({ x = 1131, y = 790, z = 7 })
 								elseif creature:isMonster() then
 									creature:remove()
 								end
@@ -344,35 +344,35 @@ local heartDestructionFinal = Action()
 function heartDestructionFinal.onUse(player, item, fromPosition, itemEx, toPosition)
 	local config = {
 		hungerPositions = {
-			Position(32271, 31374, 14),
-			Position(32271, 31375, 14),
-			Position(32271, 31376, 14),
-			Position(32271, 31377, 14),
-			Position(32271, 31378, 14),
+			Position(1203, 799, 7),
+			Position(1203, 800, 7),
+			Position(1203, 801, 7),
+			Position(1203, 802, 7),
+			Position(1203, 803, 7),
 		},
 
 		destructionPositions = {
-			Position(32272, 31374, 14),
-			Position(32272, 31375, 14),
-			Position(32272, 31376, 14),
-			Position(32272, 31377, 14),
-			Position(32272, 31378, 14),
+			Position(1204, 799, 7),
+			Position(1204, 800, 7),
+			Position(1204, 801, 7),
+			Position(1204, 802, 7),
+			Position(1204, 803, 7),
 		},
 
 		ragePositions = {
-			Position(32273, 31374, 14),
-			Position(32273, 31375, 14),
-			Position(32273, 31376, 14),
-			Position(32273, 31377, 14),
-			Position(32273, 31378, 14),
+			Position(1205, 799, 7),
+			Position(1205, 800, 7),
+			Position(1205, 801, 7),
+			Position(1205, 802, 7),
+			Position(1205, 803, 7),
 		},
 
-		hungerNewPos = { x = 32244, y = 31381, z = 14 },
-		destructionNewPos = { x = 32271, y = 31325, z = 14 },
-		rageNewPos = { x = 32299, y = 31381, z = 14 },
+		hungerNewPos = { x = 1176, y = 806, z = 7 },
+		destructionNewPos = { x = 1203, y = 750, z = 7 },
+		rageNewPos = { x = 1232, y = 806, z = 7 },
 	}
 
-	local pushPos = { x = 32272, y = 31374, z = 14 }
+	local pushPos = { x = 1204, y = 799, z = 7 }
 
 	if item.actionid == 14332 then
 		if item.itemid == 8911 then
@@ -464,11 +464,11 @@ function heartDestructionFinal.onUse(player, item, fromPosition, itemEx, toPosit
 					destructionSummon = 0
 					devourerSummon = 0
 
-					Game.createMonster("The Hunger", { x = 32244, y = 31372, z = 14 }, false, true)
-					Game.createMonster("The Destruction", { x = 32271, y = 31316, z = 14 }, false, true)
-					Game.createMonster("The Rage", { x = 32299, y = 31372, z = 14 }, false, true)
+					Game.createMonster("The Hunger", { x = 1176, y = 797, z = 7 }, false, true)
+					Game.createMonster("The Destruction", { x = 1203, y = 741, z = 7 }, false, true)
+					Game.createMonster("The Rage", { x = 1231, y = 797, z = 7 }, false, true)
 
-					local vortex = Tile({ x = 32281, y = 31348, z = 14 })
+					local vortex = Tile({ x = 1213, y = 773, z = 7 })
 					local vortexId = vortex:getItemById(23482)
 					if vortex and vortexId then
 						vortexId:transform(23483)

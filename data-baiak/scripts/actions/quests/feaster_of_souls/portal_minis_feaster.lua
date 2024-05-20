@@ -1,58 +1,60 @@
 local config = {
 	[1] = {
-		teleportPosition = { x = 33491, y = 31398, z = 8 },
+		teleportPosition = {x = 1331, y = 177, z = 8},
 		bossName = "Irgix the Flimsy",
 		requiredLevel = 250,
 		timeToFightAgain = 20, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33467, 31405, 8),
-		bossPosition = Position(33467, 31399, 8),
+		destination = Position(1307, 177, 8),
+		bossPosition = Position(1307, 182, 8),
 		specPos = {
-			from = Position(33460, 31393, 8),
-			to = Position(33474, 31408, 8),
+			from = Position(1298, 171, 8),
+			to = Position(1317, 189, 8)
 		},
-		exitPosition = Position(33493, 31400, 8),
+		exitPosition = Position(1330, 176, 8),
+		storage = Storage.Quest.U12_30.FeasterOfSouls.IrgixTimer
 	},
 	[2] = {
-		teleportPosition = { x = 33566, y = 31475, z = 8 },
+		teleportPosition = {x = 1406, y = 254, z = 8},
 		bossName = "Unaz the Mean",
 		requiredLevel = 250,
 		timeToFightAgain = 20, -- In hour
-		timeToDefeat = 10, -- In minutes
-		destination = Position(33576, 31494, 8),
-		bossPosition = Position(33565, 31496, 8),
+		timeToDefeatBoss = 10, -- In minutes
+		destination = Position(1404, 271, 8),
+		bossPosition = Position(1415, 272, 8),
 		specPos = {
-			from = Position(33558, 31487, 8),
-			to = Position(33582, 31499, 8),
+			from = Position(1398, 266, 8),
+			to = Position(1424, 280, 8)
 		},
-		exitPosition = Position(33563, 31477, 8),
+		exitPosition = Position(1405, 256, 8),
+		storage = Storage.Quest.U12_30.FeasterOfSouls.UnazTimer
 	},
 	[3] = {
-		teleportPosition = { x = 33509, y = 31450, z = 9 },
+		teleportPosition = {x = 1345, y = 224, z = 9},
 		bossName = "Vok The Freakish",
 		requiredLevel = 250,
 		timeToFightAgain = 20, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(33508, 31494, 9),
-		bossPosition = Position(33508, 31486, 9),
+		destination = Position(1343, 259, 9),
+		bossPosition = Position(1344, 265, 9),
 		specPos = {
-			from = Position(33501, 31483, 9),
-			to = Position(33515, 31496, 9),
+			from = Position(1336, 256, 9),
+			to = Position(1352, 272, 9),
 		},
-		exitPosition = Position(33509, 31451, 9),
+		exitPosition = Position(1345, 226, 9),
 	},
 	[4] = {
-		teleportPosition = { x = 33467, y = 31396, z = 8 },
-		exitPosition = Position(33493, 31400, 8),
-	},
+		teleportPosition = {x = 1307, y = 175, z = 8},
+		exitPosition = Position(1330, 176, 8),
+		},
 	[5] = {
-		teleportPosition = { x = 33562, y = 31492, z = 8 },
-		exitPosition = Position(33563, 31477, 8),
-	},
+		teleportPosition = {x = 1402, y = 271, z = 8},
+		exitPosition = Position(1405, 256, 8),
+		},
 	[6] = {
-		teleportPosition = { x = 33505, y = 31485, z = 9 },
-		exitPosition = Position(33509, 31451, 9),
-	},
+		teleportPosition = {x = 1341, y = 259, z = 9},
+		exitPosition = Position(1345, 226, 9),
+		},
 }
 
 local teleportBoss = MoveEvent()

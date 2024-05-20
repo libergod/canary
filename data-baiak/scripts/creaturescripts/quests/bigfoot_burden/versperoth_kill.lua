@@ -1,4 +1,4 @@
-local teleportPosition = Position(33075, 31878, 12)
+local teleportPosition = Position(2052, 770, 12)
 
 local function transformTeleport(open)
 	local id = (open and 16172 or 1949)

@@ -51,7 +51,7 @@ local function changeStage(cid, stage)
 		return
 	end
 
-	local position = creature:getPosition()
+local position = creature:getPosition()
 	local previousName = creature:getName()
 	creature:remove()
 	local newCreature = Game.createMonster(stage, position, true, true)
@@ -73,7 +73,7 @@ function urmahlulluChanges.onHealthChange(creature, attacker, primaryDamage, pri
 			break
 		end
 	end
-
+	
 	if nextStageIndex > #stages then
 		return primaryDamage, primaryType, secondaryDamage, secondaryType
 	end
