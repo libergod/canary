@@ -7,6 +7,12 @@ monster.outfit = {
 	lookTypeEx = 36928,
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.bosstiary = {
 	bossRaceId = 2114,
 	bossRace = RARITY_ARCHFOE,

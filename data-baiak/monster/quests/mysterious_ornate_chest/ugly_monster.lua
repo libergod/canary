@@ -21,6 +21,9 @@ monster.speed = 340
 monster.manaCost = 0
 
 monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 	"UglyMonsterDeath",
 	"UglyMonsterDrop",
 }

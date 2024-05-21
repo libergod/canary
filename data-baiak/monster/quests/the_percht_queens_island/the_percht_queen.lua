@@ -7,6 +7,12 @@ monster.outfit = {
 	lookTypeEx = 30340, -- (frozen) // lookTypeEx = 30341 (thawed)
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.bosstiary = {
 	bossRaceId = 1744,
 	bossRace = RARITY_NEMESIS,

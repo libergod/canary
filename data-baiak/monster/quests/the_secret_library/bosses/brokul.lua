@@ -13,6 +13,13 @@ monster.outfit = {
 	lookMount = 0,
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+	"brokulDeath",
+}
+
 monster.bosstiary = {
 	bossRaceId = 1645,
 	bossRace = RARITY_ARCHFOE,

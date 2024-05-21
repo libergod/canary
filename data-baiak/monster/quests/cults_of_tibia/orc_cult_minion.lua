@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Edron Orc Cave.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1000
 monster.maxHealth = 1000
 monster.race = "blood"

@@ -53,6 +53,9 @@ monster.flags = {
 }
 
 monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 	"Somewhat Beatable Death",
 }
 

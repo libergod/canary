@@ -52,6 +52,9 @@ monster.flags = {
 	canWalkOnPoison = true,
 }
 monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 	"ChargedAnomalyDeath",
 }
 

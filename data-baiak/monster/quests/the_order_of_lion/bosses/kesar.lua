@@ -33,6 +33,9 @@ monster.strategiesTarget = {
 }
 
 monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 	"KesarImmortal",
 }
 

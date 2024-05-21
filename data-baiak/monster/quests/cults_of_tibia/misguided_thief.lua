@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Misguided Camp accessible via Outlaw Camp's portal.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1800
 monster.maxHealth = 1800
 monster.race = "blood"

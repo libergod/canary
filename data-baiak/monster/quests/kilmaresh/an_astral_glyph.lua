@@ -15,6 +15,9 @@ monster.speed = 235
 monster.manaCost = 0
 
 monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 	"ForgottenKnowledgeBossDeath",
 	"AstralGlyphDeath",
 }
