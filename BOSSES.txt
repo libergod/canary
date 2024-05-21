@@ -1,0 +1,171 @@
+Bigfoot's Burden Quest
+	- Deathstrike - WZ1 - FINALIZADO E TESTADO!
+	- Gnomevil  - WZ2 - FINALIZADO E TESTADO!
+	- Mini Boss  
+		- Versperoth - FINALIZADO E TESTADO!
+	- Abyssador - WZ3 - FINALIZADO E TESTADO!
+		
+Heart of Destruction bosses
+	- Anomaly - FINALIZADO E TESTADO!
+	- Realityquake - FINALIZADO E TESTADO!
+	- Rupture - FINALIZADO E TESTADO!
+	- Eradicator - FINALIZADO! -> Necessário Testar
+	- Outburst - FINALIZADO! -> Necessário Testar
+	- World Devourer - OK - FINALIZADO! -> Necessário Testar
+
+Grimvale Quest link: https://www.tibiawiki.com.br/wiki/Grimvale_Quest
+	- Bloodback - FINALIZADO E TESTADO!
+	- Darkfang - FINALIZADO E TESTADO!
+	- Sharpclaw - FINALIZADO E TESTADO!
+	- Shadowpelt - FINALIZADO E TESTADO!
+	- Black Vixen - FINALIZADO E TESTADO!
+	
+	- Todos num TP só!!
+	- Yirkas Blue Scales - FINALIZADO E TESTADO!
+	- Katex Blood Tongue - FINALIZADO E TESTADO!
+	- Srezz Yellow Eyes - FINALIZADO E TESTADO!
+	- Utua Stone Sting - FINALIZADO E TESTADO!
+	
+Feaster of Souls
+	- Brain Head - OK
+	- Unaz the Mean - FINALIZADO E TESTADO!
+	- Irgix the Flimsy - FINALIZADO E TESTADO!
+	- Vok the Freakish - FINALIZADO E TESTADO!
+	- Thaian - OK
+	- The Dread Maiden - OK
+	- The Unwelcome - FINALIZADO E TESTADO!
+	- The Fear Feaster - OK
+	- The Pale Worm - FINALIZADO E TESTADO! -- Falta mecanica da lanterna
+	
+The Secret Library Quest
+	- Brokul - FINALIZADO E TESTADO!
+	- Grand Master Oberon - FINALIZADO E TESTADO!
+	- Mini Boss 
+		- Grand Commander Soeren - FINALIZADO E TESTADO!
+		- Preceptor Lazare  - FINALIZADO E TESTADO!
+		- Grand Chaplain Gaunder  - FINALIZADO E TESTADO!
+		- Grand Canon Dominus - FINALIZADO E TESTADO!
+		- Dazed Leaf Golem - FINALIZADO E TESTADO!
+	=Etapa 1
+	- Ghulosh - FINALIZADO E TESTADO!
+	- Gorzindel - FINALIZADO E TESTADO!
+	- Lokathmor - FINALIZADO E TESTADO!
+	- Mazzinor  - FINALIZADO E TESTADO!
+	=Etapa 2
+	- The Devourer of Secrets - FINALIZADO E TESTADO!
+	- The Spellstealer - FINALIZADO E TESTADO!
+	- Brother Chill e Brother Freeze - FINALIZADO E TESTADO!
+	- The Scion of Havoc - FINALIZADO E TESTADO!
+	- The Scourge of Oblivion - FINALIZADO E TESTADO! (Falta configurar as magias de retas qnd tiver azul)
+
+Grave Danger Quest
+	- Count Vlarkorth - Implementando...
+	- Lord Azaram - OK
+	- Earl Osam - OK
+	- Mini Boss
+		- Gaffir - OK (Falta Criar HUB para os Mini Bosses)
+		- Custodian - OK (Falta Criar HUB para os Mini Bosses)
+		- Guard Captain Quaid - OK (Falta Criar HUB para os Mini Bosses)
+	- Scarlett Etzel - OK
+	- Sir Baeloc & Sir Nictros - OK
+	- Duke Krule - OK
+	- King Zelos - FINAL - OK
+	
+Cults of Tibia Quest
+	- Leiden e Ravenous Hunger - OK
+	- Essence Of Malice - OK
+	- The Sandking - OK
+	- The False God - OK
+	- The Sinister Hermit e The Souldespoiler - OK
+	- The Voidborn - OK
+	- The Remorseless Corruptor / The Source Of Corruption - FINAL - OK
+
+The Dream Courts Quest
+	- Faceless Bane - OK
+	- Mini Boss
+		Arena Dream Scar
+		- Plagueroot  - OK (Falta Criar HUB para os Mini Bosses)
+		- Malofur Mangrinder - OK (Falta Criar HUB para os Mini Bosses)
+		- Maxxenius  - OK (Falta Criar HUB para os Mini Bosses)
+		- Alptramun  - OK (Falta Criar HUB para os Mini Bosses)
+		- Izcandar the Banished - OK (Falta Criar HUB para os Mini Bosses)
+		- The Nightmare Beast - OK (Falta Criar HUB para os Mini Bosses)
+		
+The First Dragon Quest
+	- Gelidrazah The Frozen - OK
+	- Kalyassa  - OK
+	- Tazhadur  - OK
+	- Zorvorax  - OK
+	- Mini Boss
+		- Fallen Challenger - OK
+	- The First Dragon - FINAL - OK
+
+*Soul War Quest - LVL 400
+	- Goshnar's Malice
+	- Goshnar's Hatred
+	- Goshnar's Spite 
+	- Goshnar's Cruelty
+	- Goshnar's Greed
+	- Goshnar's Megalomania - FINAL
+
+*Forgotten Knowledge Quest
+	- Lady Tenebris
+	- Lloyd
+	- Thorn Knight 
+	- Dragonking Zyrtarch
+	- Frozen Horror
+	- The Time Guardian
+	- The Last Lore Keeper - FINAL
+	
+*Elemental Spheres Quest - LVL 80 QUEST
+	- Earth Overlord 
+	- Energy Overlord
+	- Fire Overlord
+	- Ice Overlord
+	- The Lord of the Elements - FINAL
+
+*Ferumbras' Ascendant Quest - LVL 150 Quest
+	- Mini Boss
+		- The Shatterer
+	- Razzagorn
+	- Ragiaz
+	- Zamulosh
+	- Mazoran
+	- Tarbaz
+	- Shulgrax
+	- Mini Boss
+		- The Lord of the Lice
+	- Plagirath
+	- Ascending Ferumbras - FINAL
+	
+A Pirate Tail Quest
+	- Tentugly's Head - OK
+	- Ratmiral Blackwhiskers - FINAL - OK
+	
+Kilmaresh Quest
+	- Urmahlullu the Immaculate - OK
+	
+Too Hot To Handle Quest
+	- The Mega Magmaoid - OK
+	- The Brainstealer - FINAL - OK
+
+Within the Tides Quest
+	- Mini Boss
+		- The Flaming Orchid - OK (Falta Criar HUB para os Mini Bosses)
+		- The Moonlight Aster - OK (Falta Criar HUB para os Mini Bosses)
+		- The Winter Bloom - OK (Falta Criar HUB para os Mini Bosses)
+		- Kusuma  - OK (Falta Criar HUB para os Mini Bosses)
+	- Timira the Many-Headed - FINAL - OK
+	
+*Primal Ordeal Quest - LVL 700
+	- Magma Bubble
+	- Primal Menace
+	
+Adventures of Galthen Quest
+	- Megasylvan Yselda - OK
+	- Ahau - FINAL - FALTA FAZER O BOSS
+
+OTHERS
+	- Drume - OK
+
+	

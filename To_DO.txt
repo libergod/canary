@@ -1,0 +1,169 @@
+- LingQ
+- Langdive
+- Quizlet
+
+
+- Ted ED
+- 
+
+
+
+/effect 32
+/effect 50 -> lvl up
+/effect 67 -> mrocegos
+/effect 73 -> vip login effect
+
+/effect 33 -> AFK system effect
+
+
+
+item id = 22723 DODGE TOKEN
+item id = 22724 CRITICAL TOKEN
+item id = 9170 STAMINA POTION
+item id = 21554 EXP RESTORE POTION
+item id = 12305 SUPER UP KEY
+
+SOUND_EFFECT_TYPE_
+====================================================================================================================================================================
+====================================================================SERVER INFOS====================================================================================
+====================================================================================================================================================================
+NEW:
+- DUNGEON System with Custom Caves and Rewards (EM DEV)
+- REBORN System
+- 
+
+EVENTS:
+- WoE - War of Emperium 
+- Firestorm 
+- SafeZone
+- SnowBall
+- Castle 24H
+- Last Man Standing (Battlefield)
+- Zombies (EM DEV)
+- Snake Event
+- Bomberman
+
+RECHARGE:
+- Softboots and Firewalker boots with Right Button
+- VIP Automatic Payment
+- Sleepshaw with right button
+- Automatic Exercise Weapon get next on finish
+- Stamina Refill every one minute training online
+
+MECHANICS:
+- Fist Skill will increase your attack velocity
+- TASK System
+- 20% + EXP Boost will have a chance to be dropped!
+- Bonus Party Share Exp
+- Send Party Invitation with !invite and accept with !join
+
+OTHERS:
+- Free Bless until lvl 100.
+- Guild Tornaments Coin every 24h. (!guildcoins)
+- 
+
+
+====================================================================================================================================================================
+========================================================================A FAZER=====================================================================================
+====================================================================================================================================================================
+
+- ADD event em todos os monstros: dodgeCriticalThree, (Monstro exemplo: DEMON) - OK
+- Diminuir porcentagem de chance de Dodge - OK
+- Adicionar drops de monstros no scripts/custom/exp_boostDrop.lua - (Adicionar apenas Super UP Cave)
+- Arrumar o restaure de Exp - OK
+- Arrumar sprites do evento Snake - OK
+
+- Adicionar Boss, Mobs, NPC, e Mapa - https://github.com/opentibiabr/canary/pull/1224/files
+- Ajustar Entra/saida nos arquivos - D:\Github\canary_baiak\data-baiak\scripts\actions\quests\adventures_of_galthen\iksupan_entrance.lua
+				   - D:\Github\canary_baiak\data-baiak\scripts\actions\quests\adventures_of_galthen\iksupan_exit.lua
+			           - D:\Github\canary_baiak\data-baiak\scripts\movements\teleport\gnomprona.lua
+
+- Implementar zombie - 
+- Ajustar tp saida do snowballevent - (1553,852,7) - 
+
+- Ajustar coordenadas do zelosDeath.lua on Death - 
+- Ajustar coordenadas no creaturescript quests/feaster_of_souls/pale_worm_death.lua - 
+
+- Colocar trainer no Castle - OK
+- Arrumar portas do Castle - OK
+
+- Adicionar Hunts Exclusivas Castle - 
+
+- Adicionar Daily Task - OK
+- Arrumar a Store in Game - OK
+- Adicionar Bosstiary - OK
+- Remover items premium dos drops de monstros - OK
+- Remover gold ingot dos monstros (id 9058) - OK
+- Corrigir TP saída Mirror Image - OK
+- Zerar as Hunts exclusivas no reload do server - OK
+- corrigir From/To das super areas - OK
+
+- Ajustar entrada do Ebb and Flow, deve ser a cima esquerda - 
+- Ajustar qnd inundar levar para o inicio cima esquerda - 
+
+- Fazer as boss rooms - 
+
+- Adicionar NOLOGOUT nas Super Cave - OK
+- Personagem recebendo backpack+ 3 golds ao criar acc - 
+- Add Som nas runes - OK
+- Reward talkation - OK
+- Aumentar espaço da ponte dos grim heaper - OK
+- Dano dos bixos diminuido - OK
+- task system !task esta com storage igual pra todos os monstros - REMOVIDO TASK SYSTEM
+
+- Criar hunt de Fury - 
+- Criar hunt de Infernalist - 
+
+- Modificar super up Floating Savant + Burning Book - OK
+- Floating savant remover o summon de lava lurker - 
+- trocar spaw time dos super up para 15 sec - OK
+- Trocar os spaw time normal para 40sec - OK
+- verificar paralize - 
+- verificar criar item com tier - OK /i soulbleeder,1,10 (cria tier 10) - OK
+
+- comprar silver/gold token -
+- lugar pra comprar/vender pedrinhas -
+
+- 1030, 1218,8 - verificar esta quest escondida está com teleporte errado - 
+- Ativar/Desativar autoloot por comando - 
+- Ativar/Desativar autoloot por VIP - 
+- Super Up permitir party entrar na hunt - OK
+- Ajustar Dodge para dar menos chance - OK
+- Possibilitar a balance/withdraw/deposit do gold ingot - OK (Falta mexer em codigo para entregar Gold Ingot) - ADDMONEY
+- Add bixos e hunt Marapur / Gnomproma - OK, Falta Testar
+- Report Coordinate in game - 
+- Remover teleport de saida da ultima sala POI sala do Jugger - Ok
+- Corrigir Freeze Rune - OK
+- Adicionar NPC de reset no templo para testes - OK
+- Adicionar velocidade para varinhas de players VIP - 
+- Ajustar Fist skill nas vocations.xml está mt lento - OK
+- Vender todas as vials usando !sellvial - OK
+- Hunt Lion - super up aumentar respaw - OK
+- Corrigir TP no templo de ICELAND p/ 817,1409,7
+- Add teleport em templos faltantes - 
+- Tirar todos os itens do player e mandar para a BP ao resetar - 
+- Verificar Events do FEROXA e drops com id = 0 - 
+- Arrumar bug de morrer antes de resetar, para pegar lvl maximo com pot de restore xp - 
+- Remover do banco de dados a cave exp caso o user nao tenha mais tempo via storage - 
+
+- Adicionar Outfits com ASAS!!
+- 37317 - Colocar na STORE p/ a Roleta!!!
+
+- EXUNA TEST (BOUNCE_SPELL.LUA) - Modificar magia para um nome melhor!! - ED+MS
+- Criar logica para boss Thaian -> Precisa carregar outro mapa a cada X segundos e sumonar o Thaian's Ghost, que ao morrer, causa 5k dano no Thaian.
+
+SPELLS
+- ID 800 - Repeat Flux - repeat flux (lvl 500, mana 400) - RP (SINGLE)
+- ID 801 - Bounce Mort - bounce mort (lvl 500, mana 10%) - MS (SINGLE)
+- ID 802 - Energy Rain - exevo gran mas energy (lvl 500, mana 900) - MS (MAS WAVE)
+- ID 803 - Divine Grow Ghost - exevo mas san ghost (lvl 500, mana 900) - RP (MAS WAVE)
+- ID 804 - Exevo Grow Earth - exevo mas earth grow (lvl 500, mana 900) - ED (MAS WAVE) -> Verificar codigo incorreto
+- ID 805 - Bounce Frigo - bounce frigo (lvl 500, mana 10%) - ED (SINGLE)
+
+
+
+TUTORIAL FOR NEW BOSSES
+
+- Check Data Editor (Sprite Editor) for the ID of ItemEx if necessary
+- Check Static Data Editor if there is bosses on Monster tab. Load by Staticdata file.
+- Open Canary Monster Editor and grab ID of boss and LookTypeEx
