@@ -58,6 +58,9 @@ monster.flags = {
 }
 
 monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 	"UrmahlulluChanges",
 }
 monster.light = {

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Museum of Tibian Arts.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3000
 monster.maxHealth = 3000
 monster.race = "blood"

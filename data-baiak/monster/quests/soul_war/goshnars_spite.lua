@@ -14,6 +14,9 @@ monster.outfit = {
 }
 
 monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 	"SoulwarsBossDeath",
 }
 

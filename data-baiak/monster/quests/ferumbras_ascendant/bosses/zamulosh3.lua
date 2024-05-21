@@ -15,6 +15,9 @@ monster.outfit = {
 }
 
 monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 	"AscendantBossesDeath",
 	"ZamuloshClone",
 }
