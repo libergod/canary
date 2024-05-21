@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Inukaya, Chyllfroest, Chakoya Iceberg, Nibelor (during a quest).",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 68
 monster.maxHealth = 68
 monster.race = "blood"

@@ -27,6 +27,12 @@ monster.Bestiary = {
 		The Witches' Cliff (only accessible during a quest), probably more areas.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 20
 monster.maxHealth = 20
 monster.race = "blood"

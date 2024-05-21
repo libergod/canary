@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "In almost all grassy areas of Tibia. Also found in Rookgaard.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 15
 monster.maxHealth = 15
 monster.race = "blood"

@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Deep below the Crystal Lakes in Foreigner Quarter, Cult's cave in the Magician Quarter, Medusa Tower.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3000
 monster.maxHealth = 3000
 monster.race = "venom"

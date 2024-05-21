@@ -28,6 +28,12 @@ monster.Bestiary = {
 		Plains of Havoc, Kazordoon Minotaur Cave, Foreigner Quarter.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 185
 monster.maxHealth = 185
 monster.race = "blood"

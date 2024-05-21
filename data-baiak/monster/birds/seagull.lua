@@ -29,6 +29,12 @@ monster.Bestiary = {
 		Northern coast of Tibia between Dalbrect and Northport.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 25
 monster.maxHealth = 25
 monster.race = "blood"

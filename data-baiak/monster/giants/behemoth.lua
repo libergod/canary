@@ -28,6 +28,12 @@ monster.Bestiary = {
 		The Dark Path, Lower Spike, Chyllfroest, Medusa Tower and Underground Glooth Factory (west side).",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 4000
 monster.maxHealth = 4000
 monster.race = "blood"

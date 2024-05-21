@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Demon Forge, Deeper Banuta, Hero Cave, Hot Spot, Fury Dungeon.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1800
 monster.maxHealth = 1800
 monster.race = "fire"

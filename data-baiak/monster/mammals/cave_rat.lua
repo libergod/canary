@@ -28,6 +28,12 @@ monster.Bestiary = {
 		Also appears in Rat Plague in Thais and Rat Plague in Rookgaard.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 30
 monster.maxHealth = 30
 monster.race = "blood"

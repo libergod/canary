@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Mount Sternum Undead Cave, Beregar, Tiquanda Dwarf Cave, Cormaya Dwarf Cave.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 135
 monster.maxHealth = 135
 monster.race = "blood"

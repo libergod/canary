@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Way to Beregar, below Femor Hills (Tower Defence Quest), near Femor Hills during Goblin raid.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 50
 monster.maxHealth = 50
 monster.race = "blood"

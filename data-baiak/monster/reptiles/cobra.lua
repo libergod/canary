@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Drefia, Forbidden Lands, Arena Quarter, Lion's Rock.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 65
 monster.maxHealth = 65
 monster.race = "blood"

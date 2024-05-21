@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "North of Carlin, Northwest of Thais, East of Kazordoon, Yalahar, Dawnport, Edron Hunters Camp, Plains of Havoc and other Tibian woods.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 20
 monster.maxHealth = 20
 monster.race = "blood"

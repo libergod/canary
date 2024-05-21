@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Arena and Zoo Quarter, Mammoth Shearing Factory.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 320
 monster.maxHealth = 320
 monster.race = "blood"

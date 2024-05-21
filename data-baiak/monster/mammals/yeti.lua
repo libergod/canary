@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Folda, Chyllfroest, Isle of Merriment.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 950
 monster.maxHealth = 950
 monster.race = "blood"

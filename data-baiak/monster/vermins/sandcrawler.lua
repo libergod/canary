@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Zao Steppe, Raging Mage tower, Ankrahmun Desert, Darashia Desert, Drefia.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 30
 monster.maxHealth = 30
 monster.race = "venom"

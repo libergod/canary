@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Gnome Deep Hub",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 5900
 monster.maxHealth = 5900
 monster.race = "fire"

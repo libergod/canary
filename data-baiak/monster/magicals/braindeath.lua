@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Alchemist Quarter and Cemetery Quarter.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1225
 monster.maxHealth = 1225
 monster.race = "undead"

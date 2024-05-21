@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Grimvale underground, were-beasts cave south-west of Edron and in the Last Sanctum east of Cormaya.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 2200
 monster.maxHealth = 2200
 monster.race = "blood"

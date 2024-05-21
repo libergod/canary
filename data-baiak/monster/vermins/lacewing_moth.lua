@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Court of Summer at day.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 900
 monster.maxHealth = 900
 monster.race = "blood"

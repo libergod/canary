@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Temple of Equilibrium (Zao) Hidden stairs, Fire Dragon Dojo, Corruption Hole, Razzachai.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3050
 monster.maxHealth = 3050
 monster.race = "blood"

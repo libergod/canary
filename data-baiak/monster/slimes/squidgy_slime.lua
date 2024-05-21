@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Horestis Tomb during one of the states of The Mummys Curse World Change.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 150
 monster.maxHealth = 150
 monster.race = "venom"

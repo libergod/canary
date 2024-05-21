@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "North west of Ankrahmun, you must Levitate to hunt. Two can also be found in the Asura Palace.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1100
 monster.maxHealth = 1100
 monster.race = "venom"

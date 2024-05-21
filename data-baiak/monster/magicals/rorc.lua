@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "South-west of Ulderek's Rock and in the Rorc version of the Forsaken Mine.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 260
 monster.maxHealth = 260
 monster.race = "blood"

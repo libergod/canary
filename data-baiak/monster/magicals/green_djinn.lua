@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Serpentine Tower last floor behind the Magic Walls, Deeper Banuta, Goroma underground, Magician Quarter.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 330
 monster.maxHealth = 330
 monster.race = "blood"

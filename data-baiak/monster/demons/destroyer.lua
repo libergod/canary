@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Pits of Inferno, Formorgar Mines, Alchemist Quarter, Oramond Dungeon and Grounds of Destruction.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3700
 monster.maxHealth = 3700
 monster.race = "undead"

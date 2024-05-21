@@ -12,6 +12,12 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 450000
 monster.maxHealth = 450000
 monster.race = "blood"

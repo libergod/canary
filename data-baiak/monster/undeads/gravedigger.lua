@@ -27,6 +27,12 @@ monster.Bestiary = {
 		including the Drefia Grim Reaper Dungeons and the Drefia Vampire Crypt.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1500
 monster.maxHealth = 1500
 monster.race = "blood"

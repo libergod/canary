@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "The Dungeons of The Ruthless Seven.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 8500
 monster.maxHealth = 8500
 monster.race = "fire"

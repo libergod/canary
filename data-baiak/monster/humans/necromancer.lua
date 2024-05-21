@@ -27,6 +27,12 @@ monster.Bestiary = {
 		beneath Fenrock, Cemetery Quarter and Magician Quarter.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 580
 monster.maxHealth = 580
 monster.race = "blood"

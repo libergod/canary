@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "West of Edron in the Lost Mines.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 65
 monster.maxHealth = 65
 monster.race = "undead"

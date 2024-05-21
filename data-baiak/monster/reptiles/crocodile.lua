@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Fenrock, Arena and Zoo Quarter, Trade Quarter, Talahu, also located on Meriana and Laguna Islands.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 105
 monster.maxHealth = 105
 monster.race = "blood"

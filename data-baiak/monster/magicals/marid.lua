@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Kha'zeel, Magician Quarter, Djinn battle island through the Haunted Tomb.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 550
 monster.maxHealth = 550
 monster.race = "blood"

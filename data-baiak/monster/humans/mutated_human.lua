@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Alchemist Quarter and Factory Quarter (Yalahar), Robson's Isle, Tiquanda Laboratory.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 240
 monster.maxHealth = 240
 monster.race = "blood"

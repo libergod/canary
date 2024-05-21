@@ -27,6 +27,12 @@ monster.Bestiary = {
 	Locations = "South-east, east and north-east of Thais depending on the Horse Station World Change.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 75
 monster.maxHealth = 75
 monster.race = "blood"

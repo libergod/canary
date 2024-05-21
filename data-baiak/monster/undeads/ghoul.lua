@@ -33,6 +33,12 @@ monster.Bestiary = {
 		Also found behind a wall in both Rookgaard and Paradox Tower, although they cannot be reached.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 100
 monster.maxHealth = 100
 monster.race = "blood"

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Sea Serpent Area.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1050
 monster.maxHealth = 1050
 monster.race = "blood"

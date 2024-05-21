@@ -18,6 +18,12 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 500000
 monster.maxHealth = 500000
 monster.race = "undead"

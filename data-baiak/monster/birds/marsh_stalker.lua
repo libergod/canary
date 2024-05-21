@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Venore swamp surface, Venore Salamander Cave, Dryad Gardens.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 100
 monster.maxHealth = 100
 monster.race = "blood"

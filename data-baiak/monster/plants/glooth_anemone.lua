@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Rathleton Sewers, Underground Glooth Factory, Jaccus Maxxen's Dungeon.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 2400
 monster.maxHealth = 2400
 monster.race = "venom"

@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Underground Glooth Factory, Jaccus Maxxen's Dungeon.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1900
 monster.maxHealth = 1900
 monster.race = "venom"

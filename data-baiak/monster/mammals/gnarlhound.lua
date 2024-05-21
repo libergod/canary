@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Four inaccessible ones can be seen in Telas's basement.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 198
 monster.maxHealth = 198
 monster.race = "blood"

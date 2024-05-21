@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Lower Spike, Truffels Garden and Mushroom Gardens.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1330
 monster.maxHealth = 1330
 monster.race = "undead"

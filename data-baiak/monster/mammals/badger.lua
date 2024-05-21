@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Hrodmir, southern Tiquanda, unannounced raid in Ab'Dendriel and Edron.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 23
 monster.maxHealth = 23
 monster.race = "blood"

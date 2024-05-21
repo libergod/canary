@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Darashia, Krailos Steppe, Liberty Bay, Pirat Mines, Port Hope, Thais, The Wreckoning.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 2600
 monster.maxHealth = 2600
 monster.race = "blood"

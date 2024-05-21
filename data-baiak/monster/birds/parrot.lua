@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "In the jungle of Tiquanda, Liberty Bay, the Shattered Isles, and as a house pet in Meriana.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 25
 monster.maxHealth = 25
 monster.race = "blood"

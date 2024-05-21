@@ -27,6 +27,12 @@ monster.Bestiary = {
 	Vengoth, Fury Dungeon, Oramond Fury Dungeon, The Extension Site, Grounds of Destruction and Halls of Ascension.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 4100
 monster.maxHealth = 4100
 monster.race = "blood"

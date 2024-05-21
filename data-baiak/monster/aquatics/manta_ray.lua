@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Fiehonja only in stage 3 in a large room.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 680
 monster.maxHealth = 680
 monster.race = "blood"

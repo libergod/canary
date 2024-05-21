@@ -28,6 +28,12 @@ monster.Bestiary = {
 	Oramond Dungeon, Grounds of Destruction and Halls of Ascension.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 18000
 monster.maxHealth = 18000
 monster.race = "blood"

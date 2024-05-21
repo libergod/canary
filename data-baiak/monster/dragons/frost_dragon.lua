@@ -27,6 +27,12 @@ monster.Bestiary = {
 	Yakchal Crypt (only during Yakchals awakening ritual), Dragonblaze Peaks, Deeper Banuta, Chyllfroest.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 1800
 monster.maxHealth = 1800
 monster.race = "undead"

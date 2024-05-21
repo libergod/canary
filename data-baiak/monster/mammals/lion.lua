@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Jakundaf Desert, Darama, Arena Quarter, Venore Amazon Camp.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 80
 monster.maxHealth = 80
 monster.race = "blood"

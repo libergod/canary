@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Razzachai, Chyllfroest, Krailos Spider Lair.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 850
 monster.maxHealth = 850
 monster.race = "venom"

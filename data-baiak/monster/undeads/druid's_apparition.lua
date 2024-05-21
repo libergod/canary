@@ -25,6 +25,12 @@ monster.Bestiary = {
 	Locations = "Mirrored Nightmare.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 25000
 monster.maxHealth = 25000
 monster.race = "blood"

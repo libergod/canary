@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Rookgaard and in Thais during raids",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 60
 monster.maxHealth = 60
 monster.race = "blood"

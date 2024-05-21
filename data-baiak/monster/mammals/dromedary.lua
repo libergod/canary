@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Ankrahmun near the way to Darashia, Ankrahmun near sea, around Darashia, Issavi.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 45
 monster.maxHealth = 45
 monster.race = "blood"

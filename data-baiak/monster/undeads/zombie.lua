@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Cemetery Quarter, Drefia, Vampire Castle, Treasure Island, Isle of Evil, Upper Spike.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 500
 monster.maxHealth = 500
 monster.race = "undead"

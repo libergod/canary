@@ -27,6 +27,12 @@ monster.Bestiary = {
 	Oramond Fury Dungeon, Roshamuul Prison, Grounds of Damnation and Halls of Ascension.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 7350
 monster.maxHealth = 7350
 monster.race = "undead"

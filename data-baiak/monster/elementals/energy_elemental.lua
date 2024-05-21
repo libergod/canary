@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Khazeel, Energy Elemental Lair, Vandura Mountain, Vengoths mountain.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 500
 monster.maxHealth = 500
 monster.race = "venom"

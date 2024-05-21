@@ -28,6 +28,12 @@ monster.Bestiary = {
 		Two may also spawn when a Desperate White Deer or an Enraged White Deer is killed.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 160
 monster.maxHealth = 160
 monster.race = "blood"

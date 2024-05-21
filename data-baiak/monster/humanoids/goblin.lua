@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Maze of Lost Souls and Fenrock.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 50
 monster.maxHealth = 50
 monster.race = "blood"

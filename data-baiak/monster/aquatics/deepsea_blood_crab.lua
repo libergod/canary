@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Svargrond Sea Serpent Area, Drefia. There is also one under Rookgaard Academy, however it is unreachable.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 320
 monster.maxHealth = 320
 monster.race = "blood"

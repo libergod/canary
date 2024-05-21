@@ -27,6 +27,12 @@ monster.Bestiary = {
 		(only when the curse of Horestis is not active).",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 50
 monster.maxHealth = 50
 monster.race = "undead"

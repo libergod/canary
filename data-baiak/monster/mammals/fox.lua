@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "South-west of Edron, possibly other places.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 22
 monster.maxHealth = 22
 monster.race = "blood"

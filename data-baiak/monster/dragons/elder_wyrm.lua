@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Drefia Wyrm Lair, Vandura Wyrm Cave, Oramond Factory Raids (west), Warzone 4.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 2700
 monster.maxHealth = 2700
 monster.race = "blood"

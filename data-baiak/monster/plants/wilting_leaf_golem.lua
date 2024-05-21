@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Forest Fury Camp, Lair of the Treeling Witch and in the Forest Fury version of the Forsaken Mine.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 380
 monster.maxHealth = 380
 monster.race = "blood"

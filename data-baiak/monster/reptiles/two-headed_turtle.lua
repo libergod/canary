@@ -20,6 +20,12 @@ monster.Bestiary = {
 	Locations = "Great Pearl Fan Reef",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 5010
 monster.maxHealth = 5010
 monster.race = "blood"

@@ -28,6 +28,12 @@ monster.Bestiary = {
 		Northern Zao Plantations, Middle Spike.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 550
 monster.maxHealth = 550
 monster.race = "blood"

@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Northern Zao Plantations and Raging Mage tower.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 320
 monster.maxHealth = 320
 monster.race = "undead"

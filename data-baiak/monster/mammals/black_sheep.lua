@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Femor Hills, cultist cave in Liberty Bay, Drefia.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 20
 monster.maxHealth = 20
 monster.race = "blood"

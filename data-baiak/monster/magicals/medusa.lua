@@ -1,4 +1,10 @@
-local mType = Game.createMonsterType("Medusa")
+
+
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}local mType = Game.createMonsterType("Medusa")
 local monster = {}
 
 monster.description = "a medusa"
@@ -24,6 +30,12 @@ monster.Bestiary = {
 	Stars = 4,
 	Occurrence = 0,
 	Locations = "Vandura Mountain (single spawn), Talahu (Medusa Cave), Deeper Banuta, Medusa Tower.",
+}
+
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 }
 
 monster.health = 4500

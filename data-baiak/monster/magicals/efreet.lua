@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Mal'ouquah, Deeper Banuta, Goromas Cult Cave (in the classroom), Magician Quarter.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 550
 monster.maxHealth = 550
 monster.race = "blood"

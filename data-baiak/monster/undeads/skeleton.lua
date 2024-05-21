@@ -28,6 +28,12 @@ monster.Bestiary = {
 		beneath Fenrock and in the desert Tombs, Vengoth Castle.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 50
 monster.maxHealth = 50
 monster.race = "undead"

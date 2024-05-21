@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Cemetery Quarter, Vengoth Castle, Vandura Mountain, Robson Isle.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 700
 monster.maxHealth = 700
 monster.race = "undead"

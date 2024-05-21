@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Oramond/Western Plains, Lower Rathleton, Glooth Factory, Underground Glooth Factory, Rathleton Sewers.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 750
 monster.maxHealth = 750
 monster.race = "venom"

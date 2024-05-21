@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "The Hive surface during the Hive Born World Change's third stage.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 255
 monster.maxHealth = 255
 monster.race = "venom"

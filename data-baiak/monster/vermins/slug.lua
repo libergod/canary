@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "South-east of Venore, Swamp Troll Cave.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 255
 monster.maxHealth = 255
 monster.race = "venom"

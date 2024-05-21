@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Hellgate, Shadowthorn, Ab'Dendriel elf caves, Elvenbane, north of Thais.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 100
 monster.maxHealth = 100
 monster.race = "blood"

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Old Fortress (north of Edron), Old Masonry, Forbidden Temple (Carlin).",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1700
 monster.maxHealth = 1700
 monster.race = "blood"

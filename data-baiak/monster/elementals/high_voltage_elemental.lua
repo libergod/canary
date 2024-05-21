@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "South side of the second floor of Underground Glooth Factory, Warzone 5",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1500
 monster.maxHealth = 1500
 monster.race = "blood"

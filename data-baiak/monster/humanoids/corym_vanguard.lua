@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Carlin Corym Cave/Dwarf Mines Diggers Depths Mine, Upper Spike.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 700
 monster.maxHealth = 700
 monster.race = "blood"

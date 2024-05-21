@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Larva Caves, Ankrahmun Tombs, Lions Rock, Gardens of Night (unreachable)",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 70
 monster.maxHealth = 70
 monster.race = "venom"

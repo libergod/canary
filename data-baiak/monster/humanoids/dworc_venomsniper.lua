@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "South of Port Hope (Trapwood) on ground level and underground and on Foreigner Quarter of Yalahar.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 80
 monster.maxHealth = 80
 monster.race = "blood"

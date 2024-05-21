@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Cyclops Camp second floor and in the Cyclops version of the Forsaken Mine.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 435
 monster.maxHealth = 435
 monster.race = "blood"

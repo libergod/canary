@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Formorgar Mines, Vengoth, Farmine Mines, Upper Spike and Medusa Tower.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 250
 monster.maxHealth = 250
 monster.race = "undead"

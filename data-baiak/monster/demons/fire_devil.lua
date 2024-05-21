@@ -27,6 +27,12 @@ monster.Bestiary = {
 	Plains of Havoc at Ornamented Shield Quest, Spike Sword Quest.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 200
 monster.maxHealth = 200
 monster.race = "blood"

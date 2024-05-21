@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Shadowthorn in the bog god's temple, Drefia, around Lake Equivocolao when it's dirty.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 70
 monster.maxHealth = 70
 monster.race = "blood"

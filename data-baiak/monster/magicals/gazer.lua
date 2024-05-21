@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Hellgate bonelord cave, Vandura Bonelord Cave, also anywhere Elder Bonelords exist, as summons.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 120
 monster.maxHealth = 120
 monster.race = "venom"

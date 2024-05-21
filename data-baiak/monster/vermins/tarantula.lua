@@ -30,6 +30,12 @@ monster.Bestiary = {
 		After the summer update of 2876, tarantulas can be seen on the beginner's island of Rookgaard.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 225
 monster.maxHealth = 225
 monster.race = "venom"
