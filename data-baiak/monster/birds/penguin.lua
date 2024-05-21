@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "In and north of Formorgar Glacier, Nibelor, Helheim, Grimlund, south of Svargrond, Chyllfroest.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 33
 monster.maxHealth = 33
 monster.race = "blood"

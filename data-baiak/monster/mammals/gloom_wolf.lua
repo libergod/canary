@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Tainted Caves, Poacher Caves/Gloomy.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 200
 monster.maxHealth = 200
 monster.race = "blood"

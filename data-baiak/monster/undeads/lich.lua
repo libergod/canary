@@ -28,6 +28,12 @@ monster.Bestiary = {
 		Can also be seen during an undead raid in Darashia or Carlin.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 880
 monster.maxHealth = 880
 monster.race = "undead"

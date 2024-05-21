@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Seacrest Grounds when Quara Renegades are not spawning.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3000
 monster.maxHealth = 3000
 monster.race = "venom"

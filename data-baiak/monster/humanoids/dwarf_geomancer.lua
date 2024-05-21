@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Tiquanda Dwarf Cave, Cormaya Dwarven Cave, Beregar Mines.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 380
 monster.maxHealth = 380
 monster.race = "blood"

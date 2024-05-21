@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Astral Shaper Ruins in two small rooms on the second floor, and to the east.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3000
 monster.maxHealth = 3000
 monster.race = "blood"

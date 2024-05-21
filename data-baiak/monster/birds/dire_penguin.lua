@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Known spawn locations: west of Svargrond, up the Formorgar Glacier.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 173
 monster.maxHealth = 173
 monster.race = "blood"

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Desert areas like those around Ankrahmun and Darashia.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 60
 monster.maxHealth = 60
 monster.race = "blood"

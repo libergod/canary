@@ -27,6 +27,12 @@ monster.Bestiary = {
 		single spawn at Liberty Bay ruins, Chyllfroest (unreachable).",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 275
 monster.maxHealth = 275
 monster.race = "undead"

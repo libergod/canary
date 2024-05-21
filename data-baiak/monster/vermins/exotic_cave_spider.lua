@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Exotic cave spider cave.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1900
 monster.maxHealth = 1900
 monster.race = "venom"

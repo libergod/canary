@@ -28,6 +28,12 @@ monster.Bestiary = {
 		Outlaw Camp, Port Hope Surroundings, Stonehome, Thais Surroundings, Venore Southern Swamp, Venore Surroundings.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 2
 monster.maxHealth = 2
 monster.race = "venom"

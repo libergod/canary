@@ -13,6 +13,12 @@ monster.outfit = {
 	lookMount = 0,
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.raceId = 1321
 monster.Bestiary = {
 	class = "Humanoid",

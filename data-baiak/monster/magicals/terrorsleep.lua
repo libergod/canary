@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Roshamuul Mines, Roshamuul Cistern.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 7200
 monster.maxHealth = 7200
 monster.race = "blood"

@@ -13,6 +13,12 @@ monster.outfit = {
 	lookMount = 0,
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.bosstiary = {
 	bossRaceId = 763,
 	bossRace = RARITY_NEMESIS,

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Laguna Islands, Fenrock, Port Hope and also can be found behind a wall below the center of Liberty Bay. These cannot be reached.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 185
 monster.maxHealth = 185
 monster.race = "blood"

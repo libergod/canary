@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Goroma, Formorgar Mines, Magician Quarter, Forbidden Temple.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 700
 monster.maxHealth = 700
 monster.race = "blood"

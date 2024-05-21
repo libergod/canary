@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Caves of the Lost, Lower Spike and in the Lost Dwarf version of the Forsaken Mine.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 2600
 monster.maxHealth = 2600
 monster.race = "blood"

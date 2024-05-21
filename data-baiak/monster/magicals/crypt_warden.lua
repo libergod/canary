@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Kilmaresh Catacombs.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 8300
 monster.maxHealth = 8300
 monster.race = "blood"

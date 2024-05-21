@@ -27,6 +27,12 @@ monster.Bestiary = {
 		below Ankrahmun (during the Nomads Land Quest), and on Charles's ship.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 75
 monster.maxHealth = 75
 monster.race = "blood"

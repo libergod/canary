@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Deeper Banuta, Crystal Caves, Chyllfroest.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 385
 monster.maxHealth = 385
 monster.race = "undead"

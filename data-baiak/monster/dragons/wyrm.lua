@@ -27,6 +27,12 @@ monster.Bestiary = {
 	beneath Fenrock, Deeper Razachai, Lower Spike, Vandura Wyrm Cave and Vandura Mountain in Liberty Bay.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 1825
 monster.maxHealth = 1825
 monster.race = "blood"

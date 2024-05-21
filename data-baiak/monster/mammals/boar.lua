@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Forest around Outlaw Camp.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 198
 monster.maxHealth = 198
 monster.race = "blood"

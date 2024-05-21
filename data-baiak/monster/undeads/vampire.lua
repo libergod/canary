@@ -29,6 +29,12 @@ monster.Bestiary = {
 		Edron Vampire Crypt.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 475
 monster.maxHealth = 475
 monster.race = "blood"

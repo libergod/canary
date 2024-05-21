@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Rookgaard, Orc Fort, under Femor Hills with Goblins, some farms like Donald McRonaldThe McRonalds Farm, Liberty Bay slums and Nargor, Foreigner Quarter in Yalahar, Isle of the Kings, cells in The Pits of Inferno QuestTafariels throneroom in Pits of Inferno, Gardens of Night Mapper Coords129.18126.125104texthere, unreachable.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 25
 monster.maxHealth = 25
 monster.race = "blood"

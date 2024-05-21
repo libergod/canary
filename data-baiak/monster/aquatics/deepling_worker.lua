@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Fiehonja, Coral mine.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 190
 monster.maxHealth = 190
 monster.race = "blood"

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Crystal Enigma",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 16300
 monster.maxHealth = 16300
 monster.race = "blood"

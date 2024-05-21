@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "In Rookgaard Sheep field, Greenshore and other farms like the one in Thais, east of Carlin. They can also be found wandering the fields of Edron, and some can be found along with a Black Sheep with the Hunter in Femor Hills.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 20
 monster.maxHealth = 20
 monster.race = "blood"

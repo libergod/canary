@@ -27,6 +27,12 @@ monster.Bestiary = {
 		There are 5 total waves, the initial one with the raid message and the rest every 15 minutes during next hour.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 310
 monster.maxHealth = 310
 monster.race = "blood"

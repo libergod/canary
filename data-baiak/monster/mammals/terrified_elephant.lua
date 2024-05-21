@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "East of Port Hope, close to the Deeper Banuta shortcut, Mapper Coords128.84127.16872texthere.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 320
 monster.maxHealth = 320
 monster.race = "blood"

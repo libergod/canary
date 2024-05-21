@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Murky Caverns, Oskayaat",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 4300
 monster.maxHealth = 4300
 monster.race = "blood"

@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Temple of Equilibrium, Northern Zao Plantations.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1450
 monster.maxHealth = 1450
 monster.race = "blood"

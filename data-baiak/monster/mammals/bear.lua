@@ -29,6 +29,12 @@ monster.Bestiary = {
 		first floor of the Orc Fort mountain and west of Outlaw Camp.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 80
 monster.maxHealth = 80
 monster.race = "blood"

@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Corruption Hole, Razachai, Temple of Equilibrium, Northern Zao Plantations.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1400
 monster.maxHealth = 1400
 monster.race = "blood"

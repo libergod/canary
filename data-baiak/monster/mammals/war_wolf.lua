@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Orc Fort, the Orc Peninsula, Magician Tower and northwest tower or south underground of Thais, Zao steppe encaged, Vengoth.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 140
 monster.maxHealth = 140
 monster.race = "blood"

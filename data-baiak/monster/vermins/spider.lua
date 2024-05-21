@@ -27,6 +27,12 @@ monster.Bestiary = {
 		caves like as Ancient Temple, Rookgaard and the Tiquanda Tarantula Caves.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 20
 monster.maxHealth = 20
 monster.race = "venom"

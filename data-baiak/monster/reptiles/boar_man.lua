@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Ingol",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 9200
 monster.maxHealth = 9200
 monster.race = "blood"

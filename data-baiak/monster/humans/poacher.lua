@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Edron Hunter Camps, Yalahar - Trade Quarter and Foreigner Quarter.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 90
 monster.maxHealth = 90
 monster.race = "blood"

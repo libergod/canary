@@ -27,6 +27,12 @@ monster.Bestiary = {
 		small spawn north-west of Venore and in cave south-east of Thais, also one in Foreigner Quarter.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 55
 monster.maxHealth = 55
 monster.race = "venom"

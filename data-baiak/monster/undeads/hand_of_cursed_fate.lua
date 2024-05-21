@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Pits of Inferno, The Battlefield, The Arcanum, The Blood Halls and The Crystal Caves.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 6600
 monster.maxHealth = 6600
 monster.race = "blood"

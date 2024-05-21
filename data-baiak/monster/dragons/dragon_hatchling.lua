@@ -27,6 +27,12 @@ monster.Bestiary = {
 	Edron Dragon Lair, Dragonblaze Peaks, Krailos Steppe. Also summoned by Lizard Dragon Priests.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 380
 monster.maxHealth = 380
 monster.race = "blood"

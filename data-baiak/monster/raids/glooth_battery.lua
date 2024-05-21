@@ -14,6 +14,12 @@ monster.corpse = 21940
 monster.speed = 0
 monster.manaCost = 0
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.changeTarget = {
 	interval = 4000,
 	chance = 10,

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Warzone 1, Rathleton Sewers, unreachable location in Tiquanda Laboratory.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 4600
 monster.maxHealth = 4600
 monster.race = "venom"

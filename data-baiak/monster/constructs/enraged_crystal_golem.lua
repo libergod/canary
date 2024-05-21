@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Golem Workshop.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 700
 monster.maxHealth = 700
 monster.race = "venom"

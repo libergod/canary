@@ -31,6 +31,12 @@ monster.Bestiary = {
 		Tarpit Tomb, Mountain Tomb, Peninsula Tomb, Oasis Tomb and beneath Fenrock.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 260
 monster.maxHealth = 260
 monster.race = "venom"

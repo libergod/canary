@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Razachai, including the Crystal Column chambers in the Inner Sanctum.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 5550
 monster.maxHealth = 5550
 monster.race = "blood"

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Orc Fort, Orc Peninsula, near Dark Cathedral, Zao Orc Land.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 180
 monster.maxHealth = 180
 monster.race = "blood"

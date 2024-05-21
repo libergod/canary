@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Seacrest Grounds when Seacrest Serpents are not spawning.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 1200
 monster.maxHealth = 1200
 monster.race = "blood"

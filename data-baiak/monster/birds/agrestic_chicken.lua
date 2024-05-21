@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Bounac, the Order of the Lion settlement.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 15
 monster.maxHealth = 15
 monster.race = "blood"

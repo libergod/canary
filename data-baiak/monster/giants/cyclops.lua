@@ -27,6 +27,12 @@ monster.Bestiary = {
 	Orc Fort, Mistrock, Foreigner Quarter, Outlaw Camp and in the Cyclops version of the Forsaken Mine. ",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 260
 monster.maxHealth = 260
 monster.race = "blood"

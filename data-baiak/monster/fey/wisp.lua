@@ -29,6 +29,12 @@ monster.Bestiary = {
 		A few spawns around Venore, 2 spawn on the Formorgar Glacier, and on Krimhorn.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 115
 monster.maxHealth = 115
 monster.race = "undead"

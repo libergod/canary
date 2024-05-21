@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "The Laguna Islands, Arena and Zoo Quarter, TiquandaTarantula Caves, Shadowthorn Bog God Temple, Northern Zao Plantations, Northern Brimstone Bug CavesBrimstone Bug Cave, Tainted Caves.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 135
 monster.maxHealth = 135
 monster.race = "blood"

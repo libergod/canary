@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Zao Palace, Chazorai, Razzachai, and Zzaion.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 4150
 monster.maxHealth = 4150
 monster.race = "blood"

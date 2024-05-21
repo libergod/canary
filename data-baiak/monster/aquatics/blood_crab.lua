@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Mistrock, Treasure Island. There is also one underwater next to The Tibianic, however it is unreachable.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 290
 monster.maxHealth = 290
 monster.race = "blood"

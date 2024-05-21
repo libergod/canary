@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Magician Quarter (Yalahar) one floor down around the the lightbringer's basin",
 }
 
+
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
 monster.health = 3550
 monster.maxHealth = 3550
 monster.race = "undead"

@@ -27,6 +27,12 @@ monster.Bestiary = {
 		in the caves on top of the Hrodmir mountains.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 285
 monster.maxHealth = 285
 monster.race = "blood"

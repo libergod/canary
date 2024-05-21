@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Antrum of the Fallen.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 10000
 monster.maxHealth = 10000
 monster.race = "blood"

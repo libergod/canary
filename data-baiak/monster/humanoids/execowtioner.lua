@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Underground Glooth Factory, Oramond Dungeon.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3500
 monster.maxHealth = 3500
 monster.race = "blood"

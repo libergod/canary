@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Tainted Caves in the Green Claw Swamp.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 250
 monster.maxHealth = 250
 monster.race = "undead"

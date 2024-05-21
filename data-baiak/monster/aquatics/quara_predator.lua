@@ -27,6 +27,12 @@ monster.Bestiary = {
 		The Inquisition Quest, Seacrest Grounds.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 2200
 monster.maxHealth = 2200
 monster.race = "blood"

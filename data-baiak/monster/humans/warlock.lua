@@ -27,6 +27,12 @@ monster.Bestiary = {
 		beneath Fenrock, The Arcanum.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3500
 monster.maxHealth = 3500
 monster.race = "blood"

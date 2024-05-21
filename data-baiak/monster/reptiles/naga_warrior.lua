@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Temple of the Moon Goddess.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 5530
 monster.maxHealth = 5530
 monster.race = "blood"

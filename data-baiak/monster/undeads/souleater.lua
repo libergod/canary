@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Razzachai, Northern Zao Plantations, Souleater Mountains, Deeper Banuta.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1100
 monster.maxHealth = 1100
 monster.race = "undead"

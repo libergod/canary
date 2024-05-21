@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Grotto of the Lost.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 7000
 monster.maxHealth = 7000
 monster.race = "blood"

@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Lion's Rock temple.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1000
 monster.maxHealth = 1000
 monster.race = "blood"

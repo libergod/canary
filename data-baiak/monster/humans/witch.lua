@@ -29,6 +29,12 @@ monster.Bestiary = {
 		Mammoth Shearing Factory, Trade Quarter in Yalahar, The Witches' Cliff (only accessible during a quest).",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 300
 monster.maxHealth = 300
 monster.race = "blood"

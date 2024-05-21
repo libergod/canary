@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Island of Destiny (Knights area), Beregar.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 90
 monster.maxHealth = 90
 monster.race = "blood"

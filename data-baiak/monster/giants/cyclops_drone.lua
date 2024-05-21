@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Cyclopolis, Mount Sternum, Mistrock and in the Cyclops version of the Forsaken Mine.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 325
 monster.maxHealth = 325
 monster.race = "blood"

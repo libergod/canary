@@ -28,6 +28,12 @@ monster.Bestiary = {
 		  Abandoned Sewers and optionally in the Demon Oak Quest.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 3900
 monster.maxHealth = 3900
 monster.race = "undead"

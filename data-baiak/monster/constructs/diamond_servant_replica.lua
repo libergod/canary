@@ -30,6 +30,12 @@ monster.Bestiary = {
 	Locations = "Replica Dungeon",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 2000
 monster.maxHealth = 2000
 monster.race = "venom"

@@ -29,6 +29,12 @@ monster.Bestiary = {
 		Razzachai, Northern Zao Plantations, Souleater Mountains, Middle Spike, Vengoth and Vengoth Castle.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 900
 monster.maxHealth = 900
 monster.race = "blood"

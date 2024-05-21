@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Second floor Glooth Underground Factory, east side during the Oramond Minotaurs raid.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1850
 monster.maxHealth = 1850
 monster.race = "blood"

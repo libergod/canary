@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "In most grass areas of Tibia, for example on Tutorial Island.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 15
 monster.maxHealth = 15
 monster.race = "blood"

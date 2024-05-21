@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "North-east Muggy Plains, Deeper Banuta.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.health = 2500
 monster.maxHealth = 2500
 monster.race = "undead"

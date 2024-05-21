@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Dwelling of the Forgotten",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 11500
 monster.maxHealth = 11500
 monster.race = "blood"

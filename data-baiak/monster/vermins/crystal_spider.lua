@@ -28,6 +28,12 @@ monster.Bestiary = {
 	Crystal Gardens.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1250
 monster.maxHealth = 1250
 monster.race = "venom"

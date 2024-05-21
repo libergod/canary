@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Demonwar Crypt.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 2600
 monster.maxHealth = 2600
 monster.race = "venom"

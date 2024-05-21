@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Muggy Plains, Souleater Mountains and Northern Zao Plantations.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 1100
 monster.maxHealth = 1100
 monster.race = "blood"

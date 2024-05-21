@@ -15,6 +15,9 @@ monster.outfit = {
 
 monster.events = {
 	"LizardNobleDeath",
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
 }
 
 monster.raceId = 656

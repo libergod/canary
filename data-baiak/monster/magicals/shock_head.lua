@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Sparsely in eastern Lower Roshamuu and southern Guzzlemaw Valley.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 4200
 monster.maxHealth = 4200
 monster.race = "blood"

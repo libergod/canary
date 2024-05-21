@@ -28,6 +28,12 @@ monster.Bestiary = {
 		Oasis Tomb, Yalahar Trade Quarter and Isle of the Kings.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 120
 monster.maxHealth = 120
 monster.race = "blood"

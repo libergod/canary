@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Kazordoon Underground",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 350
 monster.maxHealth = 350
 monster.race = "blood"

@@ -27,6 +27,12 @@ monster.Bestiary = {
 		Mammoth Shearing Factory, Chyllfroest.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 275
 monster.maxHealth = 275
 monster.race = "blood"

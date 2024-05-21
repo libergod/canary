@@ -26,6 +26,12 @@ monster.Bestiary = {
 	Locations = "Nargor Undead Cave, Goroma, Treasure Island, Drefia, The Cave, Chyllfroest.",
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo",
+}
+
 monster.health = 190
 monster.maxHealth = 190
 monster.race = "undead"

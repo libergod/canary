@@ -25,6 +25,12 @@ monster.changeTarget = {
 	chance = 8,
 }
 
+monster.events = {
+	"dodgeCriticalThree",
+	"dodgeCriticalOne",
+	"dodgeCriticalTwo"
+}
+
 monster.strategiesTarget = {
 	nearest = 100,
 }
