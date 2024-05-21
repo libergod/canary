@@ -1,0 +1,104 @@
+https://www.linuxnaweb.com/expandindo-particao-lvm-no-ubuntu/
+
+- Verificar espaço disponivel nos discos
+
+df -h
+
+- Precisa de espaço? Adicionar novo HD no virtualbox
+- Após incluir na VM, liste seus discos com o comando lsblk.
+
+lsblk
+
+- Agora iremos listar as partições utilizando o comando fdisk para saber mais detalhes.
+
+fdisk -l
+
+- Iremos utilizar o fdisk novamente só que dessa vez para criar a partição, a partição precisa ser do tipo Linux LVM, o código dela no disk é 8e.
+
+fdisk /dev/sdb
+
+" Welcome to fdisk (util-linux 2.27.1).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table.
+Created a new DOS disklabel with disk identifier 0xeca51051."
+
+Command (m for help): p >> exibir a tabela de partição
+
+
+" Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xeca51051 "
+
+Command (m for help): n >> n para nova partição
+
+"Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)"
+
+Select (default p): p >> p para primária
+
+Partition number (1-4, default 1): >> enter
+
+First sector (2048-20971519, default 2048): >> enter
+
+Last sector, +sectors or +size{K,M,G,T,P} (2048-20971519, default 20971519): >> enter
+
+
+"Created a new partition 1 of type 'Linux' and of size 10 GiB."
+
+Command (m for help): t >> t para selecionar o tipo de partição
+
+
+"Selected partition 1"
+Partition type (type L to list all types): 8e >> 8e é tipo de partição escolhido
+
+"Changed type of partition 'Linux' to 'Linux LVM'."
+
+Command (m for help): w >> w para escrever as alterações no disco
+
+"The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks."
+
+- Execute novamente o comando fdisk para conferir se a partição foi criada:
+
+fdisk -l
+
+- Pronto agora iremos criar um Volume Físico.
+
+pvcreate /dev/sdb1
+
+- Utilize o comando pvdisplay para exibir os Volumes Físicos, e repare que o nosso volume estará lá.
+pvdisplay
+
+- Agora iremos estender nosso Grupo de Volume para o Volume Físico que criamos, antes iremos listar os Grupos de Volume criados, com o comando lvs.
+
+lvs
+
+- Repare que o nome do novo Grupo de Volume é o ubuntu-vg, agora vamos estender esse volume group.
+
+vgextend ubuntu-vg /dev/sdb1
+
+- Liste os Volumes Físicos e repare que ele está atribuído ao Grupo de Volume ubuntu-vg, um pouco antes quando executamos esse comando, ele não exibia os detalhes do Volume Físico que adicionamos, agora ele mostra todos os detalhes.
+
+pvdisplay
+
+- Repare que com o comando vgdisplay, já podemos ver que o nosso ubuntu-vg tem 20 Gigas.
+
+vgdisplay
+
+- Agora vamos expandir a nossa partição que é o / (barra), iremos aumentar mais 9 Gigas do disco que adicionamos, lembrando que a label que ele colocou é: ubuntu--vg-ubuntu--lv.
+
+lvextend -L +9GB /dev/mapper/ubuntu--vg-ubuntu--lv (Alterar +9GB para espaço disponivel no HD)
+
+- Agora iremos redimensionar o nosso sistema de arquivos, utilizando o comando resize2fs.
+
+resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+
+- Verificar se aumentou corretamente espaço disponivel
+df -h
