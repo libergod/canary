@@ -18,7 +18,7 @@ monster.events = {
 	"dodgeCriticalOne",
 	"dodgeCriticalTwo",
 	"transformOnChangeHealth",
-	"becomeDeathgaze" -- se tranforma com X % de vida no ghulosh deathgaze e invoca 2 Blood Tear
+	"becomeDeathgaze", -- se tranforma com X % de vida no ghulosh deathgaze e invoca 2 Blood Tear
 	"SecretLibraryBossDeath",
 }
 

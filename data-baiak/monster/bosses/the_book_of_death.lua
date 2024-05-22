@@ -17,6 +17,7 @@ monster.events = {
 	"dodgeCriticalThree",
 	"dodgeCriticalOne",
 	"dodgeCriticalTwo",
+	"onBookOfDeathDie", -- ao morrer cria o Concentrated death
 }
 
 monster.health = 7800

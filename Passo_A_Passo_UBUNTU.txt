@@ -80,7 +80,7 @@ service apache2 restart
 
 ========================================================================================================
 
-PROBLEMA COM PHPMYADMIN NÃO ABRINDO
+PROBLEMA COM PHPMYADMIN N O ABRINDO
 HTTP ERROR 500
 
 apachectl configtest -> retornara os problemas encontrados
@@ -90,7 +90,7 @@ https://medium.com/enekochan/solve-the-alias-directive-in-will-probably-never-ma
 --
 apachectl configtest -> erro: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
 
-Solução: 
+Solu  o: 
 nano /etc/apache2/apache2.conf
 
 add-> ServerName localhost
@@ -99,7 +99,7 @@ https://askubuntu.com/questions/256013/apache-error-could-not-reliably-determine
 
 ========================================================================================================
 
-CORREÇÃO DO PRIMEIRO ACESSO NO PHPMYADMIN COM O ROOT
+CORRE  O DO PRIMEIRO ACESSO NO PHPMYADMIN COM O ROOT
 
 sudo mysql -u root
 
@@ -132,8 +132,8 @@ cd vcpkg
 cd ..
 
 mkdir build && cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=../../vcpkg/scripts/buildsystems/vcpkg.cmake ..
-make -j`nproc`
+cmake -DCMAKE_TOOLCHAIN_FILE=../../vcpkg/scripts/buildsystems/vcpkg.cmake 
+.. make -j`nproc`
 
 cmake --build linux-release
 
@@ -180,6 +180,20 @@ cmake --build linux-release
 cd ~
 cd canary
 cp -r build/linux-release/bin/canary .
+
+========================================================================================================
+
+
+FIX PROBLEMS WITH RELOAD SERVER
+
+sed -i -e 's/\r$//' server.sh
+./server.sh
+
+
+sed -i -e 's/\r$//' key.pem
+
+sed -i -e 's/\r$//' recompile.sh
+
 
 ========================================================================================================
 

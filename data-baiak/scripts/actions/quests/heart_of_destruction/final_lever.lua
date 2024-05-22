@@ -186,7 +186,7 @@ local function changeArea()
 				if online:getStorageValue(14334) >= 1 then
 					online:setStorageValue(14334, -1)
 					online:unregisterEvent("DevourerStorage")
-					online:teleportTo({ {x = 1203, y = 782, z = 7 })
+					online:teleportTo({x = 1203, y = 782, z = 7 })
 					Position({ x = 1203, y = 782, z = 7 }):sendMagicEffect(11)
 				elseif online:getStorageValue(14335) >= 1 then
 					online:setStorageValue(14335, -1)

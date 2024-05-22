@@ -85,6 +85,14 @@ public:
 		level = reqlvl;
 	}
 
+	// Reborn System 05-21-2024
+	uint32_t getReqRebirths() const {
+		return rebirths;
+	}
+	void setReqRebirths(uint32_t reqReb) {
+		rebirths = reqReb;
+	}
+
 	uint32_t getReqMagLv() const {
 		return magLevel;
 	}
@@ -253,6 +261,9 @@ private:
 	bool wieldUnproperly = false;
 	bool m_isDisabledChain = false;
 	std::string vocationString = "";
+
+	// Reborn System 05-21-2024
+	uint32_t rebirths = 0;
 
 	void onUsedWeapon(std::shared_ptr<Player> player, std::shared_ptr<Item> item, std::shared_ptr<Tile> destTile) const;
 

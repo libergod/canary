@@ -437,6 +437,13 @@ bool Spell::playerSpellCheck(std::shared_ptr<Player> player) const {
 		return false;
 	}
 
+	// Reborn System 05-21-2024
+	if (player->getRebirth() < reqRebirth) {
+		player->sendCancelMessage(RETURNVALUE_NOTENOUGHREBORNS);
+		g_game().addMagicEffect(player->getPosition(), CONST_ME_POFF);
+		return false;
+	}
+
 	if (player->getMana() < getManaCost(player) && !player->hasFlag(PlayerFlags_t::HasInfiniteMana)) {
 		player->sendCancelMessage(RETURNVALUE_NOTENOUGHMANA);
 		g_game().addMagicEffect(player->getPosition(), CONST_ME_POFF);

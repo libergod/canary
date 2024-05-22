@@ -48,7 +48,7 @@ end
 local function greetCallback(npc, creature, message)
 	local player = Player(creature)
 	local playerId = player:getId()
-	local levelToReborn = 50
+	local levelToReborn = 1500
 	
 	--Spdlog.info("[REBORN NPC] - Level To Reborn: "..levelToReborn.. " Player Level: "..player:getLevel())
 	
@@ -70,7 +70,7 @@ end
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
-	local levelToReborn = 50
+	local levelToReborn = 1500
 
 	if not npcHandler:checkInteraction(npc, creature) then
 		return false

@@ -2858,7 +2858,7 @@ Storage = {
 				PaleWormSteps = 47022,
 			},
 			PoltergeistOutfits = {
-				Received = 47020,
+				Received = 47023,
 			},
 		},
 		U12_40 = { -- update 12.40 - Reserved Storages 47201 - 47500

@@ -71,7 +71,7 @@ end
 spell:name("Bounce Mort")
 spell:words("bounce mort")
 spell:group("attack")
-spell:vocation("sorcerer", "master sorecerer")
+spell:vocation("sorcerer", "master sorcerer")
 spell:id(801)
 spell:cooldown(1200)
 spell:level(500)
