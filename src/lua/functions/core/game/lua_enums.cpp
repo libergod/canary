@@ -1194,6 +1194,8 @@ void LuaEnums::initReturnValueEnums(lua_State* L) {
 	registerEnum(L, RETURNVALUE_CONTACTADMINISTRATOR);
 	registerEnum(L, RETURNVALUE_ITEMISNOTYOURS);
 	registerEnum(L, RETURNVALUE_ITEMUNTRADEABLE);
+	// Reborn System 05-21-2024
+	registerEnum(L, RETURNVALUE_NOTENOUGHREBORNS);
 }
 
 // Reload

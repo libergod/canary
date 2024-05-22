@@ -1,10 +1,4 @@
-
-
-monster.events = {
-	"dodgeCriticalThree",
-	"dodgeCriticalOne",
-	"dodgeCriticalTwo",
-}local mType = Game.createMonsterType("Medusa")
+local mType = Game.createMonsterType("Medusa")
 local monster = {}
 
 monster.description = "a medusa"

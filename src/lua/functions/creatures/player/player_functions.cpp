@@ -861,6 +861,20 @@ int PlayerFunctions::luaPlayerAddExperience(lua_State* L) {
 	return 1;
 }
 
+// Reborn System 05-21-2024
+int PlayerFunctions::luaPlayerDoRebirth(lua_State* L) {
+	// player:doRebirth()
+	std::shared_ptr<Player> player = getUserdataShared<Player>(L, 1);
+	if (player) {
+		player->doReborn();
+		pushBoolean(L, true);
+	}
+	else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
 int PlayerFunctions::luaPlayerRemoveExperience(lua_State* L) {
 	// player:removeExperience(experience[, sendText = false])
 	std::shared_ptr<Player> player = getUserdataShared<Player>(L, 1);
@@ -937,6 +951,19 @@ int PlayerFunctions::luaPlayerSendSpellGroupCooldown(lua_State* L) {
 	player->sendSpellGroupCooldown(groupId, time);
 	pushBoolean(L, true);
 
+	return 1;
+}
+
+// Reborn System 05-21-2024
+int PlayerFunctions::luaPlayerGetRebirth(lua_State* L) {
+	// player:getRebirth()
+	std::shared_ptr<Player> player = getUserdataShared<Player>(L, 1);
+	if (player) {
+		lua_pushnumber(L, player->getRebirth());
+	}
+	else {
+		lua_pushnil(L);
+	}
 	return 1;
 }
 

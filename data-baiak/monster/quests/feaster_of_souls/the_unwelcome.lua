@@ -17,7 +17,7 @@ monster.events = {
 	"dodgeCriticalThree",
 	"dodgeCriticalOne",
 	"dodgeCriticalTwo",
-	"FeasterOfSoulsBossDeath",
+	"FeasterOfSoulsKill",
 }
 
 monster.health = 300000

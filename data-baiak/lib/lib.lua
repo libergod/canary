@@ -90,3 +90,6 @@ dofile(DATA_DIRECTORY.. "/lib/custom/exaustion_lib.lua")
 
 -- Vip System library
 dofile(DATA_DIRECTORY .. "/lib/vip/vip_system.lua")
+
+-- Tables for Spells Ranges Custom
+dofile(DATA_DIRECTORY .. "/lib/custom/table_spells_range.lua")

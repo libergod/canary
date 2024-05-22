@@ -125,6 +125,12 @@ int32_t Weapon::playerWeaponCheck(std::shared_ptr<Player> player, std::shared_pt
 		if (player->getMagicLevel() < getReqMagLv()) {
 			damageModifier = (isWieldedUnproperly() ? damageModifier / 2 : 0);
 		}
+
+		// Reborn System 05-21-2024
+		if (player->getRebirth() < getReqRebirths()) {
+			damageModifier = (isWieldedUnproperly() ? damageModifier / 2 : 0);
+		}
+
 		return damageModifier;
 	}
 

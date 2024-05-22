@@ -7055,8 +7055,21 @@ bool Game::combatChangeHealth(std::shared_ptr<Creature> attacker, std::shared_pt
 		// Wheel of destiny apply combat effects
 		applyWheelOfDestinyEffectsToDamage(damage, attackerPlayer, target);
 
-		damage.primary.value = std::abs(damage.primary.value);
-		damage.secondary.value = std::abs(damage.secondary.value);
+		// Reborn System 05-21-2024
+		double bonusRebirth = 0.0;
+		if (attackerPlayer != nullptr) {
+			bonusRebirth = attackerPlayer->rebirth * g_configManager().getNumber(REBORN_DMGBONUS, __FUNCTION__);
+			bonusRebirth /= 10;
+			bonusRebirth /= 100;
+			bonusRebirth += 1;
+		}
+		else
+			bonusRebirth = 1.0;
+
+		std::cout << bonusRebirth << std::endl;
+
+		damage.primary.value = std::abs(damage.primary.value) * bonusRebirth;
+		damage.secondary.value = std::abs(damage.secondary.value) * bonusRebirth;
 
 		std::shared_ptr<Monster> targetMonster;
 		if (target && target->getMonster()) {

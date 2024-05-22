@@ -294,6 +294,12 @@ public:
 	void setLockedPZ(bool b) {
 		pzLocked = b;
 	}
+	[[nodiscard]] uint32_t getRebirths() const {
+		return reqRebirth;
+	}
+	void setRebirths(uint32_t reborns) {
+		reqRebirth = reborns;
+	}
 
 	/**
 	 * @brief Get whether the wheel of destiny is upgraded.
@@ -365,6 +371,9 @@ protected:
 	uint32_t level = 0;
 	uint32_t magLevel = 0;
 	int32_t range = -1;
+
+	// Reborn System 05-21-2024
+	uint32_t reqRebirth = 0;
 
 	uint16_t m_spellId = 0;
 

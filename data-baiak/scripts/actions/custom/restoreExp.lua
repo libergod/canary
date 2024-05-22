@@ -64,5 +64,6 @@ function restoreExpPot.onUse(player, item, fromPosition, target, toPosition, isH
 	return true
 end
 
-restoreExpPot:id(21554)
+--restoreExpPot:id(21554)
+restoreExpPot:id(19109)
 restoreExpPot:register()

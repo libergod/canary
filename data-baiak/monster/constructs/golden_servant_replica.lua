@@ -18,8 +18,7 @@ monster.events = {
 	"dodgeCriticalOne",
 	"dodgeCriticalTwo",
 	"ReplicaServantDeath",
-},
-	
+}
 
 monster.raceId = 1327
 monster.Bestiary = {

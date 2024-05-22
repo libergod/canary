@@ -88,6 +88,10 @@ private:
 		registerMethod(L, "Player", "removeExperience", PlayerFunctions::luaPlayerRemoveExperience);
 		registerMethod(L, "Player", "getLevel", PlayerFunctions::luaPlayerGetLevel);
 
+		// Reborn System 05-21-2024
+		registerMethod(L, "Player", "getRebirth", PlayerFunctions::luaPlayerGetRebirth); // rebirth
+		registerMethod(L, "Player", "doRebirth", PlayerFunctions::luaPlayerDoRebirth); // rebirth
+
 		registerMethod(L, "Player", "getMagicShieldCapacityFlat", PlayerFunctions::luaPlayerGetMagicShieldCapacityFlat);
 		registerMethod(L, "Player", "getMagicShieldCapacityPercent", PlayerFunctions::luaPlayerGetMagicShieldCapacityPercent);
 
@@ -454,6 +458,10 @@ private:
 	static int luaPlayerRemoveExperience(lua_State* L);
 	static int luaPlayerGetLevel(lua_State* L);
 
+	// Reborn System 05-21-2024
+	static int luaPlayerGetRebirth(lua_State* L); 
+	static int luaPlayerDoRebirth(lua_State* L);
+	
 	static int luaPlayerGetMagicShieldCapacityFlat(lua_State* L);
 	static int luaPlayerGetMagicShieldCapacityPercent(lua_State* L);
 

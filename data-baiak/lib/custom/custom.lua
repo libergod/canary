@@ -8,6 +8,32 @@ ENGLISH = 2
 SPANISH = 1
 PORTUGUES = 0
 
+-- Used by Events
+function hourToNumber(str)
+    local hour = (tonumber(str:sub(1,2))*3600) + (tonumber(str:sub(4,5)) * 60)
+    if #str > 5 then
+        hour = hour + tonumber(str:sub(7,8))
+    end
+    return hour
+end
+
+-- Used by SUPERUP functions
+function isInArea(pos, fromPos, toPos)
+    if pos.x >= fromPos.x and pos.x <= toPos.x then
+        if pos.y >= fromPos.y and pos.y <= toPos.y then
+            if pos.z >= fromPos.z and pos.z <= toPos.z then
+                return true
+            end
+        end
+    end
+    return false
+end
+
+--REBIRTH FUNCTIONS
+function getRebirth(cid) local p = Player(cid) return p and p:getRebirth() or false end
+function doRebirth(cid) local c = Player(cid) return c and c:doRebirth() or false end
+
+
 function Player.getOnlineTime(self)
     local resultId = db.storeQuery(string.format('SELECT online_time FROM `players` WHERE `id` = %d', self:getGuid()))
     if not resultId then

@@ -28,7 +28,7 @@ SOUND_EFFECT_TYPE_
 ====================================================================SERVER INFOS====================================================================================
 ====================================================================================================================================================================
 NEW:
-- DUNGEON System with Custom Caves and Rewards (EM DEV)
+- DUNGEON System
 - REBORN System
 - 
 
@@ -94,7 +94,7 @@ OTHERS:
 - Adicionar Bosstiary - OK
 - Remover items premium dos drops de monstros - OK
 - Remover gold ingot dos monstros (id 9058) - OK
-- Corrigir TP saída Mirror Image - OK
+- Corrigir TP sa da Mirror Image - OK
 - Zerar as Hunts exclusivas no reload do server - OK
 - corrigir From/To das super areas - OK
 
@@ -107,7 +107,7 @@ OTHERS:
 - Personagem recebendo backpack+ 3 golds ao criar acc - 
 - Add Som nas runes - OK
 - Reward talkation - OK
-- Aumentar espaço da ponte dos grim heaper - OK
+- Aumentar espa o da ponte dos grim heaper - OK
 - Dano dos bixos diminuido - OK
 - task system !task esta com storage igual pra todos os monstros - REMOVIDO TASK SYSTEM
 
@@ -124,7 +124,7 @@ OTHERS:
 - comprar silver/gold token -
 - lugar pra comprar/vender pedrinhas -
 
-- 1030, 1218,8 - verificar esta quest escondida está com teleporte errado - 
+- 1030, 1218,8 - verificar esta quest escondida est  com teleporte errado - 
 - Ativar/Desativar autoloot por comando - 
 - Ativar/Desativar autoloot por VIP - 
 - Super Up permitir party entrar na hunt - OK
@@ -136,7 +136,7 @@ OTHERS:
 - Corrigir Freeze Rune - OK
 - Adicionar NPC de reset no templo para testes - OK
 - Adicionar velocidade para varinhas de players VIP - 
-- Ajustar Fist skill nas vocations.xml está mt lento - OK
+- Ajustar Fist skill nas vocations.xml est  mt lento - OK
 - Vender todas as vials usando !sellvial - OK
 - Hunt Lion - super up aumentar respaw - OK
 - Corrigir TP no templo de ICELAND p/ 817,1409,7

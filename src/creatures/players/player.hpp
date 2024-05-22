@@ -186,6 +186,9 @@ public:
 	void dismount();
 	uint16_t getDodgeChance() const;
 
+	// Reborn System 05-21-2024
+	void doReborn();
+
 	uint8_t isRandomMounted() const {
 		return randomMount;
 	}
@@ -606,6 +609,12 @@ public:
 	uint32_t getLevel() const {
 		return level;
 	}
+
+	// Reborn System 05-21-2024
+	uint32_t getRebirth() const {
+		return rebirth;
+	}
+
 	uint8_t getLevelPercent() const {
 		return levelPercent;
 	}
@@ -2835,6 +2844,9 @@ private:
 	std::bitset<CombatType_t::COMBAT_COUNT> m_damageImmunities;
 	std::bitset<ConditionType_t::CONDITION_COUNT> m_conditionImmunities;
 	std::bitset<ConditionType_t::CONDITION_COUNT> m_conditionSuppressions;
+
+	// Reborn System 05-21-2024
+	uint32_t rebirth = 0;
 
 	uint32_t level = 1;
 	uint32_t magLevel = 0;
