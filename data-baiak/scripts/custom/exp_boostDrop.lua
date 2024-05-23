@@ -62,33 +62,33 @@ local function removeBoostExp(target)
 	end
 end
 
-function custom_exp_damage_effect.onKill(creature, target)
-    if target:isPlayer() then
+function custom_exp_damage_effect.onDeath(creature, corpse, killer, mostDamageKiller, unjustified, mostDamageUnjustified)
+    if creature:isPlayer() then
         return true
     end
-    local monster = config[target:getName()]
+    local monster = config[creature:getName()]
     if not monster then
         return true
     end
     if math.random(1, 5000) <= monster.chance then
-        local tile = Tile(target:getPosition())
+        local tile = Tile(creature:getPosition())
         if tile then
             local ground = tile:getGround()
             if ground then
                 ground:setActionId(6000)
-                target:say('DOUBLE EXP!', TALKTYPE_MONSTER_SAY)
+                creature:say('DOUBLE EXP!', TALKTYPE_MONSTER_SAY)
                 for i = 0, 3 do
-                    addEvent(sendMessage, 750 * i, target:getPosition())
+                    addEvent(sendMessage, 750 * i, creature:getPosition())
                 end
 				
-				addEvent(removeBoostExp, 1000 * 3, target:getPosition())
+				addEvent(removeBoostExp, 1000 * 3, creature:getPosition())
             end
         end
     end
     return true
 end
 
-custom_exp_damage_effect:type("kill")
+custom_exp_damage_effect:type("death")
 custom_exp_damage_effect:register()
 ---------------------------------------------------------------------------------------
 
