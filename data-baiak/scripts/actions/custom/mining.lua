@@ -7,13 +7,13 @@ function mining.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 	if configMining.level.active and player:getStorageValue(configMining.level.storageTentativas) >= configMining.level[player:getStorageValue(configMining.level.storageNivel) + 1].qntMin then
 		player:setStorageValue(configMining.level.storageNivel, player:getStorageValue(configMining.level.storageNivel) + 1)
-		player:sendTextMessage(22, configMining.msg.upNivel:format(configMining.level[player:getStorageValue(configMining.level.storageNivel)].name))
+		player:sendTextMessage(MESSAGE_LOOK, configMining.msg.upNivel:format(configMining.level[player:getStorageValue(configMining.level.storageNivel)].name))
 		player:getPosition():sendMagicEffect(50)
 	end
 	
 	if target.actionid ~= configMining.actionIdPedras then
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
-		player:sendTextMessage(22, configMining.msg.naoLocal)
+		player:sendTextMessage(MESSAGE_LOOK, configMining.msg.naoLocal)
 		return true
 	end
 
@@ -22,7 +22,7 @@ function mining.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:getPosition():sendMagicEffect(CONST_ME_STONES)
 			player:getPosition():sendMagicEffect(1)
 			player:addHealth(- randHit)
-			player:sendTextMessage(22, configMining.msg.dano)
+			player:sendTextMessage(MESSAGE_LOOK, configMining.msg.dano)
 		end
 	
 		if rand.chancePickNormal >= randBase and item.itemid == configMining.idPick then
@@ -33,12 +33,12 @@ function mining.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			if configMining.level.active and rand.level and player:getStorageValue(configMining.level.storageNivel) >= rand.nivelMin then
 				player:getPosition():sendMagicEffect(32)
 				player:addItem(rand.itemid, 1)
-				player:sendTextMessage(22, string.format(configMining.msg.minerouWin, name:getName()))
+				player:sendTextMessage(MESSAGE_LOOK, string.format(configMining.msg.minerouWin, name:getName()))
 				return true
 			end
 			player:getPosition():sendMagicEffect(CONST_ME_HEARTS)
 			player:addItem(rand.itemid, 1)
-			player:sendTextMessage(22, string.format(configMining.msg.minerouWin, name:getName()))
+			player:sendTextMessage(MESSAGE_LOOK, string.format(configMining.msg.minerouWin, name:getName()))
 			return true
 		elseif rand.chancePickEspecial >= randBase and item.itemid == configMining.idPickEspecial then
 			local name = ItemType(rand.itemid)
@@ -48,11 +48,11 @@ function mining.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			if configMining.level.active and rand.level and player:getStorageValue(configMining.level.storageNivel) >= rand.nivelMin then
 				player:getPosition():sendMagicEffect(32)
 				player:addItem(rand.itemid, 1)
-				player:sendTextMessage(22, string.format(configMining.msg.minerouWin, name:getName()))
+				player:sendTextMessage(MESSAGE_LOOK, string.format(configMining.msg.minerouWin, name:getName()))
 				return true
 			end
 			player:addItem(rand.itemid, 1)
-			player:sendTextMessage(22, string.format(configMining.msg.minerouWin, name:getName()))
+			player:sendTextMessage(MESSAGE_LOOK, string.format(configMining.msg.minerouWin, name:getName()))
 			player:getPosition():sendMagicEffect(CONST_ME_HEARTS)
 			if configMining.msg.usarEspecial then
 				player:say(configMining.msg.especial, TALKTYPE_MONSTER_SAY, true)
@@ -72,7 +72,7 @@ function mining.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 	else
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
-		player:sendTextMessage(22, configMining.msg.naoPick)
+		player:sendTextMessage(MESSAGE_LOOK, configMining.msg.naoPick)
 		return false
 	end
 	

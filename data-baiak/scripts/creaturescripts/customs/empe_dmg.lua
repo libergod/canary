@@ -39,7 +39,7 @@ function empe_dmg.onHealthChange(creature, attacker, primaryDamage, primaryType,
 		
 	if Guild_ID == infoLua[2] then
 		--doPlayerSendCancel(attacker, "You can't atack your empe.")
-		attacker:sendTextMessage(MESSAGE_EVENT_DEFAULT,"You can't attack your empe.")
+		attacker:sendTextMessage(MESSAGE_EVENT_ADVANCE,"You can't attack your empe.")
 		attacker:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

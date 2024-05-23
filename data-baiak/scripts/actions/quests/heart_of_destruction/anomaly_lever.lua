@@ -109,7 +109,7 @@ function heartDestructionAnomaly.onUse(player, item, fromPosition, itemEx, toPos
 						vortex:setActionId(14324)
 					end
 				else
-					player:sendTextMessage(19, "Someone is in the area.")
+					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Someone is in the area.")
 				end
 			else
 				return true

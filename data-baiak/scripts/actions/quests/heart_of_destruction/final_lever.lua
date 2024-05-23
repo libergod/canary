@@ -403,7 +403,7 @@ function heartDestructionFinal.onUse(player, item, fromPosition, itemEx, toPosit
 				end
 
 				if #storeHunger < 1 or #storeDestruction < 1 or #storeRage < 1 then
-					player:sendTextMessage(19, "You need at least 3 players, each in a column.")
+					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need at least 3 players, each in a column.")
 					return true
 				end
 
@@ -475,7 +475,7 @@ function heartDestructionFinal.onUse(player, item, fromPosition, itemEx, toPosit
 						vortexId:setActionId(14352)
 					end
 				else
-					player:sendTextMessage(19, "Someone is in the area.")
+					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Someone is in the area.")
 				end
 			else
 				return true

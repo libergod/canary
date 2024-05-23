@@ -73,11 +73,11 @@ function teleportHeart.onStepIn(creature, item, position, fromPosition)
 				player:teleportTo(bossVortex.position)
 			else
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(19, "It's too early for you to endure this challenge again.")
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It's too early for you to endure this challenge again.")
 			end
 		else
 			player:teleportTo(fromPosition)
-			player:sendTextMessage(19, "You don't have access to this portal.")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this portal.")
 		end
 	elseif uBosses then
 		if player:getStorageValue(uBosses.storage1) >= 1 and player:getStorageValue(uBosses.storage2) >= 1 and player:getStorageValue(uBosses.storage3) >= 1 then
@@ -85,11 +85,11 @@ function teleportHeart.onStepIn(creature, item, position, fromPosition)
 				player:teleportTo(uBosses.position)
 			else
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(19, "It's too early for you to endure this challenge again.")
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It's too early for you to endure this challenge again.")
 			end
 		else
 			player:teleportTo(fromPosition)
-			player:sendTextMessage(19, "You don't have access to this portal.")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this portal.")
 		end
 	elseif item.actionid == 14351 then
 		if player:getStorageValue(14330) >= 1 and player:getStorageValue(14332) >= 1 then
@@ -97,11 +97,11 @@ function teleportHeart.onStepIn(creature, item, position, fromPosition)
 				player:teleportTo(Position(1204, 809, 7))
 			else
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(19, "It's too early for you to endure this challenge again.")
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It's too early for you to endure this challenge again.")
 			end
 		else
 			player:teleportTo(fromPosition)
-			player:sendTextMessage(19, "You don't have access to this portal.")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this portal.")
 		end
 	elseif item.actionid == 14353 then -- Remove storages from mini bosses
 		player:teleportTo(Position(1137, 794, 7))

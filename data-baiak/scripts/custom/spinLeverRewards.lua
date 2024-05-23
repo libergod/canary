@@ -174,16 +174,16 @@ local casinoRoulette = Action()
 
 function casinoRoulette.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     if item:getId() == config.lever.right then
-        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Casino Roulette is currently in progress. Please wait.")
+        player:sendTextMessage(MESSAGE_STATUS, "Casino Roulette is currently in progress. Please wait.")
         return true
     end
     
     if player:getItemCount(config.playItem.itemId) < config.playItem.count then
         if player:getStorageValue(config.rouletteOptions.rouletteStorage) < 1 then
-            player:sendTextMessage(MESSAGE_STATUS_SMALL, "Casino Roulette requires " .. config.playItem.count .. " " .. (ItemType(config.playItem.itemId):getName()) .. " to use.")
+            player:sendTextMessage(MESSAGE_STATUS, "Casino Roulette requires " .. config.playItem.count .. " " .. (ItemType(config.playItem.itemId):getName()) .. " to use.")
             return true
         end
-        -- player:sendTextMessage(MESSAGE_STATUS_SMALL, "Free Spin being used due to a previous unforeseen error.")
+        -- player:sendTextMessage(MESSAGE_STATUS, "Free Spin being used due to a previous unforeseen error.")
     end
     
     item:transform(config.lever.right)

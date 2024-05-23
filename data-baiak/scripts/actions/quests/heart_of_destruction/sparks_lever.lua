@@ -185,7 +185,7 @@ function heartDestructionSparks.onUse(player, item, fromPosition, itemEx, toPosi
 					--Game.createMonster("Crackler", {x = 32200, y = 31322, z = 14}, false, true)
 					player:say("The room slowly beginns to crackle. An erruption seems imanent!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 1114, y = 735, z = 7 })
 				else
-					player:sendTextMessage(19, "Someone is in the area.")
+					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Someone is in the area.")
 				end
 			else
 				return true

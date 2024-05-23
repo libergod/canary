@@ -114,7 +114,7 @@ function heartDestructionOutburst.onUse(player, item, fromPosition, itemEx, toPo
 						vortex:setActionId(14350)
 					end
 				else
-					player:sendTextMessage(19, "Someone is in the area.")
+					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Someone is in the area.")
 				end
 			else
 				return true

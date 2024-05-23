@@ -26,7 +26,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
 			
 			if #players > 0 then
 				player:getPosition():sendMagicEffect(CONST_ME_POFF)
-				return player:sendTextMessage(MESSAGE_STATUS_SMALL, msg.PlayerInside)
+				return player:sendTextMessage(MESSAGE_STATUS, msg.PlayerInside)
 			end
 			
 			if (dg[choiceId].NeedLevel) then

@@ -1,42 +1,42 @@
 SNOWBALL = {
-	-- Configurações de texto
+	-- Configuraï¿½ï¿½es de texto
 	comandoAtirar = "atirar", -- !snowball atirar
 	prefixo = "[SNOWBALL] ",
-	mensagemFoiAcertado = "Você acabou ser acertado pelo jogador %s e perdeu -%d ponto(s).\nTotal de: %d ponto(s)",
-	mensagemAcertei = "Você acabou de acertar o jogador %s e ganhou +%d ponto(s).\nTotal de: %d ponto(s)",
-	mensagemLider = "Você agora é o lider do ranking do SnowBall, parabéns!",
-	mensagemPerdeuLider = "Você acaba de perder a primeira colocação!",
+	mensagemFoiAcertado = "Vocï¿½ acabou ser acertado pelo jogador %s e perdeu -%d ponto(s).\nTotal de: %d ponto(s)",
+	mensagemAcertei = "Vocï¿½ acabou de acertar o jogador %s e ganhou +%d ponto(s).\nTotal de: %d ponto(s)",
+	mensagemLider = "Vocï¿½ agora ï¿½ o lider do ranking do SnowBall, parabï¿½ns!",
+	mensagemPerdeuLider = "Vocï¿½ acaba de perder a primeira colocaï¿½ï¿½o!",
 	mensagemAcabouEvento = "O Evento acabou.",
 	mensagemQntBolas = "Ainda restam %d bolas de neve.",
-	mensagemNaoTemBola = "Você não possui bolas de neve.",
-	mensagemEventoFaltaPlayer = "O evento foi cancelado por conta de não ter no minimo %d jogadores.",
-	mensagemInicioEvento = "O evento foi fechado. O jogo começou.",
-	mensagemEsperandoIniciar = "Faltam %d minuto(s) e %d jogador(es) para o jogo começar.",
-	mensagemEsperandoIniciar2 = "Mínimo de Players no evento OK! Aguardando %d minuto(s) para o jogo começar.",
-	mensagemMinutosFaltam = "Faltam %d minuto(s) para o jogo começar.",
-	mensagemEventoAberto = "O evento foi aberto, vá até o templo para participar.",
-	mensagemComprou = "Você acaba de comprar %d bolas de neve por %d\nVocê tem %d bolas de neve\nVocê tem %d ponto(s).",
-	mensagemFalhaComprar = "Você não tem %d ponto(s).",
-	mensagemMinComprar = "Você só pode comprar bolas de neve com o minimo de 30 bolas.",
+	mensagemNaoTemBola = "Vocï¿½ nï¿½o possui bolas de neve.",
+	mensagemEventoFaltaPlayer = "O evento foi cancelado por conta de nï¿½o ter no minimo %d jogadores.",
+	mensagemInicioEvento = "O evento foi fechado. O jogo comeï¿½ou.",
+	mensagemEsperandoIniciar = "Faltam %d minuto(s) e %d jogador(es) para o jogo comeï¿½ar.",
+	mensagemEsperandoIniciar2 = "Mï¿½nimo de Players no evento OK! Aguardando %d minuto(s) para o jogo comeï¿½ar.",
+	mensagemMinutosFaltam = "Faltam %d minuto(s) para o jogo comeï¿½ar.",
+	mensagemEventoAberto = "O evento foi aberto, vï¿½ atï¿½ o templo para participar.",
+	mensagemComprou = "Vocï¿½ acaba de comprar %d bolas de neve por %d\nVocï¿½ tem %d bolas de neve\nVocï¿½ tem %d ponto(s).",
+	mensagemFalhaComprar = "Vocï¿½ nï¿½o tem %d ponto(s).",
+	mensagemMinComprar = "Vocï¿½ sï¿½ pode comprar bolas de neve com o minimo de 30 bolas.",
 	mensagemExausted = "You are exhausted. Wait 1 second to throw another snowball.",
-	-- Configurações de posições
+	-- Configuraï¿½ï¿½es de posiï¿½ï¿½es
 	posArena = {{x = 1525, y = 884, z = 7}, {x = 1580, y = 930, z = 7}},
 	posEspera = {x = 1553, y = 855, z = 7},
 	posTpEntrarEvento = Position(1003, 1217, 7),
-	-- Configurações de munição
+	-- Configuraï¿½ï¿½es de muniï¿½ï¿½o
 	muniPreco = 1,
 	muniQuant = 100, -- Quantidade de ganho a cada compra.
-	muniInicial = 100, -- Começa com 100
+	muniInicial = 100, -- Comeï¿½a com 100
 	muniMorreu = 100, -- Caso queira desativar deixa 0
 	muniVelocidade = 150, -- Velocidade de cada tiro
 	muniInfinito = false,
 	muniExhaust = 1, -- Segundos de espera pra usar snowball atirar
 	muniDistancia = 5,
-	-- Configurações de prêmios
+	-- Configuraï¿½ï¿½es de prï¿½mios
 	premios = {
 	[1] = {[9058] = 5}, -- Primeiro Lugar
 	},
-	-- Configurações gerais
+	-- Configuraï¿½ï¿½es gerais
 	duracaoEvento = 20,
 	duracaoEspera = 5,
 	minPlayers = 3,
@@ -63,8 +63,8 @@ SNOWBALL = {
 				"Sunday-09:40",
 				"Sunday-14:40",
 	},
-	-- Não mexa daqui pra baixo
-	-- Configurações de corpos congelados
+	-- Nï¿½o mexa daqui pra baixo
+	-- Configuraï¿½ï¿½es de corpos congelados
 	corposCongelados = {
 	[0] = { [0] = {7303}, [1] = {7306}, [2] = {7303}, [3] = {7306} },
 	[1] = { [0] = {7305, 7307, 7309, 7311}, [1] = {7308, 7310, 7312}, [2] = {7305, 7307, 7309, 7311}, [3] = {7308, 7310, 7312} },
@@ -129,15 +129,15 @@ function enviarSnowball(cid, pos, rounds, dir)
 					killed:getPosition():sendMagicEffect(50)
 					killed:setStorageValue(10109, (killed:getStorageValue(10109) - SNOWBALL.pontosPerda))
 					killed:setStorageValue(10108, SNOWBALL.muniMorreu)
-					killed:sendTextMessage(29, (SNOWBALL.mensagemFoiAcertado):format(player:getName(), SNOWBALL.pontosPerda, killed:getStorageValue(10109)))
+					killed:sendTextMessage(MESSAGE_EXPERIENCE_OTHERS, (SNOWBALL.mensagemFoiAcertado):format(player:getName(), SNOWBALL.pontosPerda, killed:getStorageValue(10109)))
 					player:setStorageValue(10109, player:getStorageValue(10109) + SNOWBALL.pontosAcerto)
-					player:sendTextMessage(29, (SNOWBALL.mensagemAcertei):format(killed:getName(), SNOWBALL.pontosAcerto, player:getStorageValue(10109)))
+					player:sendTextMessage(MESSAGE_EXPERIENCE_OTHERS, (SNOWBALL.mensagemAcertei):format(killed:getName(), SNOWBALL.pontosAcerto, player:getStorageValue(10109)))
 					
 					if(CACHE_GAMEPLAYERS[2] == player:getId()) and player:getStorageValue(10109) >= Player(CACHE_GAMEPLAYERS[1]):getStorageValue(10109) then
 						player:getPosition():sendMagicEffect(CONST_ME_FIREAREA)
-						player:sendTextMessage(29, SNOWBALL.mensagemLider)
+						player:sendTextMessage(MESSAGE_EXPERIENCE_OTHERS, SNOWBALL.mensagemLider)
 						Player(CACHE_GAMEPLAYERS[1]):getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
-						Player(CACHE_GAMEPLAYERS[1]):sendTextMessage(29, SNOWBALL.mensagemPerdeuLider)
+						Player(CACHE_GAMEPLAYERS[1]):sendTextMessage(MESSAGE_EXPERIENCE_OTHERS, SNOWBALL.mensagemPerdeuLider)
 					end
 					
 					table.sort(CACHE_GAMEPLAYERS, function(a, b) return Player(a):getStorageValue(10109) > Player(b):getStorageValue(10109) end)

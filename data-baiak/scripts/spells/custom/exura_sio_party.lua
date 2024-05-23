@@ -12,12 +12,12 @@ function onCastSpell(creature, var)
         membersList = party:getMembers()
         table.insert(membersList, party:getLeader())
         if membersList == nil then
-            creature:sendTextMessage(MESSAGE_STATUS_SMALL, "Não há membros do grupo no alcance com perca de vida.")
+            creature:sendTextMessage(MESSAGE_STATUS, "Nï¿½o hï¿½ membros do grupo no alcance com perca de vida.")
             healerPos:sendMagicEffect(CONST_ME_POFF)
             return false
         end
     else
-        creature:sendTextMessage(MESSAGE_STATUS_SMALL, "Você não está em um grupo.")
+        creature:sendTextMessage(MESSAGE_STATUS, "Vocï¿½ nï¿½o estï¿½ em um grupo.")
         return false
     end
 
@@ -39,7 +39,7 @@ function onCastSpell(creature, var)
         tmp = #affectedList
     end
     if tmp < 1 then
-        creature:sendTextMessage(MESSAGE_STATUS_SMALL, "Não há membros do grupo no alcance com perca de vida.")
+        creature:sendTextMessage(MESSAGE_STATUS, "Nï¿½o hï¿½ membros do grupo no alcance com perca de vida.")
         healerPos:sendMagicEffect(CONST_ME_POFF)
         return false
     end

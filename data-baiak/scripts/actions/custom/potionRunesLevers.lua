@@ -49,7 +49,7 @@ function items.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local buy = Game.createItem(choose.id, choose.count)
 	if player:addItemEx(buy) == RETURNVALUE_CONTAINERNOTENOUGHROOM then
 		sendMailbox(player:getId(), choose.id, choose.count)
-		player:sendTextMessage(MESSAGE_STATUS_BLUE_LIGHT, "Você não possui espaço em sua backpack e seu item foi enviado para o mailbox.")
+		player:sendTextMessage(MESSAGE_STATUS, "Você não possui espaço em sua backpack e seu item foi enviado para o mailbox.")
 	end
 
 	player:sendCancelMessage("Você comprou ".. choose.count .."x ".. userItem:getName() ..".")

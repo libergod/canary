@@ -22,7 +22,7 @@ function monsterHuntKill.onKill(player, creature, lastHit)
 
 	if creature:isMonster() and creature:getName():lower() == (MONSTER_HUNT.list[Game.getStorageValue(MONSTER_HUNT.storages.monster)]):lower() then
 		player:setStorageValue(MONSTER_HUNT.storages.player, player:getStorageValue(MONSTER_HUNT.storages.player) + 1)
-		player:sendTextMessage(MESSAGE_EVENT_DEFAULT,MONSTER_HUNT.messages.prefix .. MONSTER_HUNT.messages.kill:format(player:getStorageValue(MONSTER_HUNT.storages.player), creature:getName()))
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE,MONSTER_HUNT.messages.prefix .. MONSTER_HUNT.messages.kill:format(player:getStorageValue(MONSTER_HUNT.storages.player), creature:getName()))
 		table.insert(MONSTER_HUNT.players, {player:getId(), player:getStorageValue(MONSTER_HUNT.storages.player)})
 	end
 	
