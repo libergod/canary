@@ -1,12 +1,13 @@
 local bossEventMonsterKill = CreatureEvent("bossEventMonsterKill")
-function bossEventMonsterKill.onKill(player, creature, lastHit)
+function bossEventMonsterKill.onDeath(creature, corpse, killer, mostDamageKiller, unjustified, mostDamageUnjustified)
+--(player, creature, lastHit)
 
 	if Game.getStorageValue(Bosses.storageAlive) ~= 1 then
 	
 	return true
 	end
 
-	if not player:isPlayer() or not creature:isMonster() or creature:hasBeenSummoned() or creature:isPlayer() then
+	if not killer:isPlayer() or not creature:isMonster() or creature:hasBeenSummoned() or creature:isPlayer() then
 		return true
 	end
 	
