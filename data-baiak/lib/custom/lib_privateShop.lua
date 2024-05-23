@@ -171,7 +171,7 @@ function removeNpcPlayer(name,pos)
 		end
 	else
 		--Spdlog.error("[PRIVATE SHOP] - NPC Not found to remove or Name incorrect." .."[SHOP] - "..name)
-		--Quando cair o servidor, entrará aqui qnd o user não logar antes de cair o server.
+		--Quando cair o servidor, entrarï¿½ aqui qnd o user nï¿½o logar antes de cair o server.
 		return false
 	end
 	
@@ -396,7 +396,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType)
@@ -524,7 +524,7 @@ function doReadActualSellings(playerguid)
    return sellingString
 end
 
---FUNCIONA PORÉM NÃO MONTA A STRING NO FINAL
+--FUNCIONA PORï¿½M Nï¿½O MONTA A STRING NO FINAL
 --[[
 function doReadActualSellings(playerguid)
 
@@ -557,12 +557,12 @@ function doAddItemForPlayerShop(playerguid, itemid, quant, money)
 	[3388] =  // ITEM ID
 	{
 		[1] = "1", //QNTIDADE
-		[2] = "60000" //PREÇO
+		[2] = "60000" //PREï¿½O
 	}, 
 	[3420] =  //ITEM ID
 	{
 		[1] = "1", //QNTIDADE
-		[2] = "15000" //PREÇO
+		[2] = "15000" //PREï¿½O
 	}
 	}'
 ]]--
@@ -587,14 +587,14 @@ function installSHOPSystem()
    if not(INSTALLED) then
 
       if not (db.query("ALTER TABLE `players` ADD COLUMN `shopitens` VARCHAR( 255 )  NOT NULL DEFAULT '''{ }''';")) then
-	 error("###@!#!@$#!#@ FALHA CRÍTICA AO INSTALAR O PRIVATE SHOP SYSTEM!\n     Não foi possível criar a coluna: players.shopitens")
+	 error("###@!#!@$#!#@ FALHA CRï¿½TICA AO INSTALAR O PRIVATE SHOP SYSTEM!\n     Nï¿½o foi possï¿½vel criar a coluna: players.shopitens")
       end
-      print("              Instalação Shop System: Coluna players.shopitens criada com sucesso")      
+      print("              Instalaï¿½ï¿½o Shop System: Coluna players.shopitens criada com sucesso")      
       
       if not(db.query("ALTER TABLE `players` ADD COLUMN `shoplucro` VARCHAR( 255 )  NOT NULL DEFAULT '''{ }''';")) then
-	 error("###@!#!@$#!#@ FALHA CRÍTICA AO INSTALAR O PRIVATE SHOP SYSTEM!\n     Não foi possível criar a coluna: players.shoplucro")
+	 error("###@!#!@$#!#@ FALHA CRï¿½TICA AO INSTALAR O PRIVATE SHOP SYSTEM!\n     Nï¿½o foi possï¿½vel criar a coluna: players.shoplucro")
       end
-         print("              Instalação Shop System: Coluna players.shoplucro criada com sucesso.")      
+         print("              Instalaï¿½ï¿½o Shop System: Coluna players.shoplucro criada com sucesso.")      
    end
 end
 

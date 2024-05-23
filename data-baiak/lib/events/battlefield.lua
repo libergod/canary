@@ -16,11 +16,11 @@ BATTLEFIELD = {
 	},
 	messages = {
 		prefix = "[Battlefield] ",
-		messageOpen = "O evento foi aberto, você tem %d minutos para entrar no portal do evento que se encontra no templo!",
-		messageStart = "O portal para o evento foi fechado e será iniciado com %d participantes! Boa sorte!",
-		messageNoStart = "O evento não foi iniciado por falta de participantes!",
-		messageFinish = "O evento acabou! O time %s foi o campeão do evento!",
-		messageWait = "O portal para o evento está aberto, você tem %d minuto(s) para entrar!",
+		messageOpen = "O evento foi aberto, vocï¿½ tem %d minutos para entrar no portal do evento que se encontra no templo!",
+		messageStart = "O portal para o evento foi fechado e serï¿½ iniciado com %d participantes! Boa sorte!",
+		messageNoStart = "O evento nï¿½o foi iniciado por falta de participantes!",
+		messageFinish = "O evento acabou! O time %s foi o campeï¿½o do evento!",
+		messageWait = "O portal para o evento estï¿½ aberto, vocï¿½ tem %d minuto(s) para entrar!",
 		messageTimeEnd = "O evento foi encerrado por ultrapassar o tempo limite!",
 		messageOpenWalls = "Os muros de madeira foram removidos! Boa sorte!",
 	},
@@ -52,7 +52,7 @@ BATTLEFIELD = {
 	idWalls = 3516,
 	actionID = 6489,
 	storageEventStatus = 34873, 
-	-- 0 não iniciou, 1 iniciou, 2 iniciou com ganhador azul, 3 iniciou com ganhador red, 4 iniciou sem ganhador
+	-- 0 nï¿½o iniciou, 1 iniciou, 2 iniciou com ganhador azul, 3 iniciou com ganhador red, 4 iniciou sem ganhador
 }
 
 function BATTLEFIELD:totalPlayers()
@@ -95,11 +95,11 @@ function BATTLEFIELD:insertPlayer(playerId)
 
 	if BATTLEFIELD:redPlayers() > BATTLEFIELD:bluePlayers() then
 		BATTLEFIELD["blue"].players[player:getId()] = { }
-		player:sendCancelMessage(BATTLEFIELD.messages.prefix .."Você entrou para o time azul.")
+		player:sendCancelMessage(BATTLEFIELD.messages.prefix .."Vocï¿½ entrou para o time azul.")
 		player:setOutfit(BATTLEFIELD["blue"].outfit)
 	else
 		BATTLEFIELD["red"].players[player:getId()] = { }
-		player:sendCancelMessage(BATTLEFIELD.messages.prefix .."Você entrou para o time vermelho.")
+		player:sendCancelMessage(BATTLEFIELD.messages.prefix .."Vocï¿½ entrou para o time vermelho.")
 		player:setOutfit(BATTLEFIELD["red"].outfit)
 	end
 
@@ -186,13 +186,13 @@ function BATTLEFIELD:startEvent()
 			local player = Player(b)
 			player:teleportTo(BATTLEFIELD["blue"].base)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_INFO_DESCR, BATTLEFIELD.messages.prefix .. "Em ".. BATTLEFIELD.timeRemoveWalls .." segundos os muros de madeira serão removidos!")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, BATTLEFIELD.messages.prefix .. "Em ".. BATTLEFIELD.timeRemoveWalls .." segundos os muros de madeira serï¿½o removidos!")
 		end
 		for r in pairs(BATTLEFIELD["red"].players) do
 			local player = Player(r)
 			player:teleportTo(BATTLEFIELD["red"].base)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_INFO_DESCR, BATTLEFIELD.messages.prefix .. "Em ".. BATTLEFIELD.timeRemoveWalls .." segundos os muros de madeira serão removidos!")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, BATTLEFIELD.messages.prefix .. "Em ".. BATTLEFIELD.timeRemoveWalls .." segundos os muros de madeira serï¿½o removidos!")
 		end
 	end
 end

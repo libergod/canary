@@ -99,14 +99,14 @@ function SlotMachineTools.onUse(player, item, fromPosition, target, toPosition, 
 	local name = player:getName()
 
 	if slotMachineData.owner then
-		player:sendCancelMessage('Aguarde a sua vez.')
+		player:sendCancelMessage("Aguarde a sua vez.")
 		return true
 	else
 		local item = slotMachineData.needItem
 		--if not player:removeItem(item.id, item.count) then
 			if not player:removeMoney(item.count) then
 				if not player:removeMoneyBank(item.count) then
-					player:sendCancelMessage(('Você não possui %dx crystal coins.'):format(item.count * 1000))
+					player:sendCancelMessage(("Vocï¿½ nï¿½o possui %dx crystal coins."):format(item.count * 1000))
 					return true
 				end
 			end
@@ -178,8 +178,8 @@ function SlotMachineTools.onUse(player, item, fromPosition, target, toPosition, 
                     player:getInbox():addItemEx(itemMandar, INDEX_WHEREEVER, FLAG_NOLIMIT)
 					inbox = true
 				local rewardName = reward:getName()
-				player:sendTextMessage(MESSAGE_INFO_DESCR, ('Parabéns, você ganhou 1x %s.%s'):format(rewardName, inbox and ' O item foi enviado para a sua caixa de entrada (inbox).' or ''))
-				Game.broadcastMessage(('[Slot Machine]: %s encontrou 1x %s, que sortudo(a).'):format(name, rewardName), MESSAGE_EVENT_ADVANCE)
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, ("Parabï¿½ns, vocï¿½ ganhou 1x %s.%s"):format(rewardName, inbox and " O item foi enviado para a sua caixa de entrada (inbox)." or ""))
+				Game.broadcastMessage(("[Slot Machine]: %s encontrou 1x %s, que sortudo(a)."):format(name, rewardName), MESSAGE_EVENT_ADVANCE)
 			else
 				clearMachine(positions)
 			end
