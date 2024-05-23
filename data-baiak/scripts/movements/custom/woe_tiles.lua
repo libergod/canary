@@ -20,7 +20,7 @@ function woe_tiles.onStepIn(creature, item, position, fromPosition)
 			if Woe.isTime() then
 				if Guild_ID ~= 0 then
 					if Woe.isRegistered(creature) then
-						creature:sendTextMessage(MESSAGE_ADMINISTRADOR,"Good Luck ".. creature:getName() .."!.")
+						creature:sendTextMessage(MESSAGE_ADMINISTRATOR,"Good Luck ".. creature:getName() .."!.")
 					else
 						Woe.moveBack(creature, fromPosition, "you are not registered use !guild")
 					end			
@@ -29,7 +29,7 @@ function woe_tiles.onStepIn(creature, item, position, fromPosition)
 				end
 			elseif Guild_ID == infoLua[2] then
 				if Woe.isRegistered(creature) then
-					creature:sendTextMessage(MESSAGE_ADMINISTRADOR,"Welcome ".. creature:getName() ..".")
+					creature:sendTextMessage(MESSAGE_ADMINISTRATOR,"Welcome ".. creature:getName() ..".")
 				else
 					Woe.moveBack(creature, fromPosition, "you are not registered use !guild")
 				end			

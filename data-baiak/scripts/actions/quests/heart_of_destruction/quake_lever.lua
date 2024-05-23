@@ -114,7 +114,7 @@ function heartDestructionQuake.onUse(player, item, fromPosition, itemEx, toPosit
 						vortex:setActionId(14345)
 					end
 				else
-					player:sendTextMessage(19, "Someone is in the area.")
+					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Someone is in the area.")
 				end
 			else
 				return true

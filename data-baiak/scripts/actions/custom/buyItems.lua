@@ -16,7 +16,7 @@ function items.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	if player:getStorageValue(77124) >= os.time() then
-		player:sendCancelMessage("Você precisa esperar 2 segundos entre uma compra e outa.")
+		player:sendCancelMessage("Voce precisa esperar 2 segundos entre uma compra e outa.")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -25,13 +25,13 @@ function items.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local itemWeight = userItem:getWeight() * choose.count
 
 	if player:getFreeCapacity() < itemWeight then
-		player:sendCancelMessage("Você não tem espaço suficiente.")
+		player:sendCancelMessage("Voce nao tem espaco suficiente.")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
 
 	if not player:removeMoney(choose.value) then
-		player:sendCancelMessage("Você não tem dinheiro suficiente.")
+		player:sendCancelMessage("Voce nao tem dinheiro suficiente.")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -39,10 +39,10 @@ function items.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local buy = Game.createItem(choose.id, choose.count)
 	if player:addItem(buy) == RETURNVALUE_CONTAINERNOTENOUGHROOM then
 		sendMailbox(player:getId(), choose.id, choose.count)
-		player:sendTextMessage(MESSAGE_STATUS_BLUE_LIGHT, "Você não possui espaço em sua backpack e seu item foi enviado para o mailbox.")
+		player:sendTextMessage(MESSAGE_TRADE , "Voce nao possui espaco em sua backpack e seu item foi enviado para o mailbox.")
 	end
 
-	player:sendCancelMessage("Você comprou ".. choose.count .."x ".. userItem:getName() ..".")
+	player:sendCancelMessage("Voce comprou ".. choose.count .."x ".. userItem:getName() ..".")
 	player:addItem(choose.id,choose.count)
 	player:getPosition():sendMagicEffect(29)
 	player:setStorageValue(77124, os.time() + 2)

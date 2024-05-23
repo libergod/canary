@@ -18,7 +18,7 @@ function woe1.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 					player:teleportTo(Castle.guildEntry, true)
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				else
-					player:sendTextMessage(MESSAGE_EVENT_DEFAULT,"You are not member of ".. Woe.guildName() ..".")
+					player:sendTextMessage(MESSAGE_FAILURE,"You are not member of ".. Woe.guildName() ..".")
 					player:getPosition():sendMagicEffect(CONST_ME_POFF)
 				end
 			end
@@ -28,7 +28,7 @@ function woe1.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				player:teleportTo(Castle.guildEntry, true)
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_DEFAULT,"You are not member of ".. Woe.guildName() ..".")
+				player:sendTextMessage(MESSAGE_FAILURE,"You are not member of ".. Woe.guildName() ..".")
 				player:getPosition():sendMagicEffect(CONST_ME_POFF)
 			end
 		end
@@ -39,7 +39,7 @@ function woe1.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			if Woe.isStarted() then
 				if infoLua[2] == Guild_ID then
 					if (player:getMoney() + player:getBankBalance() < guards_price) then
-							player:sendTextMessage(MESSAGE_EVENT_DEFAULT,"Not enough money.")
+							player:sendTextMessage(MESSAGE_FAILURE,"Not enough money.")
 							return true
 					end
 					
@@ -55,11 +55,11 @@ function woe1.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 							Woe.summon()
 							player:removeMoney(guards_price)
 						else
-							player:sendTextMessage(MESSAGE_EVENT_DEFAULT,"There are still guards alive.")
+							player:sendTextMessage(MESSAGE_FAILURE,"There are still guards alive.")
 							player:getPosition():sendMagicEffect(CONST_ME_POFF)
 						end
 					else
-						player:sendTextMessage(MESSAGE_EVENT_DEFAULT,"Delay not set.")
+						player:sendTextMessage(MESSAGE_FAILURE,"Delay not set.")
 						player:getPosition():sendMagicEffect(CONST_ME_POFF)
 					end
 				end

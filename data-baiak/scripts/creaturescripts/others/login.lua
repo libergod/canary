@@ -62,7 +62,7 @@ function playerLogin.onLogin(player)
 	end
 	]]--
 
-	if isPremium(player) then
+	if player:isPremium() then
 		player:setStorageValue(Storage.PremiumAccount, 1)
 		player:say("[ONLINE]", TALKTYPE_MONSTER_SAY)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
@@ -100,7 +100,7 @@ function playerLogin.onLogin(player)
 	
 	-- Premium Ends Teleport to Temple, change addon (citizen) houseless
 	local defaultTown = "Thunder City" -- default town where player is teleported if his home town is in premium area
-	local freeTowns = {"Jamila Island", "Akravi", "Al Arar", "Bhark", "Wintermere", "Shadow Wood"} -- towns in free account area
+	local freeTowns = {"Thunder City", "Jamila Island", "Akravi", "Al Arar", "Bhark", "Wintermere", "Shadow Wood"} -- towns in free account area
 
 	if not player:isPremium() and not table.contains(freeTowns, player:getTown():getName()) then
 		local town = player:getTown()
@@ -158,51 +158,51 @@ function playerLogin.onLogin(player)
 		local supposedmana = math.floor(90 + (vocation:getManaGain() * (level-8)) + (mana * player:getReborn()))
 		local supposedcap = math.floor(47000 + (vocation:getCapacityGain() * (level-8)) + (capMore * player:getReborn()))
 		if supposedhealth ~= math.floor(player:getMaxHealth()) then
-			player:sendTextMessage(MESSAGE_STATUS_WARNING, "Server detected your max health was wrongly set at " .. math.floor(player:getMaxHealth()) .. " and we adjusted it to " .. math.floor(supposedhealth) .. " automatically.")
+			player:sendTextMessage(MESSAGE_ADMINISTRATOR , "Server detected your max health was wrongly set at " .. math.floor(player:getMaxHealth()) .. " and we adjusted it to " .. math.floor(supposedhealth) .. " automatically.")
 			player:setMaxHealth(supposedhealth)
 			player:addHealth(supposedhealth)
 		end
 		if supposedmana ~= math.floor(player:getMaxMana()) then
-			player:sendTextMessage(MESSAGE_STATUS_WARNING, "Server detected your max mana was wrongly set at " .. math.floor(player:getMaxMana()) .. " and we adjusted it to " .. math.floor(supposedmana) .. " automatically.")
+			player:sendTextMessage(MESSAGE_ADMINISTRATOR , "Server detected your max mana was wrongly set at " .. math.floor(player:getMaxMana()) .. " and we adjusted it to " .. math.floor(supposedmana) .. " automatically.")
 			player:setMaxMana(supposedmana)
 			player:addMana(supposedmana)
 		end
 		if supposedcap ~= math.floor(player:getCapacity()) then
-			player:sendTextMessage(MESSAGE_STATUS_WARNING, "Server detected your max capacity was wrongly set at " .. math.floor(player:getCapacity() / 100) .. " and we adjusted it to " .. math.floor(supposedcap/100) .. " automatically.")
+			player:sendTextMessage(MESSAGE_ADMINISTRATOR , "Server detected your max capacity was wrongly set at " .. math.floor(player:getCapacity() / 100) .. " and we adjusted it to " .. math.floor(supposedcap/100) .. " automatically.")
 			player:setCapacity(supposedcap)
 		end
 		
 		if debugact then
-			player:sendTextMessage(MESSAGE_STATUS_WARNING, "For level " .. player:getLevel() .. ", your max HP should be: " .. supposedhealth .. " max mana should be: " .. supposedmana .. " max cap should be: " .. supposedcap .. ".")
+			player:sendTextMessage(MESSAGE_ADMINISTRATOR , "For level " .. player:getLevel() .. ", your max HP should be: " .. supposedhealth .. " max mana should be: " .. supposedmana .. " max cap should be: " .. supposedcap .. ".")
 		end
 	else
 		local supposedhealth = math.floor(185 + (vocation:getHealthGain() * (level-8)))
 		local supposedmana = math.floor(90 + (vocation:getManaGain() * (level-8)))
 		local supposedcap = math.floor(47000 + (vocation:getCapacityGain() * (level-8)))
 		if supposedhealth ~= math.floor(player:getMaxHealth()) then
-			player:sendTextMessage(MESSAGE_STATUS_WARNING, "Server detected your max health was wrongly set at " .. math.floor(player:getMaxHealth()) .. " and we adjusted it to " .. supposedhealth .. " automatically.")
+			player:sendTextMessage(MESSAGE_ADMINISTRATOR , "Server detected your max health was wrongly set at " .. math.floor(player:getMaxHealth()) .. " and we adjusted it to " .. supposedhealth .. " automatically.")
 			player:setMaxHealth(supposedhealth)
 			player:addHealth(supposedhealth)
 		end
 		if supposedmana ~= math.floor(player:getMaxMana()) then
-			player:sendTextMessage(MESSAGE_STATUS_WARNING, "Server detected your max mana was wrongly set at " .. math.floor(player:getMaxMana()) .. " and we adjusted it to " .. supposedmana .. " automatically.")
+			player:sendTextMessage(MESSAGE_ADMINISTRATOR , "Server detected your max mana was wrongly set at " .. math.floor(player:getMaxMana()) .. " and we adjusted it to " .. supposedmana .. " automatically.")
 			player:setMaxMana(supposedmana)
 			player:addMana(supposedmana)
 		end
 		if supposedcap ~= math.floor(player:getCapacity()) then
-			player:sendTextMessage(MESSAGE_STATUS_WARNING, "Server detected your max capacity was wrongly set at " .. math.floor(player:getCapacity() / 100) .. " and we adjusted it to " .. supposedcap/100 .. " automatically.")
+			player:sendTextMessage(MESSAGE_ADMINISTRATOR , "Server detected your max capacity was wrongly set at " .. math.floor(player:getCapacity() / 100) .. " and we adjusted it to " .. supposedcap/100 .. " automatically.")
 			player:setCapacity(supposedcap)
 		end
 		
 		if debugact then
-			player:sendTextMessage(MESSAGE_STATUS_WARNING, "For level " .. player:getLevel() .. ", your max HP should be: " .. supposedhealth .. " max mana should be: " .. supposedmana .. " max cap should be: " .. supposedcap .. ".")
+			player:sendTextMessage(MESSAGE_ADMINISTRATOR , "For level " .. player:getLevel() .. ", your max HP should be: " .. supposedhealth .. " max mana should be: " .. supposedmana .. " max cap should be: " .. supposedcap .. ".")
 		end
 	end
 	-- end maintain users health/mana according to his vocation/promotion
 	
 	-- start Dodge/Critial System
 	
-	player:sendTextMessage(MESSAGE_STATUS_WARNING, "You currently have: " .. (player:getCriticalLevel() / 1000) * 100 .. "%, more Critical Damage and " .. (player:getDodgeLevel() / 1000) * 100 .. "% more Dodge Chance.")
+	player:sendTextMessage(MESSAGE_ADMINISTRATOR , "You currently have: " .. (player:getCriticalLevel() / 1000) * 100 .. "%, more Critical Damage and " .. (player:getDodgeLevel() / 1000) * 100 .. "% more Dodge Chance.")
 	
 	-- end Dodge/Critical System
 	

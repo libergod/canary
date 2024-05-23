@@ -158,10 +158,10 @@ function expCheck.onSay(player, words)
  
     local exhaust = 6000
     if player:getStorageValue(exhaust) - os.time() > 0 then
-        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Your extra exp will end in : "..secondsToReadable(player:getStorageValue(exhaust) - os.time()).."")
+        player:sendTextMessage(MESSAGE_STATUS, "Your extra exp will end in : "..secondsToReadable(player:getStorageValue(exhaust) - os.time()).."")
         return false
 	else
-		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You don't have extra Exp Boost active.")
+		player:sendTextMessage(MESSAGE_STATUS, "You don't have extra Exp Boost active.")
 		return false
     end
     return false
