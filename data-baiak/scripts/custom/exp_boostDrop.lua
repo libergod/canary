@@ -128,7 +128,7 @@ function custom_exp_damage_effect_movement.onStepIn(player, item, position, from
         if ground then
             ground:setActionId()
             player:setStorageValue(6000, os.time() + 60)
-            player:sendTextMessage(MESSAGE_INFO_DESCR, 'You have received double experience for the next 60 seconds.')
+            player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'You have received double experience for the next 60 seconds.')
             for i = 0, 25 do
                 addEvent(sendEffect, 100 * i, player:getId())
             end

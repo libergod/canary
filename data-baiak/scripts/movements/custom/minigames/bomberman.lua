@@ -8,30 +8,30 @@ function bomberman.onStepIn(creature, item, position, fromPosition)
 		
 	if item:getActionId() == 19001 then
 		if player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SIZE) == 10 then	
-			player:sendCancelMessage("[BOMBERMAN] - Sua bomba atinge o máximo (+10) de sqms.")
+			player:sendCancelMessage("[BOMBERMAN] - Sua bomba atinge o mï¿½ximo (+10) de sqms.")
 			return true
 		end
 		player:setStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SIZE, player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SIZE) + 1)
-		player:sendCancelMessage("[BOMBERMAN] - Agora sua bomba atinge até "..player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SIZE).." sqm.")
+		player:sendCancelMessage("[BOMBERMAN] - Agora sua bomba atinge atï¿½ "..player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SIZE).." sqm.")
 		item:remove()
 	elseif item:getActionId() == 19002 then
 		if player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_MAXBOMB) == 10 then
-			player:sendCancelMessage("[BOMBERMAN] - Você pode soltar o número máximo (+10) de bombas.")
+			player:sendCancelMessage("[BOMBERMAN] - Vocï¿½ pode soltar o nï¿½mero mï¿½ximo (+10) de bombas.")
 			return true
 		end
 		player:setStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_MAXBOMB, player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_MAXBOMB) + 1)
-		player:sendTextMessage(MESSAGE_INFO_DESCR, "Agora você pode soltar até "..player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_MAXBOMB).." bombas.")
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Agora vocï¿½ pode soltar atï¿½ "..player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_MAXBOMB).." bombas.")
 		item:remove()	
 	elseif item:getActionId() == 19003 then
 		if player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SPEED) == 10 then
-			player:sendCancelMessage("[BOMBERMAN] - Você está com a velocidade (+10) maxima.")
+			player:sendCancelMessage("[BOMBERMAN] - Vocï¿½ estï¿½ com a velocidade (+10) maxima.")
 			return true
 		end
 	
 		local speed = player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SPEED)
 		if speed >= 0 and speed < 11 then
 			player:setStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SPEED, player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SPEED) + 1)
-			player:sendCancelMessage("[BOMBERMAN] - Agora sua velocidade está +("..player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SPEED)..") pontos.")
+			player:sendCancelMessage("[BOMBERMAN] - Agora sua velocidade estï¿½ +("..player:getStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SPEED)..") pontos.")
 			doChangeSpeed(creature, getCreatureBaseSpeed(creature))
 		end
 		item:remove()	
@@ -44,7 +44,7 @@ function bomberman.onStepIn(creature, item, position, fromPosition)
 				for i = 1, #BomberTeam1 do
 					if isPlayer(BomberTeam1[i]) then
 					resetplayerbomberman(BomberTeam1[i])
-					BomberTeam1[i]:sendCancelMessage("[BOMBERMAN] - Seu time venceu. Parabéns!")
+					BomberTeam1[i]:sendCancelMessage("[BOMBERMAN] - Seu time venceu. Parabï¿½ns!")
 					BomberTeam1[i]:addItem(9058,3) --TIME A: Exemplo de recompensa que cada ganhador ganharia
 					BomberTeam1[i]:setOutfit(BombermanOutfit[BomberTeam1[i]:getGuid()])
 					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", BomberTeam1[i]:getAccountId(), "0", db.escapeString("[Bomberman] - Winner"), "2", "100", os.time()))
@@ -57,7 +57,7 @@ function bomberman.onStepIn(creature, item, position, fromPosition)
 					if isPlayer(BomberTeam2[i]) then
 					resetplayerbomberman(BomberTeam2[i])
 					BomberTeam2[i]:setOutfit(BombermanOutfit[BomberTeam2[i]:getGuid()])
-					BomberTeam2[i]:sendCancelMessage("[BOMBERMAN] - Seu time venceu. Parabéns!")
+					BomberTeam2[i]:sendCancelMessage("[BOMBERMAN] - Seu time venceu. Parabï¿½ns!")
 					BomberTeam2[i]:addItem(9058,3) --TIME B: Exemplo de recompensa que cada ganhador ganharia
 					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", BomberTeam2[i]:getAccountId(), "0", db.escapeString("[Bomberman] - Winner"), "2", "100", os.time()))
 					BomberTeam2[i]:addTournamentsCoins(100)
@@ -82,7 +82,7 @@ function bomberman.onStepIn(creature, item, position, fromPosition)
 		BombermanPortal = 0
 		item:remove()
 		else
-			player:sendCancelMessage("[BOMBERMAN] - Restam integrantes do time adversário.")
+			player:sendCancelMessage("[BOMBERMAN] - Restam integrantes do time adversï¿½rio.")
 		end
 	end
 	return true

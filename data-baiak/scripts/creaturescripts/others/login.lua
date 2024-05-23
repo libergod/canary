@@ -62,14 +62,6 @@ function playerLogin.onLogin(player)
 	end
 	]]--
 
-
-	-- BONUS EXP PER PLAYER ONLINE
-	local expOnlineBoost = Game.getStorageValue(90003)
-	if not (expOnlineBoost <= 0) then
-		player:sendTextMessage(MESSAGE_LOGIN, "High number of players! Server is giving " ..Game.getStorageValue(90003).."% exp bonus, enjoy!")
-	end
-
-
 	if isPremium(player) then
 		player:setStorageValue(Storage.PremiumAccount, 1)
 		player:say("[ONLINE]", TALKTYPE_MONSTER_SAY)
@@ -318,15 +310,7 @@ function playerLogin.onLogin(player)
 	
 	-- Loyalty system
 	player:initializeLoyaltySystem()
-
-	-- Stamina
-	nextUseStaminaTime[playerId] = 1
-
-	-- EXP Stamina
-	nextUseXpStamina[playerId] = 1
 	
-	-- Concoction Duration
-	nextUseConcoctionTime[playerId] = 1
 
 	if (player:getAccountType() == ACCOUNT_TYPE_TUTOR) then
 	local msg = [[:: Tutor Rules
@@ -382,11 +366,6 @@ function playerLogin.onLogin(player)
 
 	player:getFinalLowLevelBonus()
 
-	if onExerciseTraining[player:getId()] then -- onLogin & onLogout
-		stopEvent(onExerciseTraining[player:getId()].event)
-		onExerciseTraining[player:getId()] = nil
-		player:setTraining(false)
-	end
 	return true
 end
 
