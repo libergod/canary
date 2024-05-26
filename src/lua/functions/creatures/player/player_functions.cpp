@@ -866,8 +866,7 @@ int PlayerFunctions::luaPlayerDoRebirth(lua_State* L) {
 	if (player) {
 		player->doReborn();
 		pushBoolean(L, true);
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;
@@ -958,8 +957,7 @@ int PlayerFunctions::luaPlayerGetRebirth(lua_State* L) {
 	std::shared_ptr<Player> player = getUserdataShared<Player>(L, 1);
 	if (player) {
 		lua_pushnumber(L, player->getRebirth());
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;

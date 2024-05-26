@@ -77,8 +77,7 @@ Player::~Player() {
 }
 
 // Reborn System 05-21-2024
-void Player::doReborn()
-{
+void Player::doReborn() {
 	rebirth++;
 	double bonusRebirth = rebirth * g_configManager().getNumber(REBORN_STATBONUS, __FUNCTION__);
 	bonusRebirth /= 100;
@@ -238,7 +237,7 @@ std::string Player::getDescription(int32_t lookDistance) {
 	}
 
 	// Reborn System 05-21-2024
-		s << " Rebirths: " << rebirth << ".";
+	s << " Rebirths: " << rebirth << ".";
 	return s.str();
 }
 
