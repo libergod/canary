@@ -459,9 +459,9 @@ private:
 	static int luaPlayerGetLevel(lua_State* L);
 
 	// Reborn System 05-21-2024
-	static int luaPlayerGetRebirth(lua_State* L); 
+	static int luaPlayerGetRebirth(lua_State* L);
 	static int luaPlayerDoRebirth(lua_State* L);
-	
+
 	static int luaPlayerGetMagicShieldCapacityFlat(lua_State* L);
 	static int luaPlayerGetMagicShieldCapacityPercent(lua_State* L);
 
