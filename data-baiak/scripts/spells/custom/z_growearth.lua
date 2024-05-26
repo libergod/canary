@@ -1,8 +1,8 @@
 local config = {
     type = COMBAT_EARTHDAMAGE,
-    effect = 51, --
-    effect2 = 55, --
-    distance = 46, -- Distance effect
+    effect = CONST_ME_BIGPLANTS, --
+    effect2 = CONST_ME_PLANTATTACK, --
+    distance = CONST_ANI_SMALLEARTH, -- Distance effect
     rounds = 4, -- How many rounds
     time = 250 -- How fast it should be
 }
