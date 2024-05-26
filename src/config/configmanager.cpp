@@ -368,7 +368,7 @@ bool ConfigManager::load() {
 	// Reborn System 05-21-2024
 	loadIntConfig(L, REBORN_LEVEL, "rebornLevel", 1500);
 	loadIntConfig(L, REBORN_STATBONUS, "rebornStats", 5);
-	loadIntConfig(L, REBORN_DMGBONUS, "rebornDmg", 20);
+	loadIntConfig(L, REBORN_DMGBONUS, "rebornDmg", 10);
 
 	loaded = true;
 	lua_close(L);

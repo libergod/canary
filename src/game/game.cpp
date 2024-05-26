@@ -7066,7 +7066,7 @@ bool Game::combatChangeHealth(std::shared_ptr<Creature> attacker, std::shared_pt
 		else
 			bonusRebirth = 1.0;
 
-		std::cout << bonusRebirth << std::endl;
+		//std::cout << bonusRebirth << std::endl;
 
 		damage.primary.value = std::abs(damage.primary.value) * bonusRebirth;
 		damage.secondary.value = std::abs(damage.secondary.value) * bonusRebirth;
