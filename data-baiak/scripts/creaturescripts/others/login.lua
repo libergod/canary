@@ -1,23 +1,3 @@
-local function onMovementRemoveProtection(cid, oldPos, time)
-	local player = Player(cid)
-	if not player then
-		return true
-	end
-
-	local playerPos = player:getPosition()
-	if (playerPos.x ~= oldPos.x or playerPos.y ~= oldPos.y or playerPos.z ~= oldPos.z) or player:getTarget() then
-		player:setStorageValue(Global.Storage.CombatProtectionStorage, 0)
-		return true
-	end
-
-	addEvent(onMovementRemoveProtection, 1000, cid, oldPos, time - 1)
-end
-
-local function protectionZoneCheck(playerName)
-    doRemoveCreature(playerName)
-    return true
-end
-
 local playerLogin = CreatureEvent("PlayerLogin")
 
 function playerLogin.onLogin(player)	
@@ -63,7 +43,7 @@ function playerLogin.onLogin(player)
 	]]--
 
 	if player:isPremium() then
-		player:setStorageValue(Storage.PremiumAccount, 1)
+		--player:setStorageValue(Storage.PremiumAccount, 1)
 		player:say("[ONLINE]", TALKTYPE_MONSTER_SAY)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	end
@@ -345,11 +325,6 @@ function playerLogin.onLogin(player)
 	local stats = player:inBossFight()
 	if stats then
 		stats.playerId = player:getId()
-	end
-
-	if player:getStorageValue(Global.Storage.CombatProtectionStorage) < 1 then
-		player:setStorageValue(Global.Storage.CombatProtectionStorage, 1)
-		onMovementRemoveProtection(playerId, player:getPosition(), 10)
 	end
 
 	-- Set Client XP Gain Rate --

@@ -23,6 +23,6 @@ function onKill(player, target)
     guild1:addExperience(xp)
 	guild2:addExperience(- math.ceil(xp / 1.25))
 	
-	player:sendTextMessage(MESSAGE_STATUS, "Voc� adicionou ".. xp .." de experi�ncia � sua guild por matar ".. target:getName() ..".")
+	player:sendTextMessage(MESSAGE_STATUS, "Voce adicionou ".. xp .." de experiencia a sua guild por matar ".. target:getName() ..".")
 	return true
 end
