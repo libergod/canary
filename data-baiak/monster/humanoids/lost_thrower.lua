@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Lost Thrower")
 local monster = {}
 
 monster.description = "a lost thrower"
-monster.experience = 1200
+monster.experience = 1500
 monster.outfit = {
 	lookType = 539,
 	lookHead = 0,
@@ -67,7 +67,7 @@ monster.flags = {
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = false,
-	canWalkOnFire = false,
+	canWalkOnFire = true,
 	canWalkOnPoison = true,
 }
 
@@ -123,7 +123,7 @@ monster.elements = {
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = 15 },
+	{ type = COMBAT_ICEDAMAGE, percent = -5 },
 	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
 	{ type = COMBAT_DEATHDAMAGE, percent = 10 },
 }

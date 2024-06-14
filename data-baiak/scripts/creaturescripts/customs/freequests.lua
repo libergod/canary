@@ -60,7 +60,7 @@ local questTable = {
 	{ storage = Storage.InServiceofYalahar.DoorToMatrix, storageValue = 1 },
 	{ storage = Storage.InServiceofYalahar.DoorToQuara, storageValue = 1 },
 	{ storage = Storage.CultsOfTibia.Questline, storageValue = 7 },
-	{ storage = Storage.CultsOfTibia.Minotaurs.jamesfrancisTask, storageValue = 1 },
+	{ storage = Storage.CultsOfTibia.Minotaurs.JamesfrancisTask, storageValue = 1 },
 	{ storage = Storage.CultsOfTibia.Minotaurs.Mission, storageValue = 1 },
 	{ storage = Storage.CultsOfTibia.Minotaurs.BossTimer, storageValue = 1 },
 	{ storage = Storage.CultsOfTibia.MotA.Mission, storageValue = 1 },
