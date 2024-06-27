@@ -17,7 +17,7 @@ SAFEZONE = {
 				"Tuesday-16:40",
 				"Tuesday-20:40",
 
-				"Thursday-09:40",
+				"Thursday-10:40",
 				"Thursday-14:40",
 				
 				"Saturday-14:40",
@@ -28,15 +28,15 @@ SAFEZONE = {
 	},
 	messages = {
 		prefix = "[SAFEZONE] ",
-		messageEntrou = "Você entrou no evento. Boa Sorte!",
-		messageStart = "O evento irá começar agora com %d participantes! Boa sorte!",
+		messageEntrou = "Vocï¿½ entrou no evento. Boa Sorte!",
+		messageStart = "O evento irï¿½ comeï¿½ar agora com %d participantes! Boa sorte!",
 		messageNoStart = "O evento foi cancelado por falta de participantes!",
 		messageTime = "O evento foi cancelado por limite de tempo!",
-		messageOpen = "O evento foi aberto, você tem %d minutos para entrar no portal do evento que se encontra no templo!",
-		messageWait = "O teleporte para o evento está aberto, você tem %d minuto(s) para entrar!",
-		messageFinish = "O evento foi finalizado e o ganhador foi o %s! Parabéns!",
-		messageWinner = "Você ganhou %d %s como premiação e 300 Tournaments Coins.",
-		messageLooser = "Você perdeu suas vidas e foi eliminado do Evento.",
+		messageOpen = "O evento foi aberto, vocï¿½ tem %d minutos para entrar no portal do evento que se encontra no templo!",
+		messageWait = "O teleporte para o evento estï¿½ aberto, vocï¿½ tem %d minuto(s) para entrar!",
+		messageFinish = "O evento foi finalizado e o ganhador foi o %s! Parabï¿½ns!",
+		messageWinner = "Vocï¿½ ganhou %d %s como premiaï¿½ï¿½o e 300 Tournaments Coins.",
+		messageLooser = "Vocï¿½ perdeu suas vidas e foi eliminado do Evento.",
 		messageDraw = "O evento foi finalizado sem ganhador! Todos os players morreram!"
 	},
 	lifeColor = {
@@ -120,11 +120,11 @@ function SAFEZONE:removePlayer(playerId)
 	--Spdlog.info("[SAFEZONE EVENT] - Valor i: "..i.. " valor v: "..v)
 		if(v == playerId) then
 			--Spdlog.info("[SAFEZONE EVENT] - Valor v: "..v.. " valor playerId: "..playerId)
-			--Spdlog.info("[SAFEZONE EVENT] - User excluído com sucesso. ")
+			--Spdlog.info("[SAFEZONE EVENT] - User excluï¿½do com sucesso. ")
 			SAFEZONE.players[v] = nil
 			table.remove(SAFEZONE.players,i)
 		else
-			--Spdlog.error("[SAFEZONE EVENT] - Não excluído. ")
+			--Spdlog.error("[SAFEZONE EVENT] - Nï¿½o excluï¿½do. ")
 		end
 	end
 end	
@@ -262,7 +262,7 @@ function SAFEZONE:checkPlayersinProtectionTiles()
 							player:setStorageValue(SAFEZONE.storage, player:getStorageValue(SAFEZONE.storage) - 1)
 							local lifes = player:getStorageValue(SAFEZONE.storage)
 							player:getPosition():sendMagicEffect(CONST_ME_FIREAREA)
-							player:sendTextMessage(MESSAGE_EVENT_ADVANCE, SAFEZONE.messages.prefix .. "Você perdeu uma vida, cuidado na próxima SafeZone!")							
+							player:sendTextMessage(MESSAGE_EVENT_ADVANCE, SAFEZONE.messages.prefix .. "Vocï¿½ perdeu uma vida, cuidado na prï¿½xima SafeZone!")							
 							local outfit = player:getSex() == 0 and 136 or 128
 							if lifes == 1 then
 								local lifeColor = SAFEZONE.lifeColor[1]
@@ -282,7 +282,7 @@ function SAFEZONE:checkPlayersinProtectionTiles()
 							player:sendTextMessage(MESSAGE_EVENT_ADVANCE, SAFEZONE.messages.prefix .. SAFEZONE.messages.messageLooser)
 						end
 					else
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, SAFEZONE.messages.prefix .. "Você Acertou a SafeZone !!")
+						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, SAFEZONE.messages.prefix .. "Vocï¿½ Acertou a SafeZone !!")
 					end
 				end
 			end
