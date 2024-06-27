@@ -11,6 +11,9 @@ dofile(DATA_DIRECTORY .. "/lib/quests/quest.lua")
 -- Towns
 dofile(DATA_DIRECTORY.. "/lib/tables/town.lua")
 
+-- Teleport Destinations
+dofile(DATA_DIRECTORY.. "/lib/tables/teleport_item_destinations.lua")
+
 -- CUSTOM BAIAK
 -- Dodge e Critical
 dofile(DATA_DIRECTORY.. "/lib/custom/dodgeCritical.lua")

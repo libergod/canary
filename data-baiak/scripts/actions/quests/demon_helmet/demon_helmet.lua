@@ -49,7 +49,7 @@ function removeMonstersInArea(fromPos,toPos)
                 for Py = fromPos.y, toPos.y do
                     --local monster = Monster(getThingFromPos(Position(x,y,8)))
 					local monster = getThingfromPos({x=Px, y=Py, z=8, stackpos=253})
-					if isMonster(monster.uid) then
+					if Monster(monster.uid) then
 						monster:remove()
 						--table.insert(monsters, monster.uid)
 					end
@@ -120,7 +120,7 @@ local function checkMonstersKilled(fromPos, toPos, playerid)
 			for Px = fromPos.x, toPos.x do
 					for Py = fromPos.y, toPos.y do
 						local monster = getThingfromPos({x=Px, y=Py, z=8, stackpos=253})
-						if isMonster(monster.uid) then
+						if Monster(monster.uid) then
 							player:sendCancelMessage("You need to kill all monsters before open a passage.")
 							player:getPosition():sendMagicEffect(CONST_ME_POFF)
 							return false
