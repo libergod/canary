@@ -51,7 +51,7 @@ apt-get install screen
 
 sudo apt install cmake build-essential libluajit-5.1-dev libmysqlclient-dev libboost-system-dev libboost-iostreams-dev libboost-filesystem-dev libpugixml-dev libcrypto++-dev libfmt-dev libboost-date-time-dev -y
 
-apt-get install subversion autoconf build-essential pkg-config libboost-dev libgmp3-dev libxml2-dev liblua5.1-0-dev libmariadbclient-dev-compat ccache libboost-filesystem-dev libboost-regex-dev libboost-system-dev libboost-thread-dev screen libssl-dev libboost-iostreams-dev -y
+sudo apt-get install subversion autoconf build-essential pkg-config libboost-dev libgmp3-dev libxml2-dev liblua5.1-0-dev libmariadbclient-dev-compat ccache libboost-filesystem-dev libboost-regex-dev libboost-system-dev libboost-thread-dev screen libssl-dev libboost-iostreams-dev -y
 
 ========================================================================================================
 
@@ -168,7 +168,7 @@ git pull
 
 
 LINUX:
-./vcpkg install --triplet x64-linux asio pugixml spdlog curl jsoncpp protobuf parallel-hashmap magic-enum mio luajit libmariadb abseil argon2 eventpp bext-di
+./vcpkg install --triplet x64-linux asio pugixml spdlog curl jsoncpp protobuf parallel-hashmap magic-enum mio luajit libmariadb abseil argon2 eventpp bext-di ninja
 
 git clone --depth 1 https://github.com/opentibiabr/canary.git
 cd canary
@@ -176,6 +176,8 @@ mkdir build && cd build
 
 cmake -DCMAKE_TOOLCHAIN_FILE=~../../vcpkg/scripts/buildsystems/vcpkg.cmake .. --preset linux-release
 cmake --build linux-release
+
+cmake --build linux-release -j4
 
 cd ~
 cd canary
