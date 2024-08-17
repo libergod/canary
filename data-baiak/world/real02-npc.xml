@@ -117,6 +117,18 @@
 	<npc centerx="593" centery="1315" centerz="7" radius="1">
 		<npc name="Lailene" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="1103" centery="501" centerz="8" radius="1">
+		<npc name="Oberon'S Bile" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="1109" centery="501" centerz="8" radius="1">
+		<npc name="Oberon'S Hate" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="1103" centery="505" centerz="8" radius="1">
+		<npc name="Oberon'S Spite" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="1109" centery="505" centerz="8" radius="1">
+		<npc name="Oberon'S Ire" x="0" y="0" z="8" spawntime="60" />
+	</npc>
 	<npc centerx="1983" centery="807" centerz="10" radius="1">
 		<npc name="Gnomad" x="0" y="0" z="10" spawntime="60" />
 	</npc>

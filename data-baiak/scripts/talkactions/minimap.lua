@@ -1,8 +1,8 @@
 local minimap = TalkAction("/minimap")
 
 function minimapStart(player, minX, maxX, minY, maxY, x, y, z)
-		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Scan started: ' .. os.time())
-		--print('Minimap scan start', player:getName(), minX, maxX, minY, maxY, x, y, z)
+		player:sendCancelMessage("Scan started: " .. os.time())
+		--print("Minimap scan start", player:getName(), minX, maxX, minY, maxY, x, y, z)
 		minimapScan(player:getId(), minX, maxX, minY, maxY, minX - 5, minY, z)
 end
 
@@ -10,7 +10,7 @@ function minimapScan(cid, minX, maxX, minY, maxY, x, y, z, lastProgress)
    local player = Player(cid)
 
    if not player then
-      --print('Minimap scan stopped - player logged out', cid, minX, maxX, minY, maxY, x, y, z)
+      --print("Minimap scan stopped - player logged out", cid, minX, maxX, minY, maxY, x, y, z)
       return
    end
 
@@ -28,8 +28,8 @@ function minimapScan(cid, minX, maxX, minY, maxY, x, y, z, lastProgress)
          x = minX
          y = y + distanceBetweenPositionsY
          if y > maxY then
-            player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Scan finished: ' .. os.time())
-            --print('Minimap scan complete', player:getName(), minX, maxX, minY, maxY, x, y, z)
+            player:sendCancelMessage("Scan finished: " .. os.time())
+            --print("Minimap scan complete", player:getName(), minX, maxX, minY, maxY, x, y, z)
             break
          end
       end
@@ -38,7 +38,7 @@ function minimapScan(cid, minX, maxX, minY, maxY, x, y, z, lastProgress)
          teleportsDone = teleportsDone + 1
          lastProgress = sendScanProgress(player, minX, maxX, minY, maxY, x, y, z, lastProgress)
 
-         --print('Minimap scan teleport', player:getName(), minX, maxX, minY, maxY, x, y, z, progress, teleportsDone)
+         --print("Minimap scan teleport", player:getName(), minX, maxX, minY, maxY, x, y, z, progress, teleportsDone)
          if teleportsDone == teleportsPerEvent then
             addEvent(minimapScan, addEventDelay, cid, minX, maxX, minY, maxY, x, y, z, progress)
             break
@@ -73,7 +73,7 @@ end
 function sendScanProgress(player, minX, maxX, minY, maxY, x, y, z, lastProgress)
    local progress = math.floor(((y - minY + (((x - minX) / (maxX - minX)) * distanceBetweenPositionsY)) / (maxY - minY)) * 100)
    if progress ~= lastProgress then
-      player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Scan progress: ~' .. progress .. '%')
+      player:sendCancelMessage("Scan progress: ~" .. progress .. "%")
    end
 
    return progress
@@ -98,7 +98,7 @@ function minimap.onSay(player, words, param)
 	local splited = param:split(",")
 	
 	if #splited ~= 5 then
-      player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Command requires 5 parameters: /minimap minX, maxX, minY, maxY, z')
+      player:sendCancelMessage("Command requires 5 parameters: /minimap minX, maxX, minY, maxY, z")
       return false
    end
 
@@ -106,7 +106,7 @@ function minimap.onSay(player, words, param)
 		  local value = tonumber(position)
 
 		  if not value then
-			 player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Invalid parameter ' .. key .. ': ' .. position)
+			 player:sendCancelMessage("Invalid parameter " .. key .. ": " .. position)
 			 return false
 		  end
 

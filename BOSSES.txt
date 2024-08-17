@@ -2,61 +2,61 @@ Bigfoot's Burden Quest
 	- Deathstrike - WZ1 - FINALIZADO E TESTADO!
 	- Gnomevil  - WZ2 - FINALIZADO E TESTADO!
 	- Mini Boss  
-		- Versperoth - FINALIZADO E TESTADO!
-	- Abyssador - WZ3 - FINALIZADO E TESTADO!
+		- Versperoth - 
+	- Abyssador - WZ3 - 
 		
 Heart of Destruction bosses
-	- Anomaly - FINALIZADO E TESTADO!
-	- Realityquake - FINALIZADO E TESTADO!
-	- Rupture - FINALIZADO E TESTADO!
-	- Eradicator - FINALIZADO! -> Necessário Testar
-	- Outburst - FINALIZADO! -> Necessário Testar
-	- World Devourer - OK - FINALIZADO! -> Necessário Testar
+	- Anomaly - 
+	- Realityquake - 
+	- Rupture - 
+	- Eradicator - 
+	- Outburst - 
+	- World Devourer - 
 
 Grimvale Quest link: https://www.tibiawiki.com.br/wiki/Grimvale_Quest
-	- Bloodback - FINALIZADO E TESTADO!
-	- Darkfang - FINALIZADO E TESTADO!
-	- Sharpclaw - FINALIZADO E TESTADO!
-	- Shadowpelt - FINALIZADO E TESTADO!
-	- Black Vixen - FINALIZADO E TESTADO!
+	- Bloodback - 
+	- Darkfang - 
+	- Sharpclaw - 
+	- Shadowpelt - 
+	- Black Vixen - 
 	
-	- Todos num TP só!!
+	- Todos num TP!!
 	- Yirkas Blue Scales - FINALIZADO E TESTADO!
 	- Katex Blood Tongue - FINALIZADO E TESTADO!
 	- Srezz Yellow Eyes - FINALIZADO E TESTADO!
 	- Utua Stone Sting - FINALIZADO E TESTADO!
 	
 Feaster of Souls
-	- Brain Head - OK
-	- Unaz the Mean - FINALIZADO E TESTADO!
-	- Irgix the Flimsy - FINALIZADO E TESTADO!
-	- Vok the Freakish - FINALIZADO E TESTADO!
-	- Thaian - OK
-	- The Dread Maiden - OK
-	- The Unwelcome - FINALIZADO E TESTADO!
-	- The Fear Feaster - OK
-	- The Pale Worm - FINALIZADO E TESTADO! -- Falta mecanica da lanterna
+	- Brain Head - 
+	- Unaz the Mean - 
+	- Irgix the Flimsy - 
+	- Vok the Freakish - 
+	- Thaian - 
+	- The Dread Maiden - 
+	- The Unwelcome - 
+	- The Fear Feaster - 
+	- The Pale Worm - 
 	
 The Secret Library Quest
-	- Brokul - FINALIZADO E TESTADO!
-	- Grand Master Oberon - FINALIZADO E TESTADO!
+	- Brokul - 
+	- Grand Master Oberon - 
 	- Mini Boss 
-		- Grand Commander Soeren - FINALIZADO E TESTADO!
-		- Preceptor Lazare  - FINALIZADO E TESTADO!
-		- Grand Chaplain Gaunder  - FINALIZADO E TESTADO!
-		- Grand Canon Dominus - FINALIZADO E TESTADO!
-		- Dazed Leaf Golem - FINALIZADO E TESTADO!
+		- Grand Commander Soeren - 
+		- Preceptor Lazare  - 
+		- Grand Chaplain Gaunder  - 
+		- Grand Canon Dominus - 
+		- Dazed Leaf Golem - 
 	=Etapa 1
-	- Ghulosh - FINALIZADO E TESTADO!
-	- Gorzindel - FINALIZADO E TESTADO!
-	- Lokathmor - FINALIZADO E TESTADO!
-	- Mazzinor  - FINALIZADO E TESTADO!
+	- Ghulosh - 
+	- Gorzindel - 
+	- Lokathmor - 
+	- Mazzinor  - 
 	=Etapa 2
-	- The Devourer of Secrets - FINALIZADO E TESTADO!
-	- The Spellstealer - FINALIZADO E TESTADO!
-	- Brother Chill e Brother Freeze - FINALIZADO E TESTADO!
-	- The Scion of Havoc - FINALIZADO E TESTADO!
-	- The Scourge of Oblivion - FINALIZADO E TESTADO! (Falta configurar as magias de retas qnd tiver azul)
+	- The Devourer of Secrets - 
+	- The Spellstealer - 
+	- Brother Chill e Brother Freeze - 
+	- The Scion of Havoc - 
+	- The Scourge of Oblivion -  (Falta configurar as magias de retas qnd tiver azul)
 
 Grave Danger Quest
 	- Count Vlarkorth - Implementando...

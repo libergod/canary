@@ -1,20 +1,20 @@
 local config = {
 	boss = {
 		name = "Grand Master Oberon",
-		position = Position(33364, 31317, 9),
+		position = Position(1106, 500, 8),
 	},
 	playerPositions = {
-		{ pos = Position(33362, 31344, 9), teleport = Position(33364, 31322, 9) },
-		{ pos = Position(33363, 31344, 9), teleport = Position(33364, 31322, 9) },
-		{ pos = Position(33364, 31344, 9), teleport = Position(33364, 31322, 9) },
-		{ pos = Position(33365, 31344, 9), teleport = Position(33364, 31322, 9) },
-		{ pos = Position(33366, 31344, 9), teleport = Position(33364, 31322, 9) },
+		{ pos = Position(1104, 529, 8), teleport = Position(1106, 507, 8) },
+		{ pos = Position(1105, 529, 8), teleport = Position(1106, 507, 8) },
+		{ pos = Position(1106, 529, 8), teleport = Position(1106, 507, 8) },
+		{ pos = Position(1107, 529, 8), teleport = Position(1106, 507, 8) },
+		{ pos = Position(1108, 529, 8), teleport = Position(1106, 507, 8) },
 	},
 	specPos = {
-		from = Position(33357, 31312, 9),
-		to = Position(33371, 31324, 9),
+		from = Position(1085, 492, 8),
+		to = Position(1116, 513, 8),
 	},
-	exit = Position(33364, 31341, 9),
+	exit = Position(1106, 526, 8),
 }
 
 local lever = BossLever(config)

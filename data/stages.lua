@@ -4,27 +4,27 @@
 experienceStages = {
 	{
 		minlevel = 1,
-		maxlevel = 50,
+		maxlevel = 150,
+		multiplier = 9999,
+	},
+	{
+		minlevel = 151,
+		maxlevel = 400,
+		multiplier = 6666,
+	},
+	{
+		minlevel = 401,
+		maxlevel = 700,
+		multiplier = 4444,
+	},
+	{
+		minlevel = 701,
+		maxlevel = 1000,
+		multiplier = 2222,
+	},
+	{
+		minlevel = 1001,
 		multiplier = 1000,
-	},
-	{
-		minlevel = 51,
-		maxlevel = 200,
-		multiplier = 500,
-	},
-	{
-		minlevel = 201,
-		maxlevel = 600,
-		multiplier = 300,
-	},
-	{
-		minlevel = 601,
-		maxlevel = 1100,
-		multiplier = 200,
-	},
-	{
-		minlevel = 1100,
-		multiplier = 100,
 	},
 }
 

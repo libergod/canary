@@ -4185,12 +4185,22 @@
 		<monster name="Blightwalker" x="16" y="4" z="7" spawntime="40" />
 		<monster name="Dark Torturer" x="17" y="4" z="7" spawntime="40" />
 	</monster>
+	<monster centerx="769" centery="341" centerz="7" radius="3">
+		<monster name="Werewolf" x="-2" y="2" z="7" spawntime="60" />
+	</monster>
 	<monster centerx="957" centery="347" centerz="7" radius="1">
 		<monster name="Tomb Servant" x="1" y="0" z="7" spawntime="40" />
 		<monster name="Tomb Servant" x="0" y="1" z="7" spawntime="40" />
 	</monster>
 	<monster centerx="977" centery="347" centerz="7" radius="1">
 		<monster name="Tomb Servant" x="1" y="0" z="7" spawntime="40" />
+	</monster>
+	<monster centerx="762" centery="348" centerz="7" radius="3">
+		<monster name="Werebadger" x="2" y="-1" z="7" spawntime="60" />
+		<monster name="Werebadger" x="-1" y="0" z="7" spawntime="60" />
+	</monster>
+	<monster centerx="776" centery="348" centerz="7" radius="3">
+		<monster name="Werebadger" x="0" y="2" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="960" centery="355" centerz="7" radius="1">
 		<monster name="Ghoulish Hyaena" x="1" y="0" z="7" spawntime="40" />
@@ -4495,7 +4505,6 @@
 		<monster name="Fire Elemental" x="-11" y="-7" z="7" spawntime="40" />
 		<monster name="Lavahole" x="-6" y="-6" z="7" spawntime="40" />
 		<monster name="Fire Elemental" x="12" y="-6" z="7" spawntime="40" />
-		<monster name="Demon" x="-12" y="-5" z="7" spawntime="40" />
 		<monster name="Lavahole" x="3" y="-5" z="7" spawntime="40" />
 	</monster>
 	<monster centerx="924" centery="561" centerz="7" radius="1">
@@ -21774,6 +21783,15 @@
 	</monster>
 	<monster centerx="1387" centery="434" centerz="8" radius="1">
 		<monster name="Werelioness" x="0" y="0" z="8" spawntime="40" />
+	</monster>
+	<monster centerx="1030" centery="452" centerz="8" radius="3">
+		<monster name="Neutral Deepling Warrior" x="1" y="3" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="1044" centery="452" centerz="8" radius="3">
+		<monster name="Neutral Deepling Warrior" x="-2" y="1" z="8" spawntime="60" />
+	</monster>
+	<monster centerx="1030" centery="459" centerz="8" radius="3">
+		<monster name="Neutral Deepling Warrior" x="3" y="-3" z="8" spawntime="60" />
 	</monster>
 	<monster centerx="952" centery="487" centerz="8" radius="3">
 		<monster name="Vampire" x="-3" y="3" z="8" spawntime="40" />

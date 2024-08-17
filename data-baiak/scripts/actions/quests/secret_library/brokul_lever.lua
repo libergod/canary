@@ -1,7 +1,7 @@
 local function clearArea()
 	--Room 1
-	local upConer = {x = 1034, y = 415, z = 8}       -- upLeftCorner
-	local downConer = {x = 1061, y = 438, z = 8}     -- downRightCorner
+	local upConer = {x = 1020, y = 438, z = 8}       -- upLeftCorner
+	local downConer = {x = 1051, y = 465, z = 8}     -- downRightCorner
 
 	for i=upConer.x, downConer.x do
 		for j=upConer.y, downConer.y do
@@ -13,7 +13,7 @@ local function clearArea()
 					if creatures and #creatures > 0 then
 						for _, c in pairs(creatures) do
 							if isPlayer(c) then
-								c:teleportTo({x = 1015, y = 431, z = 8})
+								c:teleportTo({x = 1035, y = 424, z = 8})
 							elseif isMonster(c) then
 								c:remove()
 							end
@@ -31,18 +31,18 @@ local config = {
 	timeToFightAgain = 20, -- In hour
 	timeToDefeatBoss = 20, -- In minutes
 	playerPositions = {
-		{pos = Position(1015, 428, 8), teleport = Position(1046, 432, 8), effect = CONST_ME_TELEPORT},
-		{pos = Position(1013, 428, 8), teleport = Position(1046, 432, 8), effect = CONST_ME_TELEPORT},
-		{pos = Position(1014, 428, 8), teleport = Position(1046, 432, 8), effect = CONST_ME_TELEPORT},
-		{pos = Position(1016, 428, 8), teleport = Position(1046, 432, 8), effect = CONST_ME_TELEPORT},
-		{pos = Position(1017, 428, 8), teleport = Position(1046, 432, 8), effect = CONST_ME_TELEPORT}
+		{pos = Position(1035, 421, 8), teleport = Position(1035, 459, 8), effect = CONST_ME_TELEPORT},
+		{pos = Position(1036, 421, 8), teleport = Position(1035, 459, 8), effect = CONST_ME_TELEPORT},
+		{pos = Position(1037, 421, 8), teleport = Position(1035, 459, 8), effect = CONST_ME_TELEPORT},
+		{pos = Position(1034, 421, 8), teleport = Position(1035, 459, 8), effect = CONST_ME_TELEPORT},
+		{pos = Position(1033, 421, 8), teleport = Position(1035, 459, 8), effect = CONST_ME_TELEPORT}
 	},
-	bossPosition = Position(1047, 424, 8),
+	bossPosition = Position(1036, 446, 8),
 	specPos = {
-		from = Position(1034, 415, 8),
-		to = Position(1061, 438, 8)
+		from = Position(1020, 438, 8),
+		to = Position(1051, 465, 8)
 	},
-	exit = Position(1015, 431, 8),
+	exit = Position(1035, 424, 8),
 	storage = Storage.Quest.U11_80.TheSecretLibrary.BrokulTimer
 }
 
