@@ -21,6 +21,16 @@
 		storage = xxxxx
 	},
 
+	Example using KV:
+		[xxxx] = {
+			useKV = true,
+			itemId = xxxx,
+			itemPos = {x = xxxxx, y = xxxxx, z = x},
+			container = xxxx, (it's for use reward in a container, only put the id of the container here)
+			reward = {{xxxx, x}},
+			questName = "testkv",
+		}
+
 	Note:
 	The "for use of the map" variables are only used to create the action or unique on the map during startup
 	If the reward is an key, do not need to use "keyAction", only set the storage as same action id
@@ -56,6 +66,18 @@ ChestAction = {
 		itemPos = {
 			{x = 33053, y = 31020, z = 7}
 		}
+
+	-- Key  5010 (dead tree black knight quest)
+	[5002] = {
+		isKey = true,
+		itemId = 3634,
+		itemPos = {
+			{ x = 32813, y = 31964, z = 7 },
+			{ x = 32800, y = 31959, z = 7 },
+		},
+		reward = { { 2969, 1 } },
+		storage = Storage.Quest.Key.ID5010,
+	},
 	}]]--
 
 }

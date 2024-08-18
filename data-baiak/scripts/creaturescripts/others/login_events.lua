@@ -2,7 +2,6 @@ local loginEvents = CreatureEvent("LoginEvents")
 function loginEvents.onLogin(player)
 
 	local events = {
-		"AdvanceSave",
 		"VipLogin",
 		"stepsWeakSpot",
 		--Custom BAIAK
@@ -36,8 +35,6 @@ function loginEvents.onLogin(player)
 		--PRIVATE SHOP
 		"privateShopLogin",
 		"RookgaardAdvance",
-		"FamiliarLogin",
-		"FamiliarAdvance",
 		--Quests
 		--Bigfoot Burden Quest
 		"BossesWarzone",
