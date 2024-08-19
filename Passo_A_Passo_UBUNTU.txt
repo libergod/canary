@@ -143,6 +143,7 @@ cmake --build linux-release
 sudo apt-get update 
 sudo apt-get dist-upgrade
 sudo apt-get install git cmake build-essential autoconf libtool ca-certificates curl zip unzip tar pkg-config ninja-build ccache linux-headers-$(uname -r) -y
+sudo apt install git cmake build-essential autoconf libtool ca-certificates curl zip unzip tar pkg-config ninja-build ccache linux-headers-$(uname -r)
 
 
 sudo apt remove --purge cmake
@@ -174,10 +175,18 @@ git clone --depth 1 https://github.com/opentibiabr/canary.git
 cd canary
 mkdir build && cd build
 
+using root:
 cmake -DCMAKE_TOOLCHAIN_FILE=~../../vcpkg/scripts/buildsystems/vcpkg.cmake .. --preset linux-release
 cmake --build linux-release
 
+using gus:
+cmake -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake .. --preset linux-release
+cmake --build linux-release
+
 cmake --build linux-release -j4
+
+Problemas com Ninja?
+sudo chmod -R 755 /home/your_user
 
 cd ~
 cd canary
