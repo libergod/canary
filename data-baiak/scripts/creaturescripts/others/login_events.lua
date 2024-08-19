@@ -128,8 +128,6 @@ function loginEvents.onLogin(player)
 		"RenegadeOrcKill",
 		-- Grave Danger
 		"GraveDangerKill",
-		-- Feaster of Souls
-		"FeasterOfSoulsKill",
 		-- Soul War
 		"SoulWarKill",
 		-- Secret Library
