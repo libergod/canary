@@ -1,21 +1,21 @@
 -- Config
 local tplist = {
-    [42000] = {name = "Deathstrike", positions = {{x = 1984, y = 809, z = 10}}, subareas = {}},
-    [42001] = {name = "Gnomevil", positions = {{x = 1980, y = 811, z = 11}}, subareas = {}},
-    [42002] = {name = "Abyssador", positions = {{x = 1968, y = 802, z = 12}}, subareas = {}},
-    [42003] = {name = "Anomaly", positions = {{x = 1187, y = 668, z = 7}}, subareas = {}},
-    [42004] = {name = "World Devourer", positions = {{x = 1204, y = 808, z = 7}}, subareas = {}},
-    [42005] = {name = "Rupture", positions = {{x = 1247, y = 662, z = 7}}, subareas = {}},
-    [42006] = {name = "Eradicator", positions = {{x = 1281, y = 704, z = 7}}, subareas = {}},
-    [42007] = {name = "Outburst", positions = {{x = 1145, y = 700, z = 7}}, subareas = {}},
-    [42008] = {name = "Realityquake", positions = {{x = 1122, y = 657, z = 7}}, subareas = {}},
-    [42009] = {name = "Bloodback", positions = {{x = 795, y = 462, z = 7}}, subareas = {}},
-    [42010] = {name = "Darkfang", positions = {{x = 786, y = 414, z = 7}}, subareas = {}},
-    [42011] = {name = "Sharpclaw", positions = {{x = 770, y = 383, z = 7}}, subareas = {}},
-    [42012] = {name = "Shadowpelt", positions = {{x = 766, y = 341, z = 7}}, subareas = {}},
-    [42013] = {name = "Black Vixen", positions = {{x = 845, y = 460, z = 7}}, subareas = {}}, -- need to fix water showing upper floor, fix someone fighting
-    [42014] = {name = "Lions Mini Bosses", positions = {{x = 1375, y = 335, z = 9}}, subareas = {}}, -- fix door closed from lions
-    [42015] = {name = "Brokul", positions = {{x = 1032, y = 424, z = 8}}, subareas = {}}, -- need add map again (check RME)
+    [42000] = {name = "Deathstrike", positions = {{x = 1984, y = 809, z = 10}}, subareas = {}}, -- OK
+    [42001] = {name = "Gnomevil", positions = {{x = 1980, y = 811, z = 11}}, subareas = {}}, -- OK
+    [42002] = {name = "Abyssador", positions = {{x = 1968, y = 802, z = 12}}, subareas = {}}, -- OK
+    [42003] = {name = "Anomaly", positions = {{x = 1187, y = 668, z = 7}}, subareas = {}}, -- OK
+    [42004] = {name = "World Devourer", positions = {{x = 1204, y = 808, z = 7}}, subareas = {}}, -- 
+    [42005] = {name = "Rupture", positions = {{x = 1247, y = 662, z = 7}}, subareas = {}}, -- OK (need test)
+    [42006] = {name = "Eradicator", positions = {{x = 1281, y = 704, z = 7}}, subareas = {}}, -- OK (need test) 
+    [42007] = {name = "Outburst", positions = {{x = 1145, y = 700, z = 7}}, subareas = {}}, -- OK (need test)
+    [42008] = {name = "Realityquake", positions = {{x = 1122, y = 657, z = 7}}, subareas = {}}, -- OK (need test) (foreshock)
+    [42009] = {name = "Bloodback", positions = {{x = 795, y = 462, z = 7}}, subareas = {}}, -- OK
+    [42010] = {name = "Darkfang", positions = {{x = 786, y = 414, z = 7}}, subareas = {}}, -- OK
+    [42011] = {name = "Sharpclaw", positions = {{x = 770, y = 383, z = 7}}, subareas = {}}, -- OK
+    [42012] = {name = "Shadowpelt", positions = {{x = 766, y = 341, z = 7}}, subareas = {}}, -- OK
+    [42013] = {name = "Black Vixen", positions = {{x = 845, y = 460, z = 7}}, subareas = {}}, -- OK
+    [42014] = {name = "Lions Mini Bosses", positions = {{x = 1375, y = 335, z = 9}}, subareas = {}}, -- OK
+    [42015] = {name = "Brokul", positions = {{x = 1032, y = 424, z = 8}}, subareas = {}}, -- Check how many times can do it, need to fix not exiting the room
     [42016] = {name = "Grand Master Oberon", positions = {{x = 1104, y = 527, z = 8}}, subareas = {}},
     [42017] = {name = "Grand Mini Bosses", positions = {{x = XXX, y = XXX, z = X}}, subareas = {}},
     [42018] = {name = "Ghulosh", positions = {{x = 1205, y = 564, z = 7}}, subareas = {}},

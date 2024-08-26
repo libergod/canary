@@ -1,16 +1,16 @@
 local vortex = {
 	[14321] = Position(1118, 802, 8), -- Charger TP 1
 	[14322] = Position(1135, 771, 7), -- Charger Exit
-	[14324] = Position(1148, 769, 7), -- Anomaly Exit
+	[14324] = Position(1184, 663, 7), -- Anomaly Exit
 	[14325] = Position(1139, 798, 7), -- Main Room
 	[14340] = Position(1048, 914, 5), -- Main Room Exit
 	[14341] = Position(1208, 708, 7), -- Cracklers Exit
-	[14343] = Position(1218, 709, 7), -- Rupture Exit
-	[14345] = Position(1237, 739, 7), -- Realityquake Exit
+	[14343] = Position(1248, 660, 7), -- Rupture Exit
+	[14345] = Position(1121, 660, 7), -- Realityquake Exit
 	[14347] = Position(1232, 728, 7), -- Unstable Sparks Exit
-	[14348] = Position(1141, 793, 7), -- Eradicator Exit (Main Room)
-	[14350] = Position(1131, 790, 7), -- Outburst Exit (Main Room)
-	[14352] = Position(1137, 794, 7), -- World Devourer Exit (Main Room)
+	[14348] = Position(1279, 701, 7), -- Eradicator Exit (Main Room)
+	[14350] = Position(1145, 697, 7), -- Outburst Exit (Main Room)
+	[14352] = Position(1049, 908, 5), -- World Devourer Exit (Main Room)
 	[14354] = Position(1106, 768, 7), -- World Devourer (Reward Room)
 }
 

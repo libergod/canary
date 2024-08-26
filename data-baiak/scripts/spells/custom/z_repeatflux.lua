@@ -10,7 +10,7 @@ local spellConfig = {
     players = {}
 }
 
-for i = 1, 2 do
+for i = 1, 5 do
     combats[i] = Combat()
     combats[i]:setParameter(COMBAT_PARAM_TYPE, spellConfig.combat)
     combats[i]:setParameter(COMBAT_PARAM_EFFECT, spellConfig.effect)

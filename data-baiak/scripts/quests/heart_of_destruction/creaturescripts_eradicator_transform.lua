@@ -21,10 +21,10 @@ function eradicatorTransform.onThink(creature)
 		monster:addHealth(-monster:getHealth() + bossHealth, COMBAT_PHYSICALDAMAGE)
 
 		if eradicatorWeak == 0 then
-			Game.createMonster("Spark of Destruction", Position(32304, 31282, 14), false, true)
-			Game.createMonster("Spark of Destruction", Position(32305, 31287, 14), false, true)
-			Game.createMonster("Spark of Destruction", Position(32312, 31287, 14), false, true)
-			Game.createMonster("Spark of Destruction", Position(32314, 31282, 14), false, true)
+			Game.createMonster("Spark of Destruction", Position(1246, 698, 7), false, true)
+			Game.createMonster("Spark of Destruction", Position(1256, 698, 7), false, true)
+			Game.createMonster("Spark of Destruction", Position(1247, 703, 7), false, true)
+			Game.createMonster("Spark of Destruction", Position(1254, 703, 7), false, true)
 		end
 
 		eradicatorEvent = addEvent(function()

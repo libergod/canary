@@ -40,14 +40,14 @@ local function endGame()
 	exitPosition = Position(1721, 942, 7)
 	Game.broadcastMessage("[BOMBERMAN] - A partida acabou sem vencedores.", MESSAGE_GAME_HIGHLIGHT)
 	for i = 1, #BomberTeam1 do
-		if isPlayer(BomberTeam1[i]) then
+		if Player(BomberTeam1[i]) then
 			resetplayerbomberman(BomberTeam1[i])
 			BomberTeam1[i]:setOutfit(BombermanOutfit[BomberTeam1[i]:getGuid()])
 		end
 		BomberTeam1[i]:teleportTo(Position(exitPosition))
 	end
 	for i = 1, #BomberTeam2 do
-		if isPlayer(BomberTeam2[i]) then
+		if Player(BomberTeam2[i]) then
 			resetplayerbomberman(BomberTeam2[i])
 			BomberTeam2[i]:setOutfit(BombermanOutfit[BomberTeam2[i]:getGuid()])
 		end
@@ -109,7 +109,7 @@ function bombermanAct.onUse(player, item, fromPosition, target, toPosition, isHo
 			BombermanOutfit[players[i]:getGuid()] = players[i]:getOutfit()
 	    end
 			players[i]:teleportTo(config.toPositions[i])
-			if isPlayer(players[i]) then
+			if Player(players[i]) then
 				getPlayerPosition(players[i]):sendMagicEffect(CONST_ME_TELEPORT)
 				if i <= 1 then -- 5
 					players[i]:setOutfit({lookBody = 88, lookAddons = 0, lookType = 128, lookHead = 114, lookMount = 0, lookLegs = 114, lookFeet = 114})
@@ -124,7 +124,7 @@ function bombermanAct.onUse(player, item, fromPosition, target, toPosition, isHo
 				else
 				table.insert(BomberTeam2, players[i])
 			end
-			if isPlayer(players[i]) then
+			if Player(players[i]) then
 				players[i]:setStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SIZE, 1)
 				players[i]:setStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_MAXBOMB, 1)
 				players[i]:setStorageValue(STORAGEVALUE_MINIGAME_BOMBERMAN_SPEED, 1)

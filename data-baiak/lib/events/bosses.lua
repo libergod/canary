@@ -1,6 +1,6 @@
 Bosses ={
 	bosses = {
-		["Ferumbras"] = {dia = "01/29/23", horario = 19, minuto = 02, tempoMatar = 1}, -- mes/dia/ano - somente a hora - em horas
+		["Ferumbras"] = {dia = "08/19/24", horario = 11, minuto = 35, tempoMatar = 1}, -- mes/dia/ano - somente a hora - em horas
 	},
 	posNasceBoss = Position(1646, 975, 9),
 	posTpOpen = Position(1003, 1217, 7),
@@ -13,14 +13,14 @@ Bosses ={
 		active = true,
 		levelMin = 80,
 	},
-	tempoTpAberto = 20, -- Em minutos
-	mensagemUm = "[BOSS EVENT] Trovões, raios e terremotos nas profundezas do continente ... O portal mágico está entrando em colapso!",  -- 15 min
-	mensagemDois = "[BOSS EVENT] Não há mais magia capaz de parar o que está por vir. O portal está completamente aberto!", -- 10 min
-	mensagemTres = "[BOSS EVENT] Cidadãos, cuidado! Uma criatura do mal acaba de escapar do portal.", -- 5 min
-	mensagemTpFechar = "[BOSS EVENT] O teleport irá fechar em 5 minutos e não será possível entrar mais na sala do boss.",
-	msgTpFechado = "[BOSS EVENT] O teleport foi removido!! Agora só quem está na arena poderá enfrentar o mal!",
-	msgFinalBoss = "[BOSS EVENT] O Boss foi finalmente morto! Parabens a Todos!!",
-	msgacabouTempo = "[BOSS EVENT] O Boss fugiu! Tempo para mata-lo acabou.",
+	tempoTpAberto = 5, -- Em minutos
+	mensagemUm = "[Boss Event] Thunders hit Enara's land!",  -- 15 min
+	mensagemDois = "[Boss Event] Looks like something is shinning, a teleport maybe.", -- 10 min
+	mensagemTres = "[Boss Event] A creature has been spoted sneaking around, take care citizens!", -- 5 min
+	mensagemTpFechar = "[Boss Event] The teleport is being closed, magicians estimate in 5 minutes to close it.",
+	msgTpFechado = "[Boss Event] The elder magicians finally closed the teleport.",
+	msgFinalBoss = "[Boss Event] The strongest creature in Enara had been vanish from this world!",
+	msgacabouTempo = "[Boss Event] Time just ran out and the creature escaped!",
 	actionIdTp = 4247,
 	storage = 13337,
 	storageAlive = 13338,

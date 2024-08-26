@@ -8,7 +8,7 @@ local function doCheckAreaPlayer(upConer, downConer)
 					local creatures = tile:getCreatures()
 					if creatures and #creatures > 0 then
 						for _, c in pairs(creatures) do
-							if isPlayer(c) then
+							if Player(c) then
 								local player = Player(c)
 								player:teleportTo(Position(1170,395,8))
 							end

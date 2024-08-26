@@ -28,10 +28,10 @@ function gtc.onSay(player, words, param)
                         player:setStorageValue(35551, os.time() + 24 * 60 * 60)
                         for _, targetPlayer in ipairs(gMembers) do
                             if targetPlayer then                               
-								targetPlayer:addTournamentsCoins(tournamentsCoins)
+								targetPlayer:addTransferableCoins(tournamentsCoins)
                                 targetPlayer:getPosition():sendMagicEffect(CONST_ME_HOLYDAMAGE)
 								targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You received from Guild Bank %d tournament coins.", tournamentsCoins))
-								db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", targetPlayer:getAccountId(), "0", db.escapeString("[Guild Bank] - Tournament Coins"), "2", "100", os.time()))
+								db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", targetPlayer:getAccountId(), "0", db.escapeString("[Guild Bank] - Tournament Coins"), "1", "100", os.time()))
                             end
                         end
                     end

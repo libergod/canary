@@ -177,7 +177,7 @@ function SAFEZONE:createProtectionTiles()
 					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, SAFEZONE.messages.prefix .. SAFEZONE.messages.messageWinner:format(SAFEZONE.reward[2],itemType:getName()))
 					player:addItem(itemType:getId(), SAFEZONE.reward[2])
 					player:addTransferableCoins(300)
-					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", player:getAccountId(), "0", db.escapeString("[SafeZone Event] - Winner"), "0", "300", os.time()))
+					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", player:getAccountId(), "0", db.escapeString("[SafeZone Event] - Winner"), "1", "300", os.time()))
 					Game.setStorageValue(SAFEZONE.started, 0)				
 					Spdlog.info("[SAFEZONE EVENT] - Ended SafeZone Event!")
 					return true

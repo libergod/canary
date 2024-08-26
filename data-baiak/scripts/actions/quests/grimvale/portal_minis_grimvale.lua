@@ -1,22 +1,20 @@
 local config = {
 	[1] = {
-		teleportPosition = {x = 797, y = 453, z = 7},
+		teleportPosition = { x = 797, y = 453, z = 7 },
 		bossName = "Bloodback",
-		requiredLevel = 100,
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
 		destination = Position(797, 485, 7),
-		bossPosition = Position(800, 489, 7),
+		bossPosition = Position(802, 488, 7),
 		specPos = {
-			from = Position(788, 479, 7),
-			to = Position(809, 495, 7),
+			from = Position(789, 480, 7),
+			to = Position(809, 494, 7),
 		},
 		exitPosition = Position(797, 455, 7),
 	},
 	[2] = {
-		teleportPosition = {x = 783, y = 406, z = 7},
+		teleportPosition = { x = 783, y = 406, z = 7 },
 		bossName = "Darkfang",
-		requiredLevel = 100,
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
 		destination = Position(807, 411, 7),
@@ -28,9 +26,8 @@ local config = {
 		exitPosition = Position(783, 407, 7),
 	},
 	[3] = {
-		teleportPosition = {x = 757, y = 347, z = 7},
-		bossName = "Sharpclaw",
-		requiredLevel = 100,
+		teleportPosition = { x = 757, y = 347, z = 7 },
+		bossName = "Shadowpelt",
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
 		destination = Position(775, 324, 7),
@@ -41,24 +38,22 @@ local config = {
 		},
 		exitPosition = Position(758, 347, 7),
 	},
-	[4] = {
-		teleportPosition = {x = 744, y = 332, z = 7},
-		bossName = "Shadowpelt",
-		requiredLevel = 100,
+	[4] = {-- need to fix positions
+		teleportPosition = { x = 780, y = 377, z = 7 },
+		bossName = "Sharpclaw",
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
-		destination = Position(760, 308, 7),
-		bossPosition = Position(748, 309, 7),
+		destination = Position(807, 375, 7),
+		bossPosition = Position(808, 381, 7),
 		specPos = {
-			from = Position(738, 300, 7),
-			to = Position(766, 317, 7),
+			from = Position(797, 372, 7),
+			to = Position(816, 386, 7),
 		},
-		exitPosition = Position(745, 332, 7),
+		exitPosition = Position(780, 379, 7),
 	},
 	[5] = {
-		teleportPosition = {x = 848, y = 450, z = 7},
+		teleportPosition = { x = 848, y = 450, z = 7 },
 		bossName = "Black Vixen",
-		requiredLevel = 100,
 		timeToFightAgain = 10, -- In hour
 		timeToDefeat = 10, -- In minutes
 		destination = Position(853, 437, 7),
@@ -114,12 +109,6 @@ function teleportBoss.onStepIn(creature, item, position, fromPosition)
 				creature:say("There's someone fighting with " .. value.bossName .. ".", TALKTYPE_MONSTER_SAY)
 				return true
 			end
-			if creature:getLevel() < value.requiredLevel then
-				creature:teleportTo(fromPosition, true)
-				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "All the players need to be level " .. value.requiredLevel .. " or higher.")
-				return true
-			end
 			if not creature:canFightBoss(value.bossName) then
 				creature:teleportTo(fromPosition, true)
 				creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
@@ -134,6 +123,7 @@ function teleportBoss.onStepIn(creature, item, position, fromPosition)
 			creature:teleportTo(value.destination)
 			creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			creature:setBossCooldown(value.bossName, os.time() + value.timeToFightAgain * 3600)
+			creature:sendBosstiaryCooldownTimer()
 			addEvent(function()
 				spec:clearCreaturesCache()
 				spec:setOnlyPlayer(true)

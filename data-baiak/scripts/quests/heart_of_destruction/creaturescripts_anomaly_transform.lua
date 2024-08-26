@@ -1,9 +1,9 @@
 local function createSpawnAnomalyRoom(valueGlobalStorage)
-	Game.createMonster("Spark of Destruction", Position(32267, 31253, 14), false, true)
-	Game.createMonster("Spark of Destruction", Position(32274, 31255, 14), false, true)
-	Game.createMonster("Spark of Destruction", Position(32274, 31249, 14), false, true)
-	Game.createMonster("Spark of Destruction", Position(32267, 31249, 14), false, true)
-	Game.createMonster("Charged Anomaly", Position(32271, 31249, 14), false, true)
+	Game.createMonster("Spark of Destruction", Position(1209, 665, 7), false, true)
+	Game.createMonster("Spark of Destruction", Position(1216, 665, 7), false, true)
+	Game.createMonster("Spark of Destruction", Position(1209, 669, 7), false, true)
+	Game.createMonster("Spark of Destruction", Position(1216, 671, 7), false, true)
+	Game.createMonster("Charged Anomaly", Position(1213, 665, 7), false, true)
 	Game.setStorageValue(GlobalStorage.HeartOfDestruction.ChargedAnomaly, valueGlobalStorage + 1)
 end
 

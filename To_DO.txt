@@ -23,7 +23,7 @@ item id = 9170 STAMINA POTION
 item id = 21554 EXP RESTORE POTION
 item id = 12305 SUPER UP KEY
 
-SOUND_EFFECT_TYPE_
+
 ====================================================================================================================================================================
 ====================================================================SERVER INFOS====================================================================================
 ====================================================================================================================================================================
@@ -42,6 +42,7 @@ EVENTS:
 - Zombies (EM DEV)
 - Snake Event
 - Bomberman
+- MonsterHunt - OK
 
 RECHARGE:
 - Softboots and Firewalker boots with Right Button
@@ -52,7 +53,6 @@ RECHARGE:
 
 MECHANICS:
 - Fist Skill will increase your attack velocity
-- TASK System
 - 20% + EXP Boost will have a chance to be dropped!
 - Bonus Party Share Exp
 - Send Party Invitation with !invite and accept with !join
@@ -69,7 +69,7 @@ OTHERS:
 
 - ADD event em todos os monstros: dodgeCriticalThree, (Monstro exemplo: DEMON) - OK
 - Diminuir porcentagem de chance de Dodge - OK
-- Adicionar drops de monstros no scripts/custom/exp_boostDrop.lua - (Adicionar apenas Super UP Cave)
+- Adicionar drops de monstros no scripts/custom/exp_boostDrop.lua - (Adicionar apenas Super UP Cave) - TODO
 - Arrumar o restaure de Exp - OK
 - Arrumar sprites do evento Snake - OK
 
@@ -89,10 +89,10 @@ OTHERS:
 
 - Adicionar Hunts Exclusivas Castle - 
 
-- Adicionar Daily Task - OK
-- Arrumar a Store in Game - OK
+- Adicionar Daily Task - TODO
+- Arrumar a Store in Game - TODO
 - Adicionar Bosstiary - OK
-- Remover items premium dos drops de monstros - OK
+- Remover items premium dos drops de monstros - TODO
 - Remover gold ingot dos monstros (id 9058) - OK
 - Corrigir TP sa da Mirror Image - OK
 - Zerar as Hunts exclusivas no reload do server - OK

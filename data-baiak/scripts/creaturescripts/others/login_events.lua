@@ -9,7 +9,7 @@ function loginEvents.onLogin(player)
 		"AnimationUp",
 		"DodgeCriticalSystem",
 		"DodgeManaSystem",
-		"MonsterHunt",
+		"monsterHunt",
 		"monsterHuntKill",
 		"bossEventMonsterKill",
 		"autoLoot",

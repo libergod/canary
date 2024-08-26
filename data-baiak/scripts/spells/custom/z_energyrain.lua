@@ -50,15 +50,15 @@ combat:setCallback(CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local effect = {config.firstEffect,config.secondEffect}
 function onTargetTile(cid, pos)
-    return math.random(2) == 1 and pos:sendMagicEffect(effect[math.random(#effect)]) and  doSendDistanceShoot({ x = pos.x - 7, y = pos.y - 7, z = pos.z}, pos, 36) and doCombat(cid, combat, positionToVariant(pos))
+    return math.random(2) == 1 and pos:sendMagicEffect(effect[math.random(#effect)]) and  doSendDistanceShoot({ x = pos.x - 7, y = pos.y - 7, z = pos.z}, pos, 36) and combat:execute(cid, positionToVariant(pos))
 end
 
 setCombatCallback(acombat, CALLBACK_PARAM_TARGETTILE, "onTargetTile")
 
 local function doTimeCombat(cid, combat, var)
-     if isPlayer(cid) then
-         doCombat(cid, combat, var)
-         doCombat(cid, combat2, var)
+     if Player(cid) then
+         combat:execute(cid, var)
+         combat2:execute(cid, var)
      end
      return true
 end

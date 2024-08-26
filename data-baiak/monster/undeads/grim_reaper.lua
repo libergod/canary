@@ -32,6 +32,7 @@ monster.events = {
 	"dodgeCriticalThree",
 	"dodgeCriticalOne",
 	"dodgeCriticalTwo",
+	"monsterHuntKill",
 }
 
 monster.health = 3900

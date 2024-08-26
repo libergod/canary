@@ -3,7 +3,6 @@ function AutoBroadCast.onThink(interval, lastExecution)
     local messages = {
 
     "[Daily Reward]: Using the !reward command you receive your daily reward.",
-    "[Task System]: Type !task, choose missions or check the status of the current one",
 	"[Shop List]: Using !shop list, you will get a fast refill option but with 10% more cost.",
 	"[Tools]: Need a hand? Type !tools, and receive couple of usefull tools.",
 	"[BackPack]: No more space? Use !bp, to buy a backpack.",

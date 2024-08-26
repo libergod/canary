@@ -12,7 +12,7 @@ local function clearArea()
 					local creatures = tile:getCreatures()
 					if creatures and #creatures > 0 then
 						for _, c in pairs(creatures) do
-							if isPlayer(c) then
+							if Player(c) then
 								c:teleportTo({x = 1049, y = 387, z = 8})
 							elseif isMonster(c) then
 								c:remove()

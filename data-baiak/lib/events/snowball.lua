@@ -167,7 +167,7 @@ function terminarEvento()
 				Player(players):addItem(item_id, item_ammount)
 				Player(players):setStorageValue(STORAGEVALUE_EVENTS, 0)
 				Player(players):addTransferableCoins(300)
-				db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", Player(players):getAccountId(), "0", db.escapeString("[Snowball Event] - Winner"), "0", "300", os.time()))
+				db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", Player(players):getAccountId(), "0", db.escapeString("[Snowball Event] - Winner"), "1", "300", os.time()))
 			end
 		end
 

@@ -59,13 +59,13 @@ FSE.rewards = {9058, 2}
 
 FSE.msg = {
 	prefix = "[FIRESTORM] ",
-	openTp = "O evento foi aberto e espera por jogadores. Você tem %d minuto(s) para entrar.",
-	forceStop = "O evento foi forçado a parar.",
-	noPlayers = "Não foi possível iniciar o evento por falta de jogadores.",
+	openTp = "O evento foi aberto e espera por jogadores. Vocï¿½ tem %d minuto(s) para entrar.",
+	forceStop = "O evento foi forï¿½ado a parar.",
+	noPlayers = "Nï¿½o foi possï¿½vel iniciar o evento por falta de jogadores.",
 	playerRemoved = "O player %s foi atingido.",
 	eventFinish = "O evento foi encerrado e o jogador vencedor foi %s.",
 	eventFinishNoWin = "O evento foi encerrado sem jogadores.",
-	entranceNew = "Você entrou no evento. Boa Sorte!",
+	entranceNew = "Vocï¿½ entrou no evento. Boa Sorte!",
 }
 FSE.days = {--Day-Hour
 				"Monday-16:40",
@@ -180,7 +180,7 @@ function FSE:CheckControl()
 				for _, player in pairs(players) do
 					player:addItem(FSE.rewards[1], FSE.rewards[2])
 					player:addTransferableCoins(300)
-					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", player:getAccountId(), "0", db.escapeString("[FireStorm Event] - Winner"), "0", "300", os.time()))
+					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", player:getAccountId(), "0", db.escapeString("[FireStorm Event] - Winner"), "1", "300", os.time()))
 				end
 				FSE:Stoped(players, FSE.msg.prefix .. string.format(FSE.msg.eventFinish, getWinNames(players)))
 				-- FINISHED EVENT

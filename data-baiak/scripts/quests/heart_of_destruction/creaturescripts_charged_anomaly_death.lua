@@ -1,6 +1,6 @@
 local config = {
 	bossName = "Anomaly",
-	bossPosition = Position(32271, 31249, 14),
+	bossPosition = Position(1213, 665, 7),
 }
 
 local monsterTable = {

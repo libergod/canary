@@ -42,25 +42,25 @@ function bomberman.onStepIn(creature, item, position, fromPosition)
 			stopEvent(bombermanEnd)
 			if team1 > team2 then
 				for i = 1, #BomberTeam1 do
-					if isPlayer(BomberTeam1[i]) then
+					if Player(BomberTeam1[i]) then
 					resetplayerbomberman(BomberTeam1[i])
 					BomberTeam1[i]:sendCancelMessage("[BOMBERMAN] - Seu time venceu. Parab�ns!")
 					BomberTeam1[i]:addItem(9058,3) --TIME A: Exemplo de recompensa que cada ganhador ganharia
 					BomberTeam1[i]:setOutfit(BombermanOutfit[BomberTeam1[i]:getGuid()])
-					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", BomberTeam1[i]:getAccountId(), "0", db.escapeString("[Bomberman] - Winner"), "2", "100", os.time()))
-					BomberTeam1[i]:addTournamentsCoins(100)
+					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", BomberTeam1[i]:getAccountId(), "0", db.escapeString("[Bomberman] - Winner"), "1", "100", os.time()))
+					BomberTeam1[i]:addTransferableCoins(100)
 					end
 					BomberTeam1[i]:teleportTo(Position(exitPosition))
 				end
 			else
 				for i = 1, #BomberTeam2 do
-					if isPlayer(BomberTeam2[i]) then
+					if Player(BomberTeam2[i]) then
 					resetplayerbomberman(BomberTeam2[i])
 					BomberTeam2[i]:setOutfit(BombermanOutfit[BomberTeam2[i]:getGuid()])
 					BomberTeam2[i]:sendCancelMessage("[BOMBERMAN] - Seu time venceu. Parab�ns!")
 					BomberTeam2[i]:addItem(9058,3) --TIME B: Exemplo de recompensa que cada ganhador ganharia
-					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", BomberTeam2[i]:getAccountId(), "0", db.escapeString("[Bomberman] - Winner"), "2", "100", os.time()))
-					BomberTeam2[i]:addTournamentsCoins(100)
+					db.query(string.format("INSERT INTO `store_history`(`account_id`, `mode`, `description`, `coin_type`, `coin_amount`, `time`) VALUES (%s, %s, %s, %s, %s, %s)", BomberTeam2[i]:getAccountId(), "0", db.escapeString("[Bomberman] - Winner"), "1", "100", os.time()))
+					BomberTeam2[i]:addTransferableCoins(100)
 					end
 					BomberTeam2[i]:teleportTo(Position(exitPosition))
 				end
